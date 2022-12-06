@@ -1,0 +1,587 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-04T10:36:20.107Z",
+        "line": 2,
+        "name": "Verify ClassificationShape Table Data Test between PDDB_LP and DrugDB",
+        "description": "",
+        "id": "classificationshape-table-data-test-between-pddb-lp-and-drugdb;verify-classificationshape-table-data-test-between-pddb-lp-and-drugdb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 765511400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB_LP\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137294800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user count data from \"ClassificationShape\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ClassificationShape\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 644336600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "connection setup with CDDB \"DrugDB\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithCDDBDrugDBDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31197900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should check \"ClassificationShape\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ClassificationShape\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31266800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should verify ClassificationShape data count between PDDB_LP ClassificationShape table and CDDB \"ClassificationShape\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ClassificationShape\"",
+                  "offset": 101
+                }
+              ],
+              "location": "step.ClassificationShapeTestStep.userShouldVerifyClassificationShapeDataCountBetweenPDDB_LPClassificationShapeTableAndCDDBTable(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:ClassificationShape Table Data Test between PDDB_LP and DrugDB"
+          }
+        ]
+      }
+    ],
+    "name": "ClassificationShape Table Data Test between PDDB_LP and DrugDB",
+    "description": "",
+    "id": "classificationshape-table-data-test-between-pddb-lp-and-drugdb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/classificationshape.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-04T10:36:21.849Z",
+        "line": 2,
+        "name": "Verify DrugNonCountReason Table Data Test between PDDB_LP and DrugDB",
+        "description": "",
+        "id": "drugnoncountreason-table-data-test-between-pddb-lp-and-drugdb;verify-drugnoncountreason-table-data-test-between-pddb-lp-and-drugdb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 202693800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB_LP\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27271600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user count data from \"DrugNonCountReason\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugNonCountReason\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 504395900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "connection setup with CDDB \"DrugDB\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithCDDBDrugDBDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15618700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should check \"DrugNonCountReason\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugNonCountReason\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31187900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should verify DrugNonCountReason data count between PDDB_LP DrugNonCountReason table and CDDB \"DrugNonCountReason\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugNonCountReason\"",
+                  "offset": 99
+                }
+              ],
+              "location": "step.DrugNonCounReasonTestStep.userShouldVerifyDrugNonCountReasonDataCountBetweenPDDB_LPDrugNonCountReasonTableAndCDDBTable(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugNonCountReason Table Data Test between PDDB_LP and DrugDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugNonCountReason Table Data Test between PDDB_LP and DrugDB",
+    "description": "",
+    "id": "drugnoncountreason-table-data-test-between-pddb-lp-and-drugdb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/drugnoncountreason.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-04T10:36:22.631Z",
+        "line": 2,
+        "name": "Verify DrugStatus Table Data Test between PDDB_LP and DrugDB",
+        "description": "",
+        "id": "drugstatus-table-data-test-between-pddb-lp-and-drugdb;verify-drugstatus-table-data-test-between-pddb-lp-and-drugdb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 187235400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB_LP\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62423700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user count data from \"Status\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 578370400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "connection setup with CDDB \"DrugDB\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithCDDBDrugDBDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15625800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should check \"DrugStatus\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugStatus\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 647763500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should verify DrugStatus data count between PDDB_LP DrugStatus table and CDDB \"DrugStatus\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugStatus\"",
+                  "offset": 83
+                }
+              ],
+              "location": "step.DrugStatusTestStep.userShouldVerifyDrugStatusDataCountBetweenPDDB_LPDrugStatusTableAndCDDBTable(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugStatus Table Data Test between PDDB_LP and DrugDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugStatus Table Data Test between PDDB_LP and DrugDB",
+    "description": "",
+    "id": "drugstatus-table-data-test-between-pddb-lp-and-drugdb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/drugstatus.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-04T10:36:24.146Z",
+        "line": 2,
+        "name": "Verify Inventory Table Data Test between PDDB_LP and DrugDB",
+        "description": "",
+        "id": "inventory-table-data-test-between-pddb-lp-and-drugdb;verify-inventory-table-data-test-between-pddb-lp-and-drugdb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 187264200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB_LP\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31308900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user count data from \"Inventory\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 609609200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "connection setup with CDDB \"DrugDB\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithCDDBDrugDBDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15527600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should check \"Inventory\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15686300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should verify Inventory data count between PDDB_LP Inventory table and CDDB \"Inventory\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 81
+                }
+              ],
+              "location": "step.InventoryTestStep.userShouldVerifyInventoryDataCountBetweenPDDB_LPInventoryTableAndCDDBInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Inventory Table Data Test between PDDB_LP and DrugDB"
+          }
+        ]
+      }
+    ],
+    "name": "Inventory Table Data Test between PDDB_LP and DrugDB",
+    "description": "",
+    "id": "inventory-table-data-test-between-pddb-lp-and-drugdb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/inventory.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-04T10:36:25.021Z",
+        "line": 2,
+        "name": "Verify StatusType Table Data Test between PDDB_LP and DrugDB",
+        "description": "",
+        "id": "statustype-table-data-test-between-pddb-lp-and-drugdb;verify-statustype-table-data-test-between-pddb-lp-and-drugdb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 187562900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB_LP\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31346800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user count data from \"StatusType\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatusType\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 546468800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "connection setup with CDDB \"DrugDB\" database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithCDDBDrugDBDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109611100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should check \"StatusType\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatusType\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckInventoryTable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47070200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should verify StatusType data count between PDDB_LP StatusType table and CDDB \"StatusType\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatusType\"",
+                  "offset": 83
+                }
+              ],
+              "location": "step.StatusTypeTestStep.userShouldVerifyStatusTypeDataCountBetweenPDDB_LPStatusTypeTableAndCDDBTable(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:StatusType Table Data Test between PDDB_LP and DrugDB"
+          }
+        ]
+      }
+    ],
+    "name": "StatusType Table Data Test between PDDB_LP and DrugDB",
+    "description": "",
+    "id": "statustype-table-data-test-between-pddb-lp-and-drugdb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/statustype.feature",
+    "tags": []
+  }
+]

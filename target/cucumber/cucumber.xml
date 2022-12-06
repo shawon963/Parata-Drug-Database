@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="6.234">
+    <testcase classname="ClassificationShape Table Data Test between PDDB_LP and DrugDB" name="Verify ClassificationShape Table Data Test between PDDB_LP and DrugDB" time="1.727">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
+And user count data from "ClassificationShape" table........................passed
+Then connection setup with CDDB "DrugDB" database...........................passed
+And user should check "ClassificationShape" table...........................passed
+And user should verify ClassificationShape data count between PDDB_LP ClassificationShape table and CDDB "ClassificationShape" table.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugNonCountReason Table Data Test between PDDB_LP and DrugDB" name="Verify DrugNonCountReason Table Data Test between PDDB_LP and DrugDB" time="0.781">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
+And user count data from "DrugNonCountReason" table.........................passed
+Then connection setup with CDDB "DrugDB" database...........................passed
+And user should check "DrugNonCountReason" table............................passed
+And user should verify DrugNonCountReason data count between PDDB_LP DrugNonCountReason table and CDDB "DrugNonCountReason" table.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugStatus Table Data Test between PDDB_LP and DrugDB" name="Verify DrugStatus Table Data Test between PDDB_LP and DrugDB" time="1.491">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
+And user count data from "Status" table.....................................passed
+Then connection setup with CDDB "DrugDB" database...........................passed
+And user should check "DrugStatus" table....................................passed
+And user should verify DrugStatus data count between PDDB_LP DrugStatus table and CDDB "DrugStatus" table.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Inventory Table Data Test between PDDB_LP and DrugDB" name="Verify Inventory Table Data Test between PDDB_LP and DrugDB" time="0.859">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
+And user count data from "Inventory" table..................................passed
+Then connection setup with CDDB "DrugDB" database...........................passed
+And user should check "Inventory" table.....................................passed
+And user should verify Inventory data count between PDDB_LP Inventory table and CDDB "Inventory" table.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="StatusType Table Data Test between PDDB_LP and DrugDB" name="Verify StatusType Table Data Test between PDDB_LP and DrugDB" time="0.922">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
+And user count data from "StatusType" table.................................passed
+Then connection setup with CDDB "DrugDB" database...........................passed
+And user should check "StatusType" table....................................passed
+And user should verify StatusType data count between PDDB_LP StatusType table and CDDB "StatusType" table.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

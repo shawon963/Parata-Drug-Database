@@ -32,14 +32,6 @@ public class DrugDBStep {
         Response res = DrugDBRequest.Get(path, token);
         testContext.scenarioContext.setContext(CONTEXT.RESPONSE_CODE, res.statusCode());
 
-
-//        var responseDrug = res.then().extract().jsonPath().get("drug");
-//        Gson gson = new Gson();
-//        var drugObj = new JsonParser().parse(gson.toJson(responseDrug));
-//        JsonObject drug = drugObj.getAsJsonObject();
-//        String drugName = drug.get("color").getAsString();
-
-
         if(res.statusCode() == 200) {
             testContext.scenarioContext.setContext(CONTEXT.RESPONSE_BODY, res.body().asString());
             var drugObj = new JsonParser().parse(res.body().asString());
@@ -77,7 +69,6 @@ public class DrugDBStep {
     @And("user should receive color {string}")
     public void userShouldReceiveColor(String argColor) {
         JsonObject drugObj = (JsonObject) testContext.scenarioContext.getContext(CONTEXT.DRUG_OBJ);
-//        Assert.assertEquals(argColor, drugObj.get("Color").getAsString());
         Assert.assertEquals(argColor, drugObj.get("Color").isJsonNull() ? "null" : drugObj.get("Color").getAsString());
 
     }
