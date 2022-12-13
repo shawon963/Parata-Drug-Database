@@ -6,7 +6,7 @@ import org.junit.Assert;
 
 import java.sql.SQLException;
 
-public class AzureCDDBInventoryTestStep {
+public class AzureCDDBInventoryTest {
     private genericFactory gen = new genericFactory();
 
     @And("user should verify Inventory table column between SP_Pull_Inventory procedure column in PDDB_LP database within azure server and {string} table column in DrugDB database within CDDB server")

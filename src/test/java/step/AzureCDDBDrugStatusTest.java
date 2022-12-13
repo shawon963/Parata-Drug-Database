@@ -6,7 +6,7 @@ import org.junit.Assert;
 
 import java.sql.SQLException;
 
-public class AzureCDDBDrugStatusTestStep {
+public class AzureCDDBDrugStatusTest {
     private genericFactory gen = new genericFactory();
 
     @And("user should verify DrugStatus table column between SP_Pull_Status procedure column in PDDB_LP database within azure server and {string} table column in DrugDB database within CDDB server")

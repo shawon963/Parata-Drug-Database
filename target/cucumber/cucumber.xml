@@ -1,52 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="6.234">
-    <testcase classname="ClassificationShape Table Data Test between PDDB_LP and DrugDB" name="Verify ClassificationShape Table Data Test between PDDB_LP and DrugDB" time="1.727">
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="11.663">
+    <testcase classname="ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database" time="2.85">
         <system-out>
-            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
-And user count data from "ClassificationShape" table........................passed
-Then connection setup with CDDB "DrugDB" database...........................passed
-And user should check "ClassificationShape" table...........................passed
-And user should verify ClassificationShape data count between PDDB_LP ClassificationShape table and CDDB "ClassificationShape" table.passed
+            <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "SP_Pull_ClassificationShape" procedure from PDDB_LP database in azure server.passed
+And user get column from "SP_Pull_ClassificationShape" procedure in PDDB_LP database within azure server.passed
+And user get data count from "SP_Pull_ClassificationShape" procedure in PDDB_LP database within azure server.passed
+Then connection setup with "DrugDB" database from CDDB server...............passed
+And user should check "ClassificationShape" table from DrugDB database in CDDB server.passed
+And user should verify ClassificationShape table column between SP_Pull_ClassificationShape procedure column in PDDB_LP database within azure server and "ClassificationShape" table column in DrugDB database within CDDB server.passed
+And user should verify ClassificationShape table data count between SP_Pull_ClassificationShape procedure data in PDDB_LP database within azure server and "ClassificationShape" table data in DrugDB database within CDDB server.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="DrugNonCountReason Table Data Test between PDDB_LP and DrugDB" name="Verify DrugNonCountReason Table Data Test between PDDB_LP and DrugDB" time="0.781">
+    <testcase classname="DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database" time="1.201">
         <system-out>
-            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
-And user count data from "DrugNonCountReason" table.........................passed
-Then connection setup with CDDB "DrugDB" database...........................passed
-And user should check "DrugNonCountReason" table............................passed
-And user should verify DrugNonCountReason data count between PDDB_LP DrugNonCountReason table and CDDB "DrugNonCountReason" table.passed
+            <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "SP_Pull_DrugNonCountReason" procedure from PDDB_LP database in azure server.passed
+And user get column from "SP_Pull_DrugNonCountReason" procedure in PDDB_LP database within azure server.passed
+And user get data count from "SP_Pull_DrugNonCountReason" procedure in PDDB_LP database within azure server.passed
+Then connection setup with "DrugDB" database from CDDB server...............passed
+And user should check "DrugNonCountReason" table from DrugDB database in CDDB server.passed
+And user should verify DrugNonCountReason table column between SP_Pull_DrugNonCountReason procedure column in PDDB_LP database within azure server and "DrugNonCountReason" table column in DrugDB database within CDDB server.passed
+And user should verify DrugNonCountReason table data count between SP_Pull_DrugNonCountReason procedure data in PDDB_LP database within azure server and "DrugNonCountReason" table data in DrugDB database within CDDB server.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="DrugStatus Table Data Test between PDDB_LP and DrugDB" name="Verify DrugStatus Table Data Test between PDDB_LP and DrugDB" time="1.491">
+    <testcase classname="DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database" time="2.027">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "SP_Pull_Status" procedure from PDDB_LP database in azure server.passed
+And user get column from "SP_Pull_Status" procedure in PDDB_LP database within azure server.passed
+And user get data count from "SP_Pull_Status" procedure in PDDB_LP database within azure server.passed
+Then connection setup with "DrugDB" database from CDDB server...............passed
+And user should check "DrugStatus" table from DrugDB database in CDDB server.passed
+And user should verify DrugStatus table column between SP_Pull_Status procedure column in PDDB_LP database within azure server and "DrugStatus" table column in DrugDB database within CDDB server.failed
+And user should verify DrugStatus table data count between SP_Pull_Status procedure data in PDDB_LP database within azure server and "DrugStatus" table data in DrugDB database within CDDB server.skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at step.AzureCDDBDrugStatusTest.userShouldVerifyDrugStatusTableColumnBetweenSP_Pull_StatusProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBDrugStatusTest.java:15)
+	at ✽.user should verify DrugStatus table column between SP_Pull_Status procedure column in PDDB_LP database within azure server and "DrugStatus" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-drugstatus.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Inventory Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify Inventory Table Data and column Test between PDDB_LP and DrugDB Database" time="1.407">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "SP_Pull_Inventory" procedure from PDDB_LP database in azure server.passed
+And user get column from "SP_Pull_Inventory" procedure in PDDB_LP database within azure server.passed
+And user get data count from "SP_Pull_Inventory" procedure in PDDB_LP database within azure server.passed
+Then connection setup with "DrugDB" database from CDDB server...............passed
+And user should check "Inventory" table from DrugDB database in CDDB server.passed
+And user should verify Inventory table column between SP_Pull_Inventory procedure column in PDDB_LP database within azure server and "Inventory" table column in DrugDB database within CDDB server.failed
+And user should verify Inventory table data count between SP_Pull_Inventory procedure data in PDDB_LP database within azure server and "Inventory" table data in DrugDB database within CDDB server.skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at step.AzureCDDBInventoryTest.userShouldVerifyInventoryTableColumnBetweenSP_Pull_InventoryProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBInventoryTest.java:15)
+	at ✽.user should verify Inventory table column between SP_Pull_Inventory procedure column in PDDB_LP database within azure server and "Inventory" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-inventory.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="StatusType Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify StatusType Table Data and column Test between PDDB_LP and DrugDB Database" time="1.024">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "SP_Pull_StatusType" procedure from PDDB_LP database in azure server.passed
+And user get column from "SP_Pull_StatusType" procedure in PDDB_LP database within azure server.passed
+And user get data count from "SP_Pull_StatusType" procedure in PDDB_LP database within azure server.passed
+Then connection setup with "DrugDB" database from CDDB server...............passed
+And user should check "StatusType" table from DrugDB database in CDDB server.passed
+And user should verify StatusType table column between SP_Pull_StatusType procedure column in PDDB_LP database within azure server and "StatusType" table column in DrugDB database within CDDB server.failed
+And user should verify StatusType table data count between SP_Pull_StatusType procedure data in PDDB_LP database within azure server and "StatusType" table data in DrugDB database within CDDB server.skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at step.AzureCDDBStatusTypeTest.userShouldVerifyStatusTypeTableColumnBetweenSP_Pull_StatusTypeProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBStatusTypeTest.java:15)
+	at ✽.user should verify StatusType table column between SP_Pull_StatusType procedure column in PDDB_LP database within azure server and "StatusType" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-statustype.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="ClassificationShape Table Data Test between PDDB_LP and PDDB" name="Verify ClassificationShape Table Data Test between PDDB_LP and PDDB" time="0.573">
         <system-out>
-            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
-And user count data from "Status" table.....................................passed
-Then connection setup with CDDB "DrugDB" database...........................passed
-And user should check "DrugStatus" table....................................passed
-And user should verify DrugStatus data count between PDDB_LP DrugStatus table and CDDB "DrugStatus" table.passed
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "ClassificationShape" table from PDDB database within on prem lan server.passed
+And user count data from "ClassificationShape" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "ClassificationShape" table from PDDB_LP database in azure server.passed
+And user should verify ClassificationShape table column between ClassificationShape table column in PDDB database within on prem server and "ClassificationShape" table column in PDDB_LP database within Azure server.passed
+And user should verify ClassificationShape table data count between ClassificationShape table data in PDDB_LP database within on prem server and "ClassificationShape" table data in PDDB_LP database within azure server.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Inventory Table Data Test between PDDB_LP and DrugDB" name="Verify Inventory Table Data Test between PDDB_LP and DrugDB" time="0.859">
+    <testcase classname="DrugNonCountReason Table Data Test between PDDB_LP and PDDB" name="Verify DrugNonCountReason Table Data Test between PDDB_LP and PDDB" time="0.479">
         <system-out>
-            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
-And user count data from "Inventory" table..................................passed
-Then connection setup with CDDB "DrugDB" database...........................passed
-And user should check "Inventory" table.....................................passed
-And user should verify Inventory data count between PDDB_LP Inventory table and CDDB "Inventory" table.passed
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugNonCountReason" table from PDDB database within on prem lan server.passed
+And user count data from "DrugNonCountReason" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugNonCountReason" table from PDDB_LP database in azure server.passed
+And user should verify DrugNonCountReason table column between DrugNonCountReason table column in PDDB database within on prem server and "DrugNonCountReason" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugNonCountReason table data count between DrugNonCountReason table data in PDDB_LP database within on prem server and "DrugNonCountReason" table data in PDDB_LP database within azure server.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="StatusType Table Data Test between PDDB_LP and DrugDB" name="Verify StatusType Table Data Test between PDDB_LP and DrugDB" time="0.922">
+    <testcase classname="Inventory Table Data Test between PDDB_LP and PDDB" name="Verify Inventory Table Data Test between PDDB_LP and PDDB" time="0.484">
         <system-out>
-            <![CDATA[When connection setup with "PDDB_LP" database...............................passed
-And user count data from "StatusType" table.................................passed
-Then connection setup with CDDB "DrugDB" database...........................passed
-And user should check "StatusType" table....................................passed
-And user should verify StatusType data count between PDDB_LP StatusType table and CDDB "StatusType" table.passed
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "Inventory" table from PDDB database within on prem lan server.passed
+And user count data from "Inventory" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "Inventory" table from PDDB_LP database in azure server.passed
+And user should verify Inventory table column between Inventory table column in PDDB database within on prem server and "Inventory" table column in PDDB_LP database within Azure server.passed
+And user should verify Inventory table data count between Inventory table data in PDDB_LP database within on prem server and "Inventory" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Status Table Data Test between PDDB_LP and PDDB" name="Verify Status Table Data Test between PDDB_LP and PDDB" time="0.52">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "Status" table from PDDB database within on prem lan server.passed
+And user count data from "Status" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "Status" table from PDDB_LP database in azure server..passed
+And user should verify Status table column between Status table column in PDDB database within on prem server and "Status" table column in PDDB_LP database within Azure server.passed
+And user should verify Status table data count between Status table data in PDDB_LP database within on prem server and "Status" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="StatusType Table Data Test between PDDB_LP and PDDB" name="Verify StatusType Table Data Test between PDDB_LP and PDDB" time="0.472">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "StatusType" table from PDDB database within on prem lan server.passed
+And user count data from "StatusType" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "StatusType" table from PDDB_LP database in azure server.passed
+And user should verify StatusType table column between StatusType table column in PDDB database within on prem server and "StatusType" table column in PDDB_LP database within Azure server.passed
+And user should verify StatusType table data count between StatusType table data in PDDB_LP database within on prem server and "StatusType" table data in PDDB_LP database within azure server.passed
 ]]>
         </system-out>
     </testcase>

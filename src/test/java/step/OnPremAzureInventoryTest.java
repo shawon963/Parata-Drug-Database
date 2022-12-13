@@ -6,7 +6,7 @@ import org.junit.Assert;
 
 import java.sql.SQLException;
 
-public class OnPremAzureInventoryTestStep {
+public class OnPremAzureInventoryTest {
     private genericFactory gen = new genericFactory();
 
     @And("user should verify Inventory table column between Inventory table column in PDDB database within on prem server and {string} table column in PDDB_LP database within Azure server")

@@ -5,47 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ae6316-67c9-477b-b806-d2e7a447980a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBDrugStatusTestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBInventoryTestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureInventoryTestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureStatusTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureStatusTypeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-drugstatus.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-inventory.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-statustype.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-inventory.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-status.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-statustype.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBClassificationShapeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBDrugNonCountReasonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBStatusTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureClassificationShapeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureDrugNonCountReasonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureMeasurementsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/OnpremAzureDrugCoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-classificationshape.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-drugnoncountreason.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-classificationshape.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-drugcore.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-drugnoncountreason.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-measurements.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GenericInfo/genericFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenericInfo/genericFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/constants/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/constants/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/constants/GlobalContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/constants/GlobalContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/ClassificationShapeTestStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/DatabaseProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/DatabaseProcessTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/DrugNonCounReasonTestStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/DrugStatusTestStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/InventoryTestStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/StatusTypeTestStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/classificationshape.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/drugnoncountreason.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/drugstatus.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/inventory.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/statustype.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GenericInfo/genericFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GenericInfo/genericFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/constants/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/constants/DbConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/constants/GlobalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/constants/GlobalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/feature/classificationshape.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/feature/drugnoncountreason.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/feature/drugstatus.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/feature/inventory.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/feature/statustype.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/step/ClassificationShapeTestStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/step/DatabaseProcessTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/step/DatabaseProcessTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/step/DrugNonCounReasonTestStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/step/DrugStatusTestStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/step/InventoryTestStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/step/StatusTypeTestStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step/AzureCDDBDrugStatusTestStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBDrugStatusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step/AzureCDDBInventoryTestStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/AzureCDDBInventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step/OnPremAzureInventoryTestStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/OnPremAzureInventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-statustype.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-statustype.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber-pretty.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber-pretty.html/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/parata-databasetesting-qa-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/parata-databasetesting-qa-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-04T10-36-17_646.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runner.TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runner.TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/step/AzureCDDBDrugStatusTestStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/step/AzureCDDBInventoryTestStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/step/OnPremAzureInventoryTestStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-results/meta-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-results/meta-info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,15 +77,15 @@
       <recent name="F:\Ether\Ether\QA\parata-database-testing-qa\src\test\resources\feature" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: onprem-azure-statustype">
-    <configuration name="Feature: azure-cddb-drugstatus" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: onprem-azure-measurements">
+    <configuration name="Feature: onprem-azure-classificationshape" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-drugstatus.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-classificationshape.feature" />
       <option name="GLUE" value="step" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="parata-database-testing-qa" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: azure-cddb-drugstatus" />
+      <option name="SUGGESTED_NAME" value="Feature: onprem-azure-classificationshape" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +97,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: azure-cddb-inventory" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: onprem-azure-drugcore" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/azure-cddb-inventory.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-drugcore.feature" />
       <option name="GLUE" value="step" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="parata-database-testing-qa" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: azure-cddb-inventory" />
+      <option name="SUGGESTED_NAME" value="Feature: onprem-azure-drugcore" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -123,14 +116,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: onprem-azure-inventory" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: onprem-azure-measurements" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-inventory.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/onprem-azure-measurements.feature" />
       <option name="GLUE" value="step" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="parata-database-testing-qa" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: onprem-azure-inventory" />
+      <option name="SUGGESTED_NAME" value="Feature: onprem-azure-measurements" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -182,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: onprem-azure-measurements" />
+        <item itemvalue="Cucumber Java.Feature: onprem-azure-drugcore" />
+        <item itemvalue="Cucumber Java.Feature: onprem-azure-classificationshape" />
         <item itemvalue="Cucumber Java.Feature: onprem-azure-statustype" />
         <item itemvalue="Cucumber Java.Feature: onprem-azure-status" />
-        <item itemvalue="Cucumber Java.Feature: azure-cddb-drugstatus" />
-        <item itemvalue="Cucumber Java.Feature: azure-cddb-inventory" />
-        <item itemvalue="Cucumber Java.Feature: onprem-azure-inventory" />
       </list>
     </recent_temporary>
   </component>
