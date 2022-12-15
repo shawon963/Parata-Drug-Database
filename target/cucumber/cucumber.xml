@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="11.663">
-    <testcase classname="ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database" time="2.85">
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="25" time="36.439">
+    <testcase classname="ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database" time="2.151">
         <system-out>
             <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
 And user should check "SP_Pull_ClassificationShape" procedure from PDDB_LP database in azure server.passed
@@ -13,7 +13,7 @@ And user should verify ClassificationShape table data count between SP_Pull_Clas
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database" time="1.201">
+    <testcase classname="DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database" time="1.083">
         <system-out>
             <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
 And user should check "SP_Pull_DrugNonCountReason" procedure from PDDB_LP database in azure server.passed
@@ -26,7 +26,7 @@ And user should verify DrugNonCountReason table data count between SP_Pull_DrugN
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database" time="2.027">
+    <testcase classname="DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database" time="2.353">
         <failure message="" type="java.lang.AssertionError">
             <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
 And user should check "SP_Pull_Status" procedure from PDDB_LP database in azure server.passed
@@ -47,7 +47,7 @@ java.lang.AssertionError
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Inventory Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify Inventory Table Data and column Test between PDDB_LP and DrugDB Database" time="1.407">
+    <testcase classname="Inventory Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify Inventory Table Data and column Test between PDDB_LP and DrugDB Database" time="1.726">
         <failure message="" type="java.lang.AssertionError">
             <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
 And user should check "SP_Pull_Inventory" procedure from PDDB_LP database in azure server.passed
@@ -68,7 +68,28 @@ java.lang.AssertionError
 ]]>
         </failure>
     </testcase>
-    <testcase classname="StatusType Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify StatusType Table Data and column Test between PDDB_LP and DrugDB Database" time="1.024">
+    <testcase classname="PDDBDrugs Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify PDDBDrugs Table Data and column Test between PDDB_LP and DrugDB Database" time="12.879">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "SP_PDDB_Drug_Information_Api" procedure from PDDB_LP database in azure server.passed
+And user get column from "SP_PDDB_Drug_Information_Api" procedure in PDDB_LP database within azure server.passed
+And user get data count from "SP_PDDB_Drug_Information_Api" procedure in PDDB_LP database within azure server.passed
+Then connection setup with "DrugDB" database from CDDB server...............passed
+And user should check "PDDBDrugs" table from DrugDB database in CDDB server.passed
+And user should verify PDDBDrugs table column between SP_PDDB_Drug_Information_Api procedure column in PDDB_LP database within azure server and "PDDBDrugs" table column in DrugDB database within CDDB server.failed
+And user should verify PDDBDrugs table data count between SP_PDDB_Drug_Information_Api procedure data in PDDB_LP database within azure server and "PDDBDrugs" table data in DrugDB database within CDDB server.skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at step.AzureCDDBPDDBDrugsTest.userShouldVerifyPDDBDrugsTableColumnBetweenSP_PDDB_Drug_Information_ApiProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBPDDBDrugsTest.java:15)
+	at ✽.user should verify PDDBDrugs table column between SP_PDDB_Drug_Information_Api procedure column in PDDB_LP database within azure server and "PDDBDrugs" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-pddbdrugs.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="StatusType Table Data and column Test between PDDB_LP and DrugDB Database" name="Verify StatusType Table Data and column Test between PDDB_LP and DrugDB Database" time="1.015">
         <failure message="" type="java.lang.AssertionError">
             <![CDATA[When connection setup with "PDDB_LP" database from azure server.............passed
 And user should check "SP_Pull_StatusType" procedure from PDDB_LP database in azure server.passed
@@ -89,7 +110,7 @@ java.lang.AssertionError
 ]]>
         </failure>
     </testcase>
-    <testcase classname="ClassificationShape Table Data Test between PDDB_LP and PDDB" name="Verify ClassificationShape Table Data Test between PDDB_LP and PDDB" time="0.573">
+    <testcase classname="ClassificationShape Table Data Test between PDDB_LP and PDDB" name="Verify ClassificationShape Table Data Test between PDDB_LP and PDDB" time="0.815">
         <system-out>
             <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
 And user get column from "ClassificationShape" table from PDDB database within on prem lan server.passed
@@ -101,7 +122,91 @@ And user should verify ClassificationShape table data count between Classificati
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="DrugNonCountReason Table Data Test between PDDB_LP and PDDB" name="Verify DrugNonCountReason Table Data Test between PDDB_LP and PDDB" time="0.479">
+    <testcase classname="Coating Table Data Test between PDDB_LP and PDDB" name="Verify Coating Table Data Test between PDDB_LP and PDDB" time="0.753">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "Coating" table from PDDB database within on prem lan server.passed
+And user count data from "Coating" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "Coating" table from PDDB_LP database in azure server.passed
+And user should verify Coating table column between Coating table column in PDDB database within on prem server and "Coating" table column in PDDB_LP database within Azure server.passed
+And user should verify Coating table data count between Coating table data in PDDB_LP database within on prem server and "Coating" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugName Table Data Test between PDDB_LP and PDDB" name="Verify DrugName Table Data Test between PDDB_LP and PDDB" time="0.786">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugName" table from PDDB database within on prem lan server.passed
+And user count data from "DrugName" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugName" table from PDDB_LP database in azure server.passed
+And user should verify DrugName table column between DrugName table column in PDDB database within on prem server and "DrugName" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugName table data count between DrugName table data in PDDB_LP database within on prem server and "DrugName" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DosageForm Table Data Test between PDDB_LP and PDDB" name="Verify DosageForm Table Data Test between PDDB_LP and PDDB" time="0.748">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DosageForm" table from PDDB database within on prem lan server.passed
+And user count data from "DosageForm" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DosageForm" table from PDDB_LP database in azure server.passed
+And user should verify DosageForm table column between DosageForm table column in PDDB database within on prem server and "DosageForm" table column in PDDB_LP database within Azure server.passed
+And user should verify DosageForm table data count between DosageForm table data in PDDB_LP database within on prem server and "DosageForm" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugAttribute Table Data Test between PDDB_LP and PDDB" name="Verify DrugAttribute Table Data Test between PDDB_LP and PDDB" time="0.705">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugAttribute" table from PDDB database within on prem lan server.passed
+And user count data from "DrugAttribute" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugAttribute" table from PDDB_LP database in azure server.passed
+And user should verify DrugAttribute table column between DrugAttribute table column in PDDB database within on prem server and "DrugAttribute" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugAttribute table data count between DrugAttribute table data in PDDB_LP database within on prem server and "DrugAttribute" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugColor Table Data Test between PDDB_LP and PDDB" name="Verify DrugColor Table Data Test between PDDB_LP and PDDB" time="0.698">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugColor" table from PDDB database within on prem lan server.passed
+And user count data from "DrugColor" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugColor" table from PDDB_LP database in azure server.passed
+And user should verify DrugColor table column between DrugColor table column in PDDB database within on prem server and "DrugColor" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugColor table data count between DrugColor table data in PDDB_LP database within on prem server and "DrugColor" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugCore Table Data Test between PDDB_LP and PDDB" name="Verify DrugCore Table Data Test between PDDB_LP and PDDB" time="0.705">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugCore" table from PDDB database within on prem lan server.passed
+And user count data from "DrugCore" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugCore" table from PDDB_LP database in azure server.passed
+And user should verify DrugCore table column between DrugCore table column in PDDB database within on prem server and "DrugCore" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugCore table data count between DrugCore table data in PDDB_LP database within on prem server and "DrugCore" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugName Table Data Test between PDDB_LP and PDDB" name="Verify DrugName Table Data Test between PDDB_LP and PDDB" time="0.714">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugName" table from PDDB database within on prem lan server.passed
+And user count data from "DrugName" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugName" table from PDDB_LP database in azure server.passed
+And user should verify DrugName table column between DrugName table column in PDDB database within on prem server and "DrugName" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugName table data count between DrugName table data in PDDB_LP database within on prem server and "DrugName" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DrugNonCountReason Table Data Test between PDDB_LP and PDDB" name="Verify DrugNonCountReason Table Data Test between PDDB_LP and PDDB" time="0.701">
         <system-out>
             <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
 And user get column from "DrugNonCountReason" table from PDDB database within on prem lan server.passed
@@ -113,7 +218,31 @@ And user should verify DrugNonCountReason table data count between DrugNonCountR
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Inventory Table Data Test between PDDB_LP and PDDB" name="Verify Inventory Table Data Test between PDDB_LP and PDDB" time="0.484">
+    <testcase classname="DrugShape Table Data Test between PDDB_LP and PDDB" name="Verify DrugShape Table Data Test between PDDB_LP and PDDB" time="0.745">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "DrugShape" table from PDDB database within on prem lan server.passed
+And user count data from "DrugShape" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "DrugShape" table from PDDB_LP database in azure server.passed
+And user should verify DrugShape table column between DrugShape table column in PDDB database within on prem server and "DrugShape" table column in PDDB_LP database within Azure server.passed
+And user should verify DrugShape table data count between DrugShape table data in PDDB_LP database within on prem server and "DrugShape" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Firm Table Data Test between PDDB_LP and PDDB" name="Verify Firm Table Data Test between PDDB_LP and PDDB" time="0.739">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "Firm" table from PDDB database within on prem lan server.passed
+And user count data from "Firm" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "Firm" table from PDDB_LP database in azure server....passed
+And user should verify Firm table column between Firm table column in PDDB database within on prem server and "Firm" table column in PDDB_LP database within Azure server.passed
+And user should verify Firm table data count between Firm table data in PDDB_LP database within on prem server and "Firm" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Inventory Table Data Test between PDDB_LP and PDDB" name="Verify Inventory Table Data Test between PDDB_LP and PDDB" time="0.778">
         <system-out>
             <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
 And user get column from "Inventory" table from PDDB database within on prem lan server.passed
@@ -125,7 +254,55 @@ And user should verify Inventory table data count between Inventory table data i
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Status Table Data Test between PDDB_LP and PDDB" name="Verify Status Table Data Test between PDDB_LP and PDDB" time="0.52">
+    <testcase classname="Measurements Table Data Test between PDDB_LP and PDDB" name="Verify Measurements Table Data Test between PDDB_LP and PDDB" time="0.8">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "Measurements" table from PDDB database within on prem lan server.passed
+And user count data from "Measurements" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "Measurements" table from PDDB_LP database in azure server.passed
+And user should verify Measurements table column between Measurements table column in PDDB database within on prem server and "Measurements" table column in PDDB_LP database within Azure server.passed
+And user should verify Measurements table data count between Measurements table data in PDDB_LP database within on prem server and "Measurements" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="PassCanister Table Data Test between PDDB_LP and PDDB" name="Verify PassCanister Table Data Test between PDDB_LP and PDDB" time="0.692">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "PassCanister" table from PDDB database within on prem lan server.passed
+And user count data from "PassCanister" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "PassCanister" table from PDDB_LP database in azure server.passed
+And user should verify PassCanister table column between PassCanister table column in PDDB database within on prem server and "PassCanister" table column in PDDB_LP database within Azure server.passed
+And user should verify PassCanister table data count between PassCanister table data in PDDB_LP database within on prem server and "PassCanister" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="PassDrugCanister Table Data Test between PDDB_LP and PDDB" name="Verify PassDrugCanister Table Data Test between PDDB_LP and PDDB" time="0.697">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "PassDrugCanister" table from PDDB database within on prem lan server.passed
+And user count data from "PassDrugCanister" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "PassDrugCanister" table from PDDB_LP database in azure server.passed
+And user should verify PassDrugCanister table column between PassDrugCanister table column in PDDB database within on prem server and "PassDrugCanister" table column in PDDB_LP database within Azure server.passed
+And user should verify PassDrugCanister table data count between PassDrugCanister table data in PDDB_LP database within on prem server and "PassDrugCanister" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="PassScenarioDrug Table Data Test between PDDB_LP and PDDB" name="Verify PassScenarioDrug Table Data Test between PDDB_LP and PDDB" time="0.781">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "PassScenarioDrug" table from PDDB database within on prem lan server.passed
+And user count data from "PassScenarioDrug" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "PassScenarioDrug" table from PDDB_LP database in azure server.passed
+And user should verify PassScenarioDrug table column between PassScenarioDrug table column in PDDB database within on prem server and "PassScenarioDrug" table column in PDDB_LP database within Azure server.passed
+And user should verify PassScenarioDrug table data count between PassScenarioDrug table data in PDDB_LP database within on prem server and "PassScenarioDrug" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Status Table Data Test between PDDB_LP and PDDB" name="Verify Status Table Data Test between PDDB_LP and PDDB" time="0.802">
         <system-out>
             <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
 And user get column from "Status" table from PDDB database within on prem lan server.passed
@@ -137,7 +314,7 @@ And user should verify Status table data count between Status table data in PDDB
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="StatusType Table Data Test between PDDB_LP and PDDB" name="Verify StatusType Table Data Test between PDDB_LP and PDDB" time="0.472">
+    <testcase classname="StatusType Table Data Test between PDDB_LP and PDDB" name="Verify StatusType Table Data Test between PDDB_LP and PDDB" time="0.691">
         <system-out>
             <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
 And user get column from "StatusType" table from PDDB database within on prem lan server.passed
@@ -146,6 +323,18 @@ Then connection setup with "PDDB_LP" database from azure server.............pass
 And user should check "StatusType" table from PDDB_LP database in azure server.passed
 And user should verify StatusType table column between StatusType table column in PDDB database within on prem server and "StatusType" table column in PDDB_LP database within Azure server.passed
 And user should verify StatusType table data count between StatusType table data in PDDB_LP database within on prem server and "StatusType" table data in PDDB_LP database within azure server.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="StrengthUnitType Table Data Test between PDDB_LP and PDDB" name="Verify StrengthUnitType Table Data Test between PDDB_LP and PDDB" time="0.692">
+        <system-out>
+            <![CDATA[When connection setup with "PDDB" database from on prem lan server..........passed
+And user get column from "StrengthUnitType" table from PDDB database within on prem lan server.passed
+And user count data from "StrengthUnitType" table from PDDB database within on prem lan server.passed
+Then connection setup with "PDDB_LP" database from azure server.............passed
+And user should check "StrengthUnitType" table from PDDB_LP database in azure server.passed
+And user should verify StrengthUnitType table column between StrengthUnitType table column in PDDB database within on prem server and "StrengthUnitType" table column in PDDB_LP database within Azure server.passed
+And user should verify StrengthUnitType table data count between StrengthUnitType table data in PDDB_LP database within on prem server and "StrengthUnitType" table data in PDDB_LP database within azure server.passed
 ]]>
         </system-out>
     </testcase>

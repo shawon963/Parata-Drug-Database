@@ -19,5 +19,4 @@ public class OnPremAzureInventoryTest {
         boolean dataCountEvaluation = gen.checkDataCountInTableBetweenPDDBAndPDDB_LP(tableName);
         Assert.assertTrue(dataCountEvaluation);
     }
-
 }

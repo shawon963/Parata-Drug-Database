@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:50.402Z",
+        "start_timestamp": "2022-12-15T09:52:27.629Z",
         "line": 2,
         "name": "Verify ClassificationShape Table Data and column Test between PDDB_LP and DrugDB Database",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 872692200,
+              "duration": 919874400,
               "status": "passed"
             },
             "line": 3,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 190998400,
+              "duration": 211012400,
               "status": "passed"
             },
             "line": 4,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 56988100,
+              "duration": 54998600,
               "status": "passed"
             },
             "line": 5,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 28995900,
+              "duration": 57003800,
               "status": "passed"
             },
             "line": 6,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1096386900,
+              "duration": 609454700,
               "status": "passed"
             },
             "line": 7,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 277263400,
+              "duration": 30396600,
               "status": "passed"
             },
             "line": 8,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 28007800,
+              "duration": 14001000,
               "status": "passed"
             },
             "line": 9,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 191849700,
+              "duration": 146346700,
               "status": "passed"
             },
             "line": 10,
@@ -174,7 +174,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:53.292Z",
+        "start_timestamp": "2022-12-15T09:52:29.824Z",
         "line": 2,
         "name": "Verify DrugNonCountReason Table Data and column Test between PDDB_LP and DrugDB Database",
         "description": "",
@@ -184,7 +184,7 @@
         "steps": [
           {
             "result": {
-              "duration": 217225600,
+              "duration": 282988300,
               "status": "passed"
             },
             "line": 3,
@@ -202,7 +202,7 @@
           },
           {
             "result": {
-              "duration": 29846800,
+              "duration": 49002600,
               "status": "passed"
             },
             "line": 4,
@@ -220,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 26073500,
+              "duration": 45990400,
               "status": "passed"
             },
             "line": 5,
@@ -238,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 25427100,
+              "duration": 42992100,
               "status": "passed"
             },
             "line": 6,
@@ -256,7 +256,7 @@
           },
           {
             "result": {
-              "duration": 812007700,
+              "duration": 571263700,
               "status": "passed"
             },
             "line": 7,
@@ -274,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 16995000,
+              "duration": 17876900,
               "status": "passed"
             },
             "line": 8,
@@ -292,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 11459400,
+              "duration": 6994500,
               "status": "passed"
             },
             "line": 9,
@@ -310,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 48874500,
+              "duration": 57119400,
               "status": "passed"
             },
             "line": 10,
@@ -345,7 +345,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:54.527Z",
+        "start_timestamp": "2022-12-15T09:52:30.932Z",
         "line": 2,
         "name": "Verify DrugStatus Table Data and column Test between PDDB_LP and DrugDB Database",
         "description": "",
@@ -355,7 +355,7 @@
         "steps": [
           {
             "result": {
-              "duration": 205351300,
+              "duration": 301951300,
               "status": "passed"
             },
             "line": 3,
@@ -373,7 +373,7 @@
           },
           {
             "result": {
-              "duration": 28612900,
+              "duration": 54002500,
               "status": "passed"
             },
             "line": 4,
@@ -391,7 +391,7 @@
           },
           {
             "result": {
-              "duration": 42058200,
+              "duration": 66995000,
               "status": "passed"
             },
             "line": 5,
@@ -409,7 +409,7 @@
           },
           {
             "result": {
-              "duration": 1113993200,
+              "duration": 1304933800,
               "status": "passed"
             },
             "line": 6,
@@ -427,7 +427,7 @@
           },
           {
             "result": {
-              "duration": 600351900,
+              "duration": 590707700,
               "status": "passed"
             },
             "line": 7,
@@ -445,7 +445,7 @@
           },
           {
             "result": {
-              "duration": 12986100,
+              "duration": 13420000,
               "status": "passed"
             },
             "line": 8,
@@ -464,7 +464,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat step.AzureCDDBDrugStatusTest.userShouldVerifyDrugStatusTableColumnBetweenSP_Pull_StatusProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBDrugStatusTest.java:15)\r\n\tat ✽.user should verify DrugStatus table column between SP_Pull_Status procedure column in PDDB_LP database within azure server and \"DrugStatus\" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-drugstatus.feature:9)\r\n",
-              "duration": 10003900,
+              "duration": 9027100,
               "status": "failed"
             },
             "line": 9,
@@ -482,7 +482,7 @@
           },
           {
             "result": {
-              "duration": 1008100,
+              "duration": 996400,
               "status": "skipped"
             },
             "line": 10,
@@ -517,7 +517,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:56.576Z",
+        "start_timestamp": "2022-12-15T09:52:33.316Z",
         "line": 2,
         "name": "Verify Inventory Table Data and column Test between PDDB_LP and DrugDB Database",
         "description": "",
@@ -527,7 +527,7 @@
         "steps": [
           {
             "result": {
-              "duration": 183586300,
+              "duration": 273720000,
               "status": "passed"
             },
             "line": 3,
@@ -545,7 +545,7 @@
           },
           {
             "result": {
-              "duration": 28587400,
+              "duration": 46293400,
               "status": "passed"
             },
             "line": 4,
@@ -563,7 +563,7 @@
           },
           {
             "result": {
-              "duration": 51267800,
+              "duration": 69354900,
               "status": "passed"
             },
             "line": 5,
@@ -581,7 +581,7 @@
           },
           {
             "result": {
-              "duration": 428047500,
+              "duration": 713911700,
               "status": "passed"
             },
             "line": 6,
@@ -599,7 +599,7 @@
           },
           {
             "result": {
-              "duration": 652935100,
+              "duration": 592683900,
               "status": "passed"
             },
             "line": 7,
@@ -617,7 +617,7 @@
           },
           {
             "result": {
-              "duration": 15012400,
+              "duration": 14004300,
               "status": "passed"
             },
             "line": 8,
@@ -636,7 +636,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat step.AzureCDDBInventoryTest.userShouldVerifyInventoryTableColumnBetweenSP_Pull_InventoryProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBInventoryTest.java:15)\r\n\tat ✽.user should verify Inventory table column between SP_Pull_Inventory procedure column in PDDB_LP database within azure server and \"Inventory\" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-inventory.feature:9)\r\n",
-              "duration": 39108600,
+              "duration": 7994100,
               "status": "failed"
             },
             "line": 9,
@@ -654,7 +654,6 @@
           },
           {
             "result": {
-              "duration": 1001900,
               "status": "skipped"
             },
             "line": 10,
@@ -689,17 +688,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:58.005Z",
+        "start_timestamp": "2022-12-15T09:52:35.076Z",
         "line": 2,
-        "name": "Verify StatusType Table Data and column Test between PDDB_LP and DrugDB Database",
+        "name": "Verify PDDBDrugs Table Data and column Test between PDDB_LP and DrugDB Database",
         "description": "",
-        "id": "statustype-table-data-and-column-test-between-pddb-lp-and-drugdb-database;verify-statustype-table-data-and-column-test-between-pddb-lp-and-drugdb-database",
+        "id": "pddbdrugs-table-data-and-column-test-between-pddb-lp-and-drugdb-database;verify-pddbdrugs-table-data-and-column-test-between-pddb-lp-and-drugdb-database",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 181280100,
+              "duration": 266396400,
               "status": "passed"
             },
             "line": 3,
@@ -717,15 +716,15 @@
           },
           {
             "result": {
-              "duration": 28654100,
+              "duration": 46230800,
               "status": "passed"
             },
             "line": 4,
-            "name": "user should check \"SP_Pull_StatusType\" procedure from PDDB_LP database in azure server",
+            "name": "user should check \"SP_PDDB_Drug_Information_Api\" procedure from PDDB_LP database in azure server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"SP_Pull_StatusType\"",
+                  "val": "\"SP_PDDB_Drug_Information_Api\"",
                   "offset": 18
                 }
               ],
@@ -735,15 +734,15 @@
           },
           {
             "result": {
-              "duration": 25515200,
+              "duration": 2680188500,
               "status": "passed"
             },
             "line": 5,
-            "name": "user get column from \"SP_Pull_StatusType\" procedure in PDDB_LP database within azure server",
+            "name": "user get column from \"SP_PDDB_Drug_Information_Api\" procedure in PDDB_LP database within azure server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"SP_Pull_StatusType\"",
+                  "val": "\"SP_PDDB_Drug_Information_Api\"",
                   "offset": 21
                 }
               ],
@@ -753,15 +752,15 @@
           },
           {
             "result": {
-              "duration": 25007300,
+              "duration": 9185582600,
               "status": "passed"
             },
             "line": 6,
-            "name": "user get data count from \"SP_Pull_StatusType\" procedure in PDDB_LP database within azure server",
+            "name": "user get data count from \"SP_PDDB_Drug_Information_Api\" procedure in PDDB_LP database within azure server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"SP_Pull_StatusType\"",
+                  "val": "\"SP_PDDB_Drug_Information_Api\"",
                   "offset": 25
                 }
               ],
@@ -771,7 +770,7 @@
           },
           {
             "result": {
-              "duration": 733468200,
+              "duration": 564701700,
               "status": "passed"
             },
             "line": 7,
@@ -789,7 +788,178 @@
           },
           {
             "result": {
-              "duration": 15120500,
+              "duration": 120693200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should check \"PDDBDrugs\" table from DrugDB database in CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDBDrugs\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromDrugDBDatabaseInCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat step.AzureCDDBPDDBDrugsTest.userShouldVerifyPDDBDrugsTableColumnBetweenSP_PDDB_Drug_Information_ApiProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBPDDBDrugsTest.java:15)\r\n\tat ✽.user should verify PDDBDrugs table column between SP_PDDB_Drug_Information_Api procedure column in PDDB_LP database within azure server and \"PDDBDrugs\" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-pddbdrugs.feature:9)\r\n",
+              "duration": 7985000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user should verify PDDBDrugs table column between SP_PDDB_Drug_Information_Api procedure column in PDDB_LP database within azure server and \"PDDBDrugs\" table column in DrugDB database within CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDBDrugs\"",
+                  "offset": 140
+                }
+              ],
+              "location": "step.AzureCDDBPDDBDrugsTest.userShouldVerifyPDDBDrugsTableColumnBetweenSP_PDDB_Drug_Information_ApiProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should verify PDDBDrugs table data count between SP_PDDB_Drug_Information_Api procedure data in PDDB_LP database within azure server and \"PDDBDrugs\" table data in DrugDB database within CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDBDrugs\"",
+                  "offset": 142
+                }
+              ],
+              "location": "step.AzureCDDBPDDBDrugsTest.userShouldVerifyPDDBDrugsTableDataCountBetweenSP_PDDB_Drug_Information_ApiProcedureDataInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:PDDBDrugs Table Data and column Test between PDDB_LP and DrugDB Database"
+          }
+        ]
+      }
+    ],
+    "name": "PDDBDrugs Table Data and column Test between PDDB_LP and DrugDB Database",
+    "description": "",
+    "id": "pddbdrugs-table-data-and-column-test-between-pddb-lp-and-drugdb-database",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/azure-cddb-pddbdrugs.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:47.992Z",
+        "line": 2,
+        "name": "Verify StatusType Table Data and column Test between PDDB_LP and DrugDB Database",
+        "description": "",
+        "id": "statustype-table-data-and-column-test-between-pddb-lp-and-drugdb-database;verify-statustype-table-data-and-column-test-between-pddb-lp-and-drugdb-database",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 314418800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52799800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should check \"SP_Pull_StatusType\" procedure from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SP_Pull_StatusType\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckProcedureFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50016100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user get column from \"SP_Pull_StatusType\" procedure in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SP_Pull_StatusType\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromProcedureInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49967400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user get data count from \"SP_Pull_StatusType\" procedure in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SP_Pull_StatusType\"",
+                  "offset": 25
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetDataCountFromProcedureInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 517581800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "connection setup with \"DrugDB\" database from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14016000,
               "status": "passed"
             },
             "line": 8,
@@ -808,7 +978,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat step.AzureCDDBStatusTypeTest.userShouldVerifyStatusTypeTableColumnBetweenSP_Pull_StatusTypeProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(AzureCDDBStatusTypeTest.java:15)\r\n\tat ✽.user should verify StatusType table column between SP_Pull_StatusType procedure column in PDDB_LP database within azure server and \"StatusType\" table column in DrugDB database within CDDB server(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/azure-cddb-statustype.feature:9)\r\n",
-              "duration": 7921500,
+              "duration": 7978500,
               "status": "failed"
             },
             "line": 9,
@@ -826,7 +996,6 @@
           },
           {
             "result": {
-              "duration": 990300,
               "status": "skipped"
             },
             "line": 10,
@@ -861,7 +1030,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:59.043Z",
+        "start_timestamp": "2022-12-15T09:52:49.039Z",
         "line": 2,
         "name": "Verify ClassificationShape Table Data Test between PDDB_LP and PDDB",
         "description": "",
@@ -871,7 +1040,7 @@
         "steps": [
           {
             "result": {
-              "duration": 241986200,
+              "duration": 316987900,
               "status": "passed"
             },
             "line": 3,
@@ -889,7 +1058,7 @@
           },
           {
             "result": {
-              "duration": 34997100,
+              "duration": 48594900,
               "status": "passed"
             },
             "line": 4,
@@ -907,7 +1076,7 @@
           },
           {
             "result": {
-              "duration": 36006200,
+              "duration": 46002700,
               "status": "passed"
             },
             "line": 5,
@@ -925,7 +1094,7 @@
           },
           {
             "result": {
-              "duration": 178301600,
+              "duration": 264215000,
               "status": "passed"
             },
             "line": 6,
@@ -943,7 +1112,7 @@
           },
           {
             "result": {
-              "duration": 26275000,
+              "duration": 44003800,
               "status": "passed"
             },
             "line": 7,
@@ -961,7 +1130,7 @@
           },
           {
             "result": {
-              "duration": 24865700,
+              "duration": 43992400,
               "status": "passed"
             },
             "line": 8,
@@ -973,13 +1142,13 @@
                   "offset": 136
                 }
               ],
-              "location": "step.OnPremClassificationShapeTest.userShouldVerifyClassificationShapeTableColumnBetweenClassificationShapeTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+              "location": "step.OnPremAzureClassificationShapeTest.userShouldVerifyClassificationShapeTableColumnBetweenClassificationShapeTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 26075800,
+              "duration": 45000000,
               "status": "passed"
             },
             "line": 9,
@@ -991,7 +1160,7 @@
                   "offset": 141
                 }
               ],
-              "location": "step.OnPremClassificationShapeTest.userShouldVerifyClassificationShapeTableDataCountBetweenClassificationShapeTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+              "location": "step.OnPremAzureClassificationShapeTest.userShouldVerifyClassificationShapeTableDataCountBetweenClassificationShapeTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1014,17 +1183,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:37:59.630Z",
+        "start_timestamp": "2022-12-15T09:52:49.885Z",
         "line": 2,
-        "name": "Verify DrugNonCountReason Table Data Test between PDDB_LP and PDDB",
+        "name": "Verify Coating Table Data Test between PDDB_LP and PDDB",
         "description": "",
-        "id": "drugnoncountreason-table-data-test-between-pddb-lp-and-pddb;verify-drugnoncountreason-table-data-test-between-pddb-lp-and-pddb",
+        "id": "coating-table-data-test-between-pddb-lp-and-pddb;verify-coating-table-data-test-between-pddb-lp-and-pddb",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 160979800,
+              "duration": 218037000,
               "status": "passed"
             },
             "line": 3,
@@ -1042,15 +1211,15 @@
           },
           {
             "result": {
-              "duration": 28770600,
+              "duration": 40999200,
               "status": "passed"
             },
             "line": 4,
-            "name": "user get column from \"DrugNonCountReason\" table from PDDB database within on prem lan server",
+            "name": "user get column from \"Coating\" table from PDDB database within on prem lan server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"DrugNonCountReason\"",
+                  "val": "\"Coating\"",
                   "offset": 21
                 }
               ],
@@ -1060,15 +1229,15 @@
           },
           {
             "result": {
-              "duration": 29126700,
+              "duration": 41005600,
               "status": "passed"
             },
             "line": 5,
-            "name": "user count data from \"DrugNonCountReason\" table from PDDB database within on prem lan server",
+            "name": "user count data from \"Coating\" table from PDDB database within on prem lan server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"DrugNonCountReason\"",
+                  "val": "\"Coating\"",
                   "offset": 21
                 }
               ],
@@ -1078,7 +1247,7 @@
           },
           {
             "result": {
-              "duration": 176004400,
+              "duration": 295696500,
               "status": "passed"
             },
             "line": 6,
@@ -1096,7 +1265,1078 @@
           },
           {
             "result": {
-              "duration": 26006900,
+              "duration": 51002600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"Coating\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Coating\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49001000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify Coating table column between Coating table column in PDDB database within on prem server and \"Coating\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Coating\"",
+                  "offset": 112
+                }
+              ],
+              "location": "step.OnPremAzureCoatingTest.userShouldVerifyDrugShapeTableColumnBetweenDrugShapeTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49328300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify Coating table data count between Coating table data in PDDB_LP database within on prem server and \"Coating\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Coating\"",
+                  "offset": 117
+                }
+              ],
+              "location": "step.OnPremAzureCoatingTest.userShouldVerifyDrugShapeTableDataCountBetweenDrugShapeTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Coating Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "Coating Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "coating-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-coating.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:50.659Z",
+        "line": 2,
+        "name": "Verify DrugName Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "drugname-table-data-test-between-pddb-lp-and-pddb;verify-drugname-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 218566000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41992500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DrugName\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44996800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DrugName\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 318040900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50433000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DrugName\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50048200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DrugName table column between DrugName table column in PDDB database within on prem server and \"DrugName\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 114
+                }
+              ],
+              "location": "step.OnPremAzureDrugNameTest.userShouldVerifyDrugNameTableColumnBetweenDrugNameTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56126300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DrugName table data count between DrugName table data in PDDB_LP database within on prem server and \"DrugName\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 119
+                }
+              ],
+              "location": "step.OnPremAzureDrugNameTest.userShouldVerifyDrugNameTableDataCountBetweenDrugNameTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugName Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugName Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "drugname-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-devicesettingmax.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:51.472Z",
+        "line": 2,
+        "name": "Verify DosageForm Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "dosageform-table-data-test-between-pddb-lp-and-pddb;verify-dosageform-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 218394200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39989900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DosageForm\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DosageForm\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39989600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DosageForm\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DosageForm\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 295500200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50006300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DosageForm\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DosageForm\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48992000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DosageForm table column between DosageForm table column in PDDB database within on prem server and \"DosageForm\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DosageForm\"",
+                  "offset": 118
+                }
+              ],
+              "location": "step.OnPremAzureDosageFormTest.userShouldVerifyDosageFormTableColumnBetweenDosageFormTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48992100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DosageForm table data count between DosageForm table data in PDDB_LP database within on prem server and \"DosageForm\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DosageForm\"",
+                  "offset": 123
+                }
+              ],
+              "location": "step.OnPremAzureDosageFormTest.userShouldVerifyDosageFormTableDataCountBetweenDosageFormTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DosageForm Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DosageForm Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "dosageform-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-dosageform.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:52.241Z",
+        "line": 2,
+        "name": "Verify DrugAttribute Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "drugattribute-table-data-test-between-pddb-lp-and-pddb;verify-drugattribute-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 216010300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39993400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DrugAttribute\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugAttribute\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43983400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DrugAttribute\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugAttribute\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260030400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43992800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DrugAttribute\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugAttribute\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43997500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DrugAttribute table column between DrugAttribute table column in PDDB database within on prem server and \"DrugAttribute\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugAttribute\"",
+                  "offset": 124
+                }
+              ],
+              "location": "step.OnPremAzureDrugAttributeTest.userShouldVerifyDrugAttributeTableColumnBetweenDrugAttributeTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48988300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DrugAttribute table data count between DrugAttribute table data in PDDB_LP database within on prem server and \"DrugAttribute\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugAttribute\"",
+                  "offset": 129
+                }
+              ],
+              "location": "step.OnPremAzureDrugAttributeTest.userShouldVerifyDrugAttributeTableDataCountBetweenDrugAttributeTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugAttribute Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugAttribute Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "drugattribute-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-drugattribute.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:52.975Z",
+        "line": 2,
+        "name": "Verify DrugColor Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "drugcolor-table-data-test-between-pddb-lp-and-pddb;verify-drugcolor-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 216994700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41006900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DrugColor\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugColor\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40995500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DrugColor\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugColor\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 263232100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44422600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DrugColor\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugColor\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42938900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DrugColor table column between DrugColor table column in PDDB database within on prem server and \"DrugColor\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugColor\"",
+                  "offset": 116
+                }
+              ],
+              "location": "step.OnPremAzureDrugColorTest.userShouldVerifyDrugColorTableColumnBetweenDrugColorTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44489800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DrugColor table data count between DrugColor table data in PDDB_LP database within on prem server and \"DrugColor\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugColor\"",
+                  "offset": 121
+                }
+              ],
+              "location": "step.OnPremAzureDrugColorTest.userShouldVerifyDrugColorTableDataCountBetweenDrugColorTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugColor Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugColor Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "drugcolor-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-drugcolor.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:53.695Z",
+        "line": 2,
+        "name": "Verify DrugCore Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "drugcore-table-data-test-between-pddb-lp-and-pddb;verify-drugcore-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 214418500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41497700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DrugCore\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugCore\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44050000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DrugCore\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugCore\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 263493200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43994600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DrugCore\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugCore\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44140400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DrugCore table column between DrugCore table column in PDDB database within on prem server and \"DrugCore\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugCore\"",
+                  "offset": 114
+                }
+              ],
+              "location": "step.OnpremAzureDrugCoreTest.userShouldVerifyDrugCoreTableColumnBetweenDrugCoreTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50390300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DrugCore table data count between DrugCore table data in PDDB_LP database within on prem server and \"DrugCore\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugCore\"",
+                  "offset": 119
+                }
+              ],
+              "location": "step.OnpremAzureDrugCoreTest.userShouldVerifyDrugCoreTableDataCountBetweenDrugCoreTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugCore Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugCore Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "drugcore-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-drugcore.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:54.421Z",
+        "line": 2,
+        "name": "Verify DrugName Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "drugname-table-data-test-between-pddb-lp-and-pddb;verify-drugname-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 216625700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39998100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DrugName\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44003100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DrugName\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 270993500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44002300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DrugName\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44002800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DrugName table column between DrugName table column in PDDB database within on prem server and \"DrugName\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 114
+                }
+              ],
+              "location": "step.OnPremAzureDrugNameTest.userShouldVerifyDrugNameTableColumnBetweenDrugNameTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49993100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DrugName table data count between DrugName table data in PDDB_LP database within on prem server and \"DrugName\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugName\"",
+                  "offset": 119
+                }
+              ],
+              "location": "step.OnPremAzureDrugNameTest.userShouldVerifyDrugNameTableDataCountBetweenDrugNameTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugName Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugName Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "drugname-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-drugname.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:55.156Z",
+        "line": 2,
+        "name": "Verify DrugNonCountReason Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "drugnoncountreason-table-data-test-between-pddb-lp-and-pddb;verify-drugnoncountreason-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 219325200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42001900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"DrugNonCountReason\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugNonCountReason\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41613700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"DrugNonCountReason\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugNonCountReason\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261844900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44171900,
               "status": "passed"
             },
             "line": 7,
@@ -1114,7 +2354,7 @@
           },
           {
             "result": {
-              "duration": 25000300,
+              "duration": 45368100,
               "status": "passed"
             },
             "line": 8,
@@ -1132,7 +2372,7 @@
           },
           {
             "result": {
-              "duration": 24985500,
+              "duration": 43549400,
               "status": "passed"
             },
             "line": 9,
@@ -1167,17 +2407,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:38:00.127Z",
+        "start_timestamp": "2022-12-15T09:52:55.879Z",
         "line": 2,
-        "name": "Verify Inventory Table Data Test between PDDB_LP and PDDB",
+        "name": "Verify DrugShape Table Data Test between PDDB_LP and PDDB",
         "description": "",
-        "id": "inventory-table-data-test-between-pddb-lp-and-pddb;verify-inventory-table-data-test-between-pddb-lp-and-pddb",
+        "id": "drugshape-table-data-test-between-pddb-lp-and-pddb;verify-drugshape-table-data-test-between-pddb-lp-and-pddb",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 153075400,
+              "duration": 213992400,
               "status": "passed"
             },
             "line": 3,
@@ -1195,15 +2435,15 @@
           },
           {
             "result": {
-              "duration": 28703800,
+              "duration": 40994000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user get column from \"Inventory\" table from PDDB database within on prem lan server",
+            "name": "user get column from \"DrugShape\" table from PDDB database within on prem lan server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Inventory\"",
+                  "val": "\"DrugShape\"",
                   "offset": 21
                 }
               ],
@@ -1213,15 +2453,15 @@
           },
           {
             "result": {
-              "duration": 33147600,
+              "duration": 40005700,
               "status": "passed"
             },
             "line": 5,
-            "name": "user count data from \"Inventory\" table from PDDB database within on prem lan server",
+            "name": "user count data from \"DrugShape\" table from PDDB database within on prem lan server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Inventory\"",
+                  "val": "\"DrugShape\"",
                   "offset": 21
                 }
               ],
@@ -1231,7 +2471,7 @@
           },
           {
             "result": {
-              "duration": 181283600,
+              "duration": 294986000,
               "status": "passed"
             },
             "line": 6,
@@ -1249,7 +2489,313 @@
           },
           {
             "result": {
-              "duration": 26329800,
+              "duration": 50029500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"DrugShape\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugShape\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50009100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify DrugShape table column between DrugShape table column in PDDB database within on prem server and \"DrugShape\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugShape\"",
+                  "offset": 116
+                }
+              ],
+              "location": "step.OnPremAzureDrugShapeTest.userShouldVerifyDrugShapeTableColumnBetweenDrugShapeTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49991900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify DrugShape table data count between DrugShape table data in PDDB_LP database within on prem server and \"DrugShape\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugShape\"",
+                  "offset": 121
+                }
+              ],
+              "location": "step.OnPremAzureDrugShapeTest.userShouldVerifyDrugShapeTableDataCountBetweenDrugShapeTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:DrugShape Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "DrugShape Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "drugshape-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-drugshape.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:56.647Z",
+        "line": 2,
+        "name": "Verify Firm Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "firm-table-data-test-between-pddb-lp-and-pddb;verify-firm-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 214826100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40818200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"Firm\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Firm\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40793900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"Firm\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Firm\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 288832500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49339500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"Firm\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Firm\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50178700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify Firm table column between Firm table column in PDDB database within on prem server and \"Firm\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Firm\"",
+                  "offset": 106
+                }
+              ],
+              "location": "step.OnPremAzureFirmTest.userShouldVerifyFirmTableColumnBetweenFirmTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50678900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify Firm table data count between Firm table data in PDDB_LP database within on prem server and \"Firm\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Firm\"",
+                  "offset": 111
+                }
+              ],
+              "location": "step.OnPremAzureFirmTest.userShouldVerifyFirmTableDataCountBetweenFirmTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Firm Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "Firm Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "firm-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-firm.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:57.406Z",
+        "line": 2,
+        "name": "Verify Inventory Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "inventory-table-data-test-between-pddb-lp-and-pddb;verify-inventory-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 230354900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40803200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"Inventory\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49825600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"Inventory\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inventory\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294748500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50186800,
               "status": "passed"
             },
             "line": 7,
@@ -1267,7 +2813,7 @@
           },
           {
             "result": {
-              "duration": 25465200,
+              "duration": 49753500,
               "status": "passed"
             },
             "line": 8,
@@ -1285,7 +2831,7 @@
           },
           {
             "result": {
-              "duration": 31178400,
+              "duration": 56567600,
               "status": "passed"
             },
             "line": 9,
@@ -1320,17 +2866,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:38:00.624Z",
+        "start_timestamp": "2022-12-15T09:52:58.202Z",
         "line": 2,
-        "name": "Verify Status Table Data Test between PDDB_LP and PDDB",
+        "name": "Verify Measurements Table Data Test between PDDB_LP and PDDB",
         "description": "",
-        "id": "status-table-data-test-between-pddb-lp-and-pddb;verify-status-table-data-test-between-pddb-lp-and-pddb",
+        "id": "measurements-table-data-test-between-pddb-lp-and-pddb;verify-measurements-table-data-test-between-pddb-lp-and-pddb",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 152937200,
+              "duration": 226496500,
               "status": "passed"
             },
             "line": 3,
@@ -1348,15 +2894,15 @@
           },
           {
             "result": {
-              "duration": 29610500,
+              "duration": 41146800,
               "status": "passed"
             },
             "line": 4,
-            "name": "user get column from \"Status\" table from PDDB database within on prem lan server",
+            "name": "user get column from \"Measurements\" table from PDDB database within on prem lan server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Status\"",
+                  "val": "\"Measurements\"",
                   "offset": 21
                 }
               ],
@@ -1366,15 +2912,15 @@
           },
           {
             "result": {
-              "duration": 46378700,
+              "duration": 45958100,
               "status": "passed"
             },
             "line": 5,
-            "name": "user count data from \"Status\" table from PDDB database within on prem lan server",
+            "name": "user count data from \"Measurements\" table from PDDB database within on prem lan server",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Status\"",
+                  "val": "\"Measurements\"",
                   "offset": 21
                 }
               ],
@@ -1384,7 +2930,7 @@
           },
           {
             "result": {
-              "duration": 170449700,
+              "duration": 324837000,
               "status": "passed"
             },
             "line": 6,
@@ -1402,7 +2948,619 @@
           },
           {
             "result": {
-              "duration": 26097300,
+              "duration": 50273200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"Measurements\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Measurements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50994200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify Measurements table column between Measurements table column in PDDB database within on prem server and \"Measurements\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Measurements\"",
+                  "offset": 122
+                }
+              ],
+              "location": "step.OnPremAzureMeasurementsTest.userShouldVerifyMeasurementsTableColumnBetweenMeasurementsTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57006300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify Measurements table data count between Measurements table data in PDDB_LP database within on prem server and \"Measurements\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Measurements\"",
+                  "offset": 127
+                }
+              ],
+              "location": "step.OnPremAzureMeasurementsTest.userShouldVerifyMeasurementsTableDataCountBetweenMeasurementsTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Measurements Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "Measurements Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "measurements-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-measurements.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:59.029Z",
+        "line": 2,
+        "name": "Verify PassCanister Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "passcanister-table-data-test-between-pddb-lp-and-pddb;verify-passcanister-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 213481800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41012500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"PassCanister\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassCanister\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41215700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"PassCanister\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassCanister\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260108500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44416000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"PassCanister\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassCanister\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42971000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify PassCanister table column between PassCanister table column in PDDB database within on prem server and \"PassCanister\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassCanister\"",
+                  "offset": 122
+                }
+              ],
+              "location": "step.OnPremAzurePassCanisterTest.userShouldVerifyPassCanisterTableColumnBetweenPassCanisterTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45213800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify PassCanister table data count between PassCanister table data in PDDB_LP database within on prem server and \"PassCanister\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassCanister\"",
+                  "offset": 127
+                }
+              ],
+              "location": "step.OnPremAzurePassCanisterTest.userShouldVerifyPassCanisterTableDataCountBetweenPassCanisterTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:PassCanister Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "PassCanister Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "passcanister-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-passcanister.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:52:59.738Z",
+        "line": 2,
+        "name": "Verify PassDrugCanister Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "passdrugcanister-table-data-test-between-pddb-lp-and-pddb;verify-passdrugcanister-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 211217300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40385800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"PassDrugCanister\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassDrugCanister\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41112800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"PassDrugCanister\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassDrugCanister\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 264819500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44682100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"PassDrugCanister\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassDrugCanister\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44111900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify PassDrugCanister table column between PassDrugCanister table column in PDDB database within on prem server and \"PassDrugCanister\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassDrugCanister\"",
+                  "offset": 130
+                }
+              ],
+              "location": "step.OnPremAzurePassDrugCanisterTest.userShouldVerifyPassDrugCanisterTableColumnBetweenPassDrugCanisterTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46556800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify PassDrugCanister table data count between PassDrugCanister table data in PDDB_LP database within on prem server and \"PassDrugCanister\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassDrugCanister\"",
+                  "offset": 135
+                }
+              ],
+              "location": "step.OnPremAzurePassDrugCanisterTest.userShouldVerifyPassDrugCanisterTableDataCountBetweenPassDrugCanisterTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:PassDrugCanister Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "PassDrugCanister Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "passdrugcanister-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-passdrugcanister.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:53:00.454Z",
+        "line": 2,
+        "name": "Verify PassScenarioDrug Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "passscenariodrug-table-data-test-between-pddb-lp-and-pddb;verify-passscenariodrug-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 224780400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41766900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"PassScenarioDrug\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassScenarioDrug\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55742100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"PassScenarioDrug\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassScenarioDrug\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 288869300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50497800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"PassScenarioDrug\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassScenarioDrug\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54438900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify PassScenarioDrug table column between PassScenarioDrug table column in PDDB database within on prem server and \"PassScenarioDrug\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassScenarioDrug\"",
+                  "offset": 130
+                }
+              ],
+              "location": "step.OnPremAzurePassScenarioDrugTest.userShouldVerifyPassScenarioDrugTableColumnBetweenPassScenarioDrugTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62357100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify PassScenarioDrug table data count between PassScenarioDrug table data in PDDB_LP database within on prem server and \"PassScenarioDrug\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PassScenarioDrug\"",
+                  "offset": 135
+                }
+              ],
+              "location": "step.OnPremAzurePassScenarioDrugTest.userShouldVerifyPassScenarioDrugTableDataCountBetweenPassScenarioDrugTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:PassScenarioDrug Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "PassScenarioDrug Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "passscenariodrug-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-passscenariodrug.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:53:01.258Z",
+        "line": 2,
+        "name": "Verify Status Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "status-table-data-test-between-pddb-lp-and-pddb;verify-status-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 214984800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41238700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"Status\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62251400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"Status\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Status\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291394500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49743700,
               "status": "passed"
             },
             "line": 7,
@@ -1420,7 +3578,7 @@
           },
           {
             "result": {
-              "duration": 25299900,
+              "duration": 49503600,
               "status": "passed"
             },
             "line": 8,
@@ -1438,7 +3596,7 @@
           },
           {
             "result": {
-              "duration": 64998000,
+              "duration": 90396400,
               "status": "passed"
             },
             "line": 9,
@@ -1473,7 +3631,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-13T08:38:01.157Z",
+        "start_timestamp": "2022-12-15T09:53:02.091Z",
         "line": 2,
         "name": "Verify StatusType Table Data Test between PDDB_LP and PDDB",
         "description": "",
@@ -1483,7 +3641,7 @@
         "steps": [
           {
             "result": {
-              "duration": 162989900,
+              "duration": 212431000,
               "status": "passed"
             },
             "line": 3,
@@ -1501,7 +3659,7 @@
           },
           {
             "result": {
-              "duration": 28349700,
+              "duration": 41241700,
               "status": "passed"
             },
             "line": 4,
@@ -1519,7 +3677,7 @@
           },
           {
             "result": {
-              "duration": 28885700,
+              "duration": 40302900,
               "status": "passed"
             },
             "line": 5,
@@ -1537,7 +3695,7 @@
           },
           {
             "result": {
-              "duration": 171769900,
+              "duration": 264386400,
               "status": "passed"
             },
             "line": 6,
@@ -1555,7 +3713,7 @@
           },
           {
             "result": {
-              "duration": 26405400,
+              "duration": 44203800,
               "status": "passed"
             },
             "line": 7,
@@ -1573,7 +3731,7 @@
           },
           {
             "result": {
-              "duration": 25220000,
+              "duration": 43038300,
               "status": "passed"
             },
             "line": 8,
@@ -1591,7 +3749,7 @@
           },
           {
             "result": {
-              "duration": 25118800,
+              "duration": 43244300,
               "status": "passed"
             },
             "line": 9,
@@ -1620,6 +3778,159 @@
     "id": "statustype-table-data-test-between-pddb-lp-and-pddb",
     "keyword": "Feature",
     "uri": "file:src/test/resources/feature/onprem-azure-statustype.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-15T09:53:02.806Z",
+        "line": 2,
+        "name": "Verify StrengthUnitType Table Data Test between PDDB_LP and PDDB",
+        "description": "",
+        "id": "strengthunittype-table-data-test-between-pddb-lp-and-pddb;verify-strengthunittype-table-data-test-between-pddb-lp-and-pddb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 214947600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "connection setup with \"PDDB\" database from on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDBDatabaseFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39466600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get column from \"StrengthUnitType\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StrengthUnitType\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39745000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user count data from \"StrengthUnitType\" table from PDDB database within on prem lan server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StrengthUnitType\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 262905200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connection setup with \"PDDB_LP\" database from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PDDB_LP\"",
+                  "offset": 22
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithPDDB_LPDatabaseFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45003100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should check \"StrengthUnitType\" table from PDDB_LP database in azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StrengthUnitType\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step.DatabaseProcessTest.userShouldCheckTableFromPDDB_LPDatabaseInAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43762500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify StrengthUnitType table column between StrengthUnitType table column in PDDB database within on prem server and \"StrengthUnitType\" table column in PDDB_LP database within Azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StrengthUnitType\"",
+                  "offset": 130
+                }
+              ],
+              "location": "step.OnPremAzureStrengthUnitTypeTest.userShouldVerifyStrengthUnitTypeTableColumnBetweenStrengthUnitTypeTableColumnInPDDBDatabaseWithinOnPremServerAndTableColumnInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43540200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify StrengthUnitType table data count between StrengthUnitType table data in PDDB_LP database within on prem server and \"StrengthUnitType\" table data in PDDB_LP database within azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StrengthUnitType\"",
+                  "offset": 135
+                }
+              ],
+              "location": "step.OnPremAzureStrengthUnitTypeTest.userShouldVerifyStrengthUnitTypeTableDataCountBetweenStrengthUnitTypeTableDataInPDDB_LPDatabaseWithinOnPremServerAndTableDataInPDDB_LPDatabaseWithinAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:StrengthUnitType Table Data Test between PDDB_LP and PDDB"
+          }
+        ]
+      }
+    ],
+    "name": "StrengthUnitType Table Data Test between PDDB_LP and PDDB",
+    "description": "",
+    "id": "strengthunittype-table-data-test-between-pddb-lp-and-pddb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/onprem-azure-strengthunittype.feature",
     "tags": []
   }
 ]
