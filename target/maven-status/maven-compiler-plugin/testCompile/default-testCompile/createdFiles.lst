@@ -4,6 +4,8 @@ GenericInfo\genericFactory.class
 step\OnPremAzurePassCanisterTest.class
 step\OnPremAzurePassScenarioDrugTest.class
 step\OnPremAzureDrugColorTest.class
+step\OnPremAzureTableDataAndColumnvalidationTest.class
+step\AzureCDDBSPAndTableEvaluateTest.class
 step\OnPremAzureStatusTest.class
 step\DrugDBStep.class
 step\DrugDBRequest.class

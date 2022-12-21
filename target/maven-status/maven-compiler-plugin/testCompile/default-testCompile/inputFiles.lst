@@ -8,6 +8,7 @@ F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\GenericInfo\genericFa
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureStatusTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzurePassDrugCanisterTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureClassificationShapeTest.java
+F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\AzureCDDBSPAndTableEvaluateTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\constants\DbConnection.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\runner\TestRunner.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\utils\context\TestContext.java
@@ -21,6 +22,7 @@ F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureStatu
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureDrugShapeTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureStrengthUnitTypeTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureDrugColorTest.java
+F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureTableDataAndColumnvalidationTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureCoatingTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureDosageFormTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\DrugDBStep.java

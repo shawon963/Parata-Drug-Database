@@ -71,13 +71,13 @@ public class DatabaseProcessTest {
         Assert.assertTrue(isTableExist);
     }
 
-    @And("user get column from {string} table from PDDB database within on prem lan server")
+    @And("user get column from {string} table with PDDB database within on prem lan server")
     public void userGetColumnFromTableFromPDDBDatabaseWithinOnPremLanServer(String tableName) throws SQLException{
         boolean isColumnExist = gen.getColumnFromTable(tableName);
         Assert.assertTrue(isColumnExist);
     }
 
-    @And("user count data from {string} table from PDDB database within on prem lan server")
+    @And("user count data from {string} table with PDDB database within on prem lan server")
     public void userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(String tableName) throws SQLException {
         boolean isDataExist = gen.countDataFromTable(tableName);
         Assert.assertTrue(isDataExist);

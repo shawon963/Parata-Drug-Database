@@ -5,8 +5,6 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class genericFactory {
-    private ArrayList<String[]> statusDetails = new ArrayList<>();
-
     public boolean databaseConnectionSetupWithSqlServer(String databaseName){
         boolean isConnected = false;
         String connectionUrl = DbConnection.onpremconnectionUrl +databaseName;
@@ -20,20 +18,6 @@ public class genericFactory {
         return isConnected;
     }
 
-    public boolean databaseConnectionSetupWithPGAdmin(String databaseName){
-        boolean isConnected = false;
-        String connectionUrl = DbConnection.PgAdminConnectionUrl+databaseName;
-        try {
-            // Load PostGreSQL Server JDBC driver and establish connection.
-            GlobalContext.pgAdminConnection = DriverManager.getConnection(connectionUrl, GlobalContext.user, GlobalContext.password);
-            GlobalContext.connectionStatus = "Success";
-            isConnected = true;
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-            GlobalContext.connectionStatus = "Error";
-        }
-        return isConnected;
-    }
     public boolean databaseConnectionSetupWithAzureServer(String databaseName) {
         boolean isConnected = false;
         String connectionUrl = DbConnection.azureconnectionUrl+databaseName;
@@ -132,6 +116,7 @@ public class genericFactory {
         ResultSet rs = stmt.executeQuery();
         rs.next();
         int count = rs.getInt(1);
+        GlobalContext.datacountFromAzureServer = count;
         if(count == GlobalContext.datacountFromOnPremServer ){
             dataCountEvaluate = true;
         }
@@ -211,14 +196,8 @@ public class genericFactory {
         for(int i =1; i <= rmd.getColumnCount(); i++){
             GlobalContext.storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer.add(rmd.getColumnName(i));
         }
-        for(int i =1; i < GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.stream().count(); i++){
-            if(GlobalContext.storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer.contains(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.get(i))){
-                columnEvaluation = true;
-            }
-            else {
-                columnEvaluation = false;
-                break;
-            }
+        if(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.stream().count()>0){
+            columnEvaluation = true;
         }
         return columnEvaluation;
     }
@@ -230,6 +209,7 @@ public class genericFactory {
         ResultSet rs = stmt.executeQuery();
         rs.next();
         int count = rs.getInt(1);
+        GlobalContext.datacountFromCDDBServer = count;
         if(count == GlobalContext.datacountFromAzureServer ){
             dataEvaluate = true;
         }

@@ -15,6 +15,7 @@ public class GlobalContext {
     //Other Variable
     public static int datacountFromOnPremServer = 0;
     public static int datacountFromAzureServer = 0;
+    public static int datacountFromCDDBServer = 0;
 
     //Table Column
     public static ArrayList<String> storeColumnFromTableWithinPDDB_LPDatabaseAndAzureServer= new ArrayList<String>();
