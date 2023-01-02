@@ -14,9 +14,9 @@ import static net.javacrumbs.jsonunit.assertj.JsonAssertions.assertThatJson;
 public class AzureCDDBSPAndTableEvaluateTest {
     private genericFactory gen = new genericFactory();
 
-    @And("user should verify {string} table column between {string} procedure column in PDDB_LP database within azure server and {string} table column in DrugDB database within CDDB server")
-    public void userShouldVerifyTableColumnBetweenProcedureColumnInPDDB_LPDatabaseWithinAzureServerAndTableColumnInDrugDBDatabaseWithinCDDBServer(String arg0, String arg1, String tableName)  throws SQLException {
-        boolean columnEvaluation = gen.checkColumnInTableWithProcedureBetweenDrugDBAndPDDB_LPServer(tableName);
+    @And("Procedure {string} columns in PDDB_LP database should be same as table {string} columns in DrugDB database")
+    public void ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(String procedureName, String tableName)  throws SQLException {
+        boolean columnEvaluation = gen.checkColumnInTableWithProcedureBetweenDrugDBAndPDDB_LPServer(procedureName, tableName);
         System.out.println("This is the output"+ GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer);
         assertThatJson(GlobalContext.storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer.toString())
                 .when(Option.IGNORING_EXTRA_FIELDS)
@@ -24,13 +24,9 @@ public class AzureCDDBSPAndTableEvaluateTest {
                 .isEqualTo(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.toString());
     }
 
-    @And("user should verify {string} table data count between {string} procedure data in PDDB_LP database within azure server and {string} table data in DrugDB database within CDDB server")
-    public void userShouldVerifyTableDataCountBetweenProcedureDataInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(String arg0, String arg1, String tableName)  throws SQLException{
-        System.out.println("This is output"+ GlobalContext.datacountFromAzureServer);
-        boolean dataCountEvaluation = gen.checkDataCountInTableWithProcedureBetweenDrugDBAndPDDB_LPServer(tableName);
-        assertThatJson(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.toString())
-                .when(Option.IGNORING_EXTRA_FIELDS)
-                .when(Option.IGNORING_ARRAY_ORDER)
-                .isEqualTo(GlobalContext.storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer.toString());
+    @And("Procedure {string} data count in PDDB_LP database should be equals to table {string} data count in DrugDB database")
+    public void ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(String procedureName, String tableName)  throws SQLException{
+        boolean dataCountEvaluation = gen.checkDataCountInTableWithProcedureBetweenDrugDBAndPDDB_LPServer(procedureName, tableName);
+        Assert.assertEquals(GlobalContext.datacountFromCDDBServer, GlobalContext.datacountFromAzureServer);
     }
 }

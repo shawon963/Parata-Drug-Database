@@ -1,6 +1,7 @@
 package step;
 
 import GenericInfo.genericFactory;
+import constants.GlobalContext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,26 +12,26 @@ import java.sql.SQLException;
 public class DatabaseProcessTest {
     private genericFactory gen = new genericFactory();
 
-    @When("connection setup with {string} database from on prem lan server")
-    public void connectionSetupWithPDDBDatabaseFromOnPremLanServer(String databaseName) {
+    @When("Database connection for {string} from on-prem server")
+    public void databaseConnectionFromOnPremLanServer(String databaseName) {
         boolean isActive = gen.databaseConnectionSetupWithSqlServer(databaseName);
         Assert.assertTrue("Connection failed For PDDB from on prem lan server", isActive);
     }
 
-    @Then("connection setup with {string} database from azure server")
-    public void connectionSetupWithPDDB_LPDatabaseFromAzureServer(String databaseName) {
+    @Then("Database connection for {string} from azure server")
+    public void databaseConnectionFromAzureServer(String databaseName) {
         boolean isActive = gen.databaseConnectionSetupWithAzureServer(databaseName);
         Assert.assertTrue("Connection Failed From Azure Server", isActive);
     }
 
     @And("user count data from {string} table")
-    public void userCountDataFromInventoryTable(String tableName) throws SQLException {
+    public void userCountDataFromTable(String tableName) throws SQLException {
         boolean countedData = gen.countDataFromTable(tableName);
         Assert.assertTrue(countedData);
     }
 
     @And("user should check {string} table")
-    public void userShouldCheckInventoryTable(String tableName) throws SQLException {
+    public void userShouldCheckTable(String tableName) throws SQLException {
         boolean isTableExist = gen.isTableExistInDrugDB(tableName);
         Assert.assertTrue(isTableExist);
     }
@@ -59,7 +60,7 @@ public class DatabaseProcessTest {
         Assert.assertTrue(isDataExist);
     }
 
-    @Then("connection setup with {string} database from CDDB server")
+    @Then("Database connection for {string} from CDDB server")
     public void connectionSetupWithDatabaseFromCDDBServer(String databaseName) throws SQLException{
         boolean isActive = gen.databaseConnectionSetupWithCDDBServer(databaseName);
         Assert.assertTrue("Connection failed For DrugDB from CDDB server", isActive);
@@ -81,5 +82,17 @@ public class DatabaseProcessTest {
     public void userCountDataFromTableFromPDDBDatabaseWithinOnPremLanServer(String tableName) throws SQLException {
         boolean isDataExist = gen.countDataFromTable(tableName);
         Assert.assertTrue(isDataExist);
+    }
+
+    @When("Database connections are established")
+    public void databaseConnectionsAreEstablished() {
+        boolean isDatabaseConnectionExist = false;
+        if(GlobalContext.databaseConnectionForOnPrem == GlobalContext.databaseConnectionForAzure){
+            isDatabaseConnectionExist = true;
+        }
+        else if(GlobalContext.databaseConnectionForCDDB == GlobalContext.databaseConnectionForAzure){
+            isDatabaseConnectionExist = true;
+        }
+        Assert.assertTrue(isDatabaseConnectionExist);
     }
 }

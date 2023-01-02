@@ -24,4 +24,9 @@ public class GlobalContext {
     //Procedure Column
     public static ArrayList<String> storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer= new ArrayList<String>();
     public static ArrayList<String> storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer= new ArrayList<String>();
+
+    //Check Database connection
+    public static boolean databaseConnectionForOnPrem = false;
+    public static boolean databaseConnectionForAzure = false;
+    public static boolean databaseConnectionForCDDB = false;
 }
