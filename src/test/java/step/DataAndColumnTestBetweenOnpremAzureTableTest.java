@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 import static net.javacrumbs.jsonunit.assertj.JsonAssertions.assertThatJson;
 
-public class OnPremAzureTableDataAndColumnvalidationTest {
+public class DataAndColumnTestBetweenOnpremAzureTableTest {
     private genericFactory gen = new genericFactory();
 
     @And("Table {string} columns in PDDB_LP database should be same as table {string} columns in PDDB database")

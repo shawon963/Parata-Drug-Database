@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 import static net.javacrumbs.jsonunit.assertj.JsonAssertions.assertThatJson;
 
-public class AzureCDDBSPAndTableEvaluateTest {
+public class DataAndColumnTestAzureCDDBSPAndTableTest {
     private genericFactory gen = new genericFactory();
 
     @And("Procedure {string} columns in PDDB_LP database should be same as table {string} columns in DrugDB database")
@@ -21,6 +21,7 @@ public class AzureCDDBSPAndTableEvaluateTest {
         assertThatJson(GlobalContext.storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer.toString())
                 .when(Option.IGNORING_EXTRA_FIELDS)
                 .when(Option.IGNORING_ARRAY_ORDER)
+                .when(Option.IGNORING_EXTRA_ARRAY_ITEMS)
                 .isEqualTo(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.toString());
     }
 

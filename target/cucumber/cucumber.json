@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-01-02T07:04:36.380Z",
+        "start_timestamp": "2023-01-02T08:47:45.414Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"StatusType\"",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 791016600,
+              "duration": 775005600,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 716299300,
+              "duration": 774787400,
               "status": "passed"
             },
             "line": 5,
@@ -49,7 +49,6 @@
           },
           {
             "result": {
-              "duration": 986600,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 256442200,
+              "duration": 264006400,
               "status": "passed"
             },
             "line": 7,
@@ -77,13 +76,13 @@
                   "offset": 83
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 59996900,
+              "duration": 68000200,
               "status": "passed"
             },
             "line": 8,
@@ -99,7 +98,7 @@
                   "offset": 88
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -114,7 +113,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:38.314Z",
+        "start_timestamp": "2023-01-02T08:47:47.397Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugNonCountReason\"",
         "description": "",
@@ -124,7 +123,7 @@
         "steps": [
           {
             "result": {
-              "duration": 178492100,
+              "duration": 196982700,
               "status": "passed"
             },
             "line": 4,
@@ -142,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 800542000,
+              "duration": 559263500,
               "status": "passed"
             },
             "line": 5,
@@ -160,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 1011100,
+              "duration": 1058300,
               "status": "passed"
             },
             "line": 6,
@@ -172,7 +171,7 @@
           },
           {
             "result": {
-              "duration": 34802600,
+              "duration": 33763600,
               "status": "passed"
             },
             "line": 7,
@@ -188,13 +187,13 @@
                   "offset": 91
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 47153700,
+              "duration": 69554700,
               "status": "passed"
             },
             "line": 8,
@@ -210,7 +209,7 @@
                   "offset": 96
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -225,7 +224,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:39.397Z",
+        "start_timestamp": "2023-01-02T08:47:48.276Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"Inventory\"",
         "description": "",
@@ -235,7 +234,7 @@
         "steps": [
           {
             "result": {
-              "duration": 176382000,
+              "duration": 174804500,
               "status": "passed"
             },
             "line": 4,
@@ -253,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 519238700,
+              "duration": 530291100,
               "status": "passed"
             },
             "line": 5,
@@ -282,9 +281,8 @@
           },
           {
             "result": {
-              "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c13\u003e but was: \u003c21\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_Inventory\" columns in PDDB_LP database should be same as table \"Inventory\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-              "duration": 88705400,
-              "status": "failed"
+              "duration": 74056700,
+              "status": "passed"
             },
             "line": 7,
             "name": "Procedure \"SP_Pull_Inventory\" columns in PDDB_LP database should be same as table \"Inventory\" columns in DrugDB database",
@@ -299,14 +297,14 @@
                   "offset": 82
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1008000,
-              "status": "skipped"
+              "duration": 580948000,
+              "status": "passed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in DrugDB database",
@@ -321,7 +319,7 @@
                   "offset": 87
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -336,7 +334,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:40.203Z",
+        "start_timestamp": "2023-01-02T08:47:49.650Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"ClassificationShape\"",
         "description": "",
@@ -346,7 +344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 172302800,
+              "duration": 182244500,
               "status": "passed"
             },
             "line": 4,
@@ -364,7 +362,7 @@
           },
           {
             "result": {
-              "duration": 482465200,
+              "duration": 533425700,
               "status": "passed"
             },
             "line": 5,
@@ -382,7 +380,7 @@
           },
           {
             "result": {
-              "duration": 1007900,
+              "duration": 1000300,
               "status": "passed"
             },
             "line": 6,
@@ -394,9 +392,8 @@
           },
           {
             "result": {
-              "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c17\u003e but was: \u003c25\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\", \"ClassificationShapeID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\", \"ClassificationShapeId\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"ClassificationShapeID\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\",\"ClassificationShapeId\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_ClassificationShape\" columns in PDDB_LP database should be same as table \"ClassificationShape\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-              "duration": 63923400,
-              "status": "failed"
+              "duration": 42936600,
+              "status": "passed"
             },
             "line": 7,
             "name": "Procedure \"SP_Pull_ClassificationShape\" columns in PDDB_LP database should be same as table \"ClassificationShape\" columns in DrugDB database",
@@ -411,14 +408,14 @@
                   "offset": 92
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1006100,
-              "status": "skipped"
+              "duration": 63852700,
+              "status": "passed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_ClassificationShape\" data count in PDDB_LP database should be equals to table \"ClassificationShape\" data count in DrugDB database",
@@ -433,7 +430,7 @@
                   "offset": 97
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -448,7 +445,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:40.945Z",
+        "start_timestamp": "2023-01-02T08:47:50.487Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugStatus\"",
         "description": "",
@@ -458,7 +455,7 @@
         "steps": [
           {
             "result": {
-              "duration": 171987600,
+              "duration": 192235800,
               "status": "passed"
             },
             "line": 4,
@@ -476,7 +473,7 @@
           },
           {
             "result": {
-              "duration": 524755000,
+              "duration": 546867800,
               "status": "passed"
             },
             "line": 5,
@@ -494,6 +491,7 @@
           },
           {
             "result": {
+              "duration": 998100,
               "status": "passed"
             },
             "line": 6,
@@ -505,9 +503,8 @@
           },
           {
             "result": {
-              "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c24\u003e but was: \u003c33\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\", \"ClassificationShapeID\", \"StatusID\", \"StatusTypeID\", \"DeviceID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\", \"ClassificationShapeId\", \"StatusId\", \"StatusTypeId\", \"DeviceId\", \"Id\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"ClassificationShapeID\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusID\",\"StatusTypeID\",\"DeviceID\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\",\"ClassificationShapeId\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusId\",\"StatusTypeId\",\"DeviceId\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\",\"Id\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_Status\" columns in PDDB_LP database should be same as table \"DrugStatus\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-              "duration": 61793700,
-              "status": "failed"
+              "duration": 58990400,
+              "status": "passed"
             },
             "line": 7,
             "name": "Procedure \"SP_Pull_Status\" columns in PDDB_LP database should be same as table \"DrugStatus\" columns in DrugDB database",
@@ -522,14 +519,14 @@
                   "offset": 79
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 995500,
-              "status": "skipped"
+              "duration": 1216990500,
+              "status": "passed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_Status\" data count in PDDB_LP database should be equals to table \"DrugStatus\" data count in DrugDB database",
@@ -544,7 +541,7 @@
                   "offset": 84
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -559,7 +556,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:41.727Z",
+        "start_timestamp": "2023-01-02T08:47:52.514Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugAttribute\"",
         "description": "",
@@ -569,7 +566,7 @@
         "steps": [
           {
             "result": {
-              "duration": 174914900,
+              "duration": 170667700,
               "status": "passed"
             },
             "line": 4,
@@ -587,7 +584,7 @@
           },
           {
             "result": {
-              "duration": 567285400,
+              "duration": 571137800,
               "status": "passed"
             },
             "line": 5,
@@ -605,7 +602,7 @@
           },
           {
             "result": {
-              "duration": 1070000,
+              "duration": 1007000,
               "status": "passed"
             },
             "line": 6,
@@ -617,9 +614,8 @@
           },
           {
             "result": {
-              "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c33\u003e but was: \u003c43\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\", \"ClassificationShapeID\", \"StatusID\", \"StatusTypeID\", \"DeviceID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\", \"ClassificationShapeId\", \"StatusId\", \"StatusTypeId\", \"DeviceId\", \"Id\", \"Id\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"ClassificationShapeID\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusID\",\"StatusTypeID\",\"DeviceID\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\",\"DrugAttributeId\",\"CleaningCodeId\",\"ColorId\",\"CoatingId\",\"ShapeId\",\"ImprintFront\",\"ImprintBack\",\"DosageFormId\",\"Scored\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\",\"ClassificationShapeId\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusId\",\"StatusTypeId\",\"DeviceId\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\",\"Id\",\"Id\",\"DrugAttributeId\",\"CleaningCodeId\",\"ColorId\",\"CoatingId\",\"ShapeId\",\"ImprintFront\",\"ImprintBack\",\"DosageFormId\",\"Scored\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_DrugAttribute\" columns in PDDB_LP database should be same as table \"DrugAttribute\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-              "duration": 78252700,
-              "status": "failed"
+              "duration": 46360300,
+              "status": "passed"
             },
             "line": 7,
             "name": "Procedure \"SP_Pull_DrugAttribute\" columns in PDDB_LP database should be same as table \"DrugAttribute\" columns in DrugDB database",
@@ -634,13 +630,14 @@
                   "offset": 86
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 348415400,
+              "status": "passed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in DrugDB database",
@@ -655,7 +652,7 @@
                   "offset": 91
                 }
               ],
-              "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -674,14 +671,14 @@
     "description": "",
     "id": "table-data-and-column-test-between-pddb-lp-and-drugdb-database",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature",
+    "uri": "file:src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-01-02T07:04:42.570Z",
+        "start_timestamp": "2023-01-02T08:47:53.660Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugColor\"",
         "description": "",
@@ -691,7 +688,7 @@
         "steps": [
           {
             "result": {
-              "duration": 172985300,
+              "duration": 210706200,
               "status": "passed"
             },
             "line": 4,
@@ -709,7 +706,7 @@
           },
           {
             "result": {
-              "duration": 174128700,
+              "duration": 170750900,
               "status": "passed"
             },
             "line": 5,
@@ -727,6 +724,7 @@
           },
           {
             "result": {
+              "duration": 994800,
               "status": "passed"
             },
             "line": 6,
@@ -738,7 +736,7 @@
           },
           {
             "result": {
-              "duration": 60081200,
+              "duration": 65006700,
               "status": "passed"
             },
             "line": 7,
@@ -754,13 +752,13 @@
                   "offset": 70
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 70012100,
+              "duration": 61984300,
               "status": "passed"
             },
             "line": 8,
@@ -776,7 +774,7 @@
                   "offset": 75
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -791,7 +789,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:43.066Z",
+        "start_timestamp": "2023-01-02T08:47:54.185Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"ClassificationShape\"",
         "description": "",
@@ -801,7 +799,7 @@
         "steps": [
           {
             "result": {
-              "duration": 156989300,
+              "duration": 164402300,
               "status": "passed"
             },
             "line": 4,
@@ -819,7 +817,7 @@
           },
           {
             "result": {
-              "duration": 176013400,
+              "duration": 172458600,
               "status": "passed"
             },
             "line": 5,
@@ -837,6 +835,7 @@
           },
           {
             "result": {
+              "duration": 1033700,
               "status": "passed"
             },
             "line": 6,
@@ -848,7 +847,7 @@
           },
           {
             "result": {
-              "duration": 52992400,
+              "duration": 55269500,
               "status": "passed"
             },
             "line": 7,
@@ -864,13 +863,13 @@
                   "offset": 80
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 51990300,
+              "duration": 55621700,
               "status": "passed"
             },
             "line": 8,
@@ -886,7 +885,7 @@
                   "offset": 85
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -901,7 +900,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:43.517Z",
+        "start_timestamp": "2023-01-02T08:47:54.646Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugCore\"",
         "description": "",
@@ -911,7 +910,7 @@
         "steps": [
           {
             "result": {
-              "duration": 153991700,
+              "duration": 162998100,
               "status": "passed"
             },
             "line": 4,
@@ -929,7 +928,7 @@
           },
           {
             "result": {
-              "duration": 168400200,
+              "duration": 170964400,
               "status": "passed"
             },
             "line": 5,
@@ -947,7 +946,7 @@
           },
           {
             "result": {
-              "duration": 1069000,
+              "duration": 1020400,
               "status": "passed"
             },
             "line": 6,
@@ -959,7 +958,7 @@
           },
           {
             "result": {
-              "duration": 53320900,
+              "duration": 55323900,
               "status": "passed"
             },
             "line": 7,
@@ -975,14 +974,14 @@
                   "offset": 69
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37556\u003e but was:\u003c37583\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 70332400,
+              "error_message": "java.lang.AssertionError: expected:\u003c37556\u003e but was:\u003c37583\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 66552500,
               "status": "failed"
             },
             "line": 8,
@@ -998,7 +997,7 @@
                   "offset": 74
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1013,7 +1012,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:43.975Z",
+        "start_timestamp": "2023-01-02T08:47:55.119Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugName\"",
         "description": "",
@@ -1023,7 +1022,7 @@
         "steps": [
           {
             "result": {
-              "duration": 150096000,
+              "duration": 162034500,
               "status": "passed"
             },
             "line": 4,
@@ -1041,7 +1040,7 @@
           },
           {
             "result": {
-              "duration": 169477500,
+              "duration": 171115700,
               "status": "passed"
             },
             "line": 5,
@@ -1059,7 +1058,7 @@
           },
           {
             "result": {
-              "duration": 1064900,
+              "duration": 1059900,
               "status": "passed"
             },
             "line": 6,
@@ -1071,7 +1070,7 @@
           },
           {
             "result": {
-              "duration": 53801600,
+              "duration": 55619400,
               "status": "passed"
             },
             "line": 7,
@@ -1087,14 +1086,14 @@
                   "offset": 69
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37837\u003e but was:\u003c37864\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 61643800,
+              "error_message": "java.lang.AssertionError: expected:\u003c37837\u003e but was:\u003c37864\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 65208400,
               "status": "failed"
             },
             "line": 8,
@@ -1110,7 +1109,7 @@
                   "offset": 74
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1125,7 +1124,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:44.426Z",
+        "start_timestamp": "2023-01-02T08:47:55.586Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugNonCountReason\"",
         "description": "",
@@ -1135,7 +1134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 149002600,
+              "duration": 167513700,
               "status": "passed"
             },
             "line": 4,
@@ -1153,7 +1152,7 @@
           },
           {
             "result": {
-              "duration": 174194100,
+              "duration": 166294200,
               "status": "passed"
             },
             "line": 5,
@@ -1182,7 +1181,7 @@
           },
           {
             "result": {
-              "duration": 52002600,
+              "duration": 54997200,
               "status": "passed"
             },
             "line": 7,
@@ -1198,13 +1197,13 @@
                   "offset": 79
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 52999100,
+              "duration": 55001100,
               "status": "passed"
             },
             "line": 8,
@@ -1220,7 +1219,7 @@
                   "offset": 84
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1235,7 +1234,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:44.865Z",
+        "start_timestamp": "2023-01-02T08:47:56.042Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Firm\"",
         "description": "",
@@ -1245,7 +1244,7 @@
         "steps": [
           {
             "result": {
-              "duration": 153988900,
+              "duration": 166306400,
               "status": "passed"
             },
             "line": 4,
@@ -1263,7 +1262,7 @@
           },
           {
             "result": {
-              "duration": 171992800,
+              "duration": 169496500,
               "status": "passed"
             },
             "line": 5,
@@ -1292,7 +1291,7 @@
           },
           {
             "result": {
-              "duration": 52331400,
+              "duration": 54094400,
               "status": "passed"
             },
             "line": 7,
@@ -1308,14 +1307,14 @@
                   "offset": 65
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c2526\u003e but was:\u003c2528\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 52322200,
+              "error_message": "java.lang.AssertionError: expected:\u003c2526\u003e but was:\u003c2528\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 55017500,
               "status": "failed"
             },
             "line": 8,
@@ -1331,7 +1330,7 @@
                   "offset": 70
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1346,7 +1345,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:45.308Z",
+        "start_timestamp": "2023-01-02T08:47:56.501Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Inventory\"",
         "description": "",
@@ -1356,7 +1355,7 @@
         "steps": [
           {
             "result": {
-              "duration": 151686500,
+              "duration": 160844800,
               "status": "passed"
             },
             "line": 4,
@@ -1374,7 +1373,7 @@
           },
           {
             "result": {
-              "duration": 174315300,
+              "duration": 179839600,
               "status": "passed"
             },
             "line": 5,
@@ -1392,6 +1391,7 @@
           },
           {
             "result": {
+              "duration": 1015500,
               "status": "passed"
             },
             "line": 6,
@@ -1403,7 +1403,7 @@
           },
           {
             "result": {
-              "duration": 53611600,
+              "duration": 55368500,
               "status": "passed"
             },
             "line": 7,
@@ -1419,14 +1419,14 @@
                   "offset": 70
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c36111\u003e but was:\u003c36141\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 62842100,
+              "error_message": "java.lang.AssertionError: expected:\u003c36111\u003e but was:\u003c36141\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 63554600,
               "status": "failed"
             },
             "line": 8,
@@ -1442,7 +1442,7 @@
                   "offset": 75
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1457,7 +1457,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:45.761Z",
+        "start_timestamp": "2023-01-02T08:47:56.973Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugShape\"",
         "description": "",
@@ -1467,7 +1467,7 @@
         "steps": [
           {
             "result": {
-              "duration": 154916800,
+              "duration": 165015100,
               "status": "passed"
             },
             "line": 4,
@@ -1485,7 +1485,7 @@
           },
           {
             "result": {
-              "duration": 170990400,
+              "duration": 169997000,
               "status": "passed"
             },
             "line": 5,
@@ -1503,6 +1503,7 @@
           },
           {
             "result": {
+              "duration": 1000800,
               "status": "passed"
             },
             "line": 6,
@@ -1514,7 +1515,7 @@
           },
           {
             "result": {
-              "duration": 54003400,
+              "duration": 56008000,
               "status": "passed"
             },
             "line": 7,
@@ -1530,13 +1531,13 @@
                   "offset": 70
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 51994300,
+              "duration": 53989900,
               "status": "passed"
             },
             "line": 8,
@@ -1552,7 +1553,7 @@
                   "offset": 75
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1567,7 +1568,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:46.205Z",
+        "start_timestamp": "2023-01-02T08:47:57.429Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Measurements\"",
         "description": "",
@@ -1577,7 +1578,7 @@
         "steps": [
           {
             "result": {
-              "duration": 152006300,
+              "duration": 163997600,
               "status": "passed"
             },
             "line": 4,
@@ -1595,7 +1596,7 @@
           },
           {
             "result": {
-              "duration": 168187500,
+              "duration": 170868100,
               "status": "passed"
             },
             "line": 5,
@@ -1613,7 +1614,6 @@
           },
           {
             "result": {
-              "duration": 1054400,
               "status": "passed"
             },
             "line": 6,
@@ -1625,7 +1625,7 @@
           },
           {
             "result": {
-              "duration": 53242600,
+              "duration": 60501700,
               "status": "passed"
             },
             "line": 7,
@@ -1641,14 +1641,14 @@
                   "offset": 73
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 67527100,
+              "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 64510600,
               "status": "failed"
             },
             "line": 8,
@@ -1664,7 +1664,7 @@
                   "offset": 78
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1679,7 +1679,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:46.659Z",
+        "start_timestamp": "2023-01-02T08:47:57.904Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassCanister\"",
         "description": "",
@@ -1689,7 +1689,7 @@
         "steps": [
           {
             "result": {
-              "duration": 154382700,
+              "duration": 163534900,
               "status": "passed"
             },
             "line": 4,
@@ -1707,7 +1707,7 @@
           },
           {
             "result": {
-              "duration": 170218500,
+              "duration": 169063900,
               "status": "passed"
             },
             "line": 5,
@@ -1725,7 +1725,7 @@
           },
           {
             "result": {
-              "duration": 1060000,
+              "duration": 1070300,
               "status": "passed"
             },
             "line": 6,
@@ -1737,7 +1737,7 @@
           },
           {
             "result": {
-              "duration": 53443600,
+              "duration": 57762600,
               "status": "passed"
             },
             "line": 7,
@@ -1753,13 +1753,13 @@
                   "offset": 73
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 52661900,
+              "duration": 55008400,
               "status": "passed"
             },
             "line": 8,
@@ -1775,7 +1775,7 @@
                   "offset": 78
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1790,7 +1790,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:47.102Z",
+        "start_timestamp": "2023-01-02T08:47:58.362Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassScenarioDrug\"",
         "description": "",
@@ -1800,7 +1800,7 @@
         "steps": [
           {
             "result": {
-              "duration": 156991000,
+              "duration": 166984300,
               "status": "passed"
             },
             "line": 4,
@@ -1818,7 +1818,7 @@
           },
           {
             "result": {
-              "duration": 174867900,
+              "duration": 169758400,
               "status": "passed"
             },
             "line": 5,
@@ -1836,7 +1836,7 @@
           },
           {
             "result": {
-              "duration": 1005200,
+              "duration": 1122600,
               "status": "passed"
             },
             "line": 6,
@@ -1848,7 +1848,7 @@
           },
           {
             "result": {
-              "duration": 54380400,
+              "duration": 56842300,
               "status": "passed"
             },
             "line": 7,
@@ -1864,14 +1864,14 @@
                   "offset": 77
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c189477\u003e but was:\u003c190546\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 80347100,
+              "error_message": "java.lang.AssertionError: expected:\u003c189477\u003e but was:\u003c190546\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 81157200,
               "status": "failed"
             },
             "line": 8,
@@ -1887,7 +1887,7 @@
                   "offset": 82
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1902,7 +1902,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:47.581Z",
+        "start_timestamp": "2023-01-02T08:47:58.848Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DosageForm\"",
         "description": "",
@@ -1912,7 +1912,7 @@
         "steps": [
           {
             "result": {
-              "duration": 162974400,
+              "duration": 164789100,
               "status": "passed"
             },
             "line": 4,
@@ -1930,7 +1930,7 @@
           },
           {
             "result": {
-              "duration": 169211900,
+              "duration": 169455100,
               "status": "passed"
             },
             "line": 5,
@@ -1948,7 +1948,7 @@
           },
           {
             "result": {
-              "duration": 1027700,
+              "duration": 874500,
               "status": "passed"
             },
             "line": 6,
@@ -1960,7 +1960,7 @@
           },
           {
             "result": {
-              "duration": 52381900,
+              "duration": 55732500,
               "status": "passed"
             },
             "line": 7,
@@ -1976,13 +1976,13 @@
                   "offset": 71
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 52118000,
+              "duration": 55155300,
               "status": "passed"
             },
             "line": 8,
@@ -1998,7 +1998,7 @@
                   "offset": 76
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2013,7 +2013,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:48.026Z",
+        "start_timestamp": "2023-01-02T08:47:59.301Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugAttribute\"",
         "description": "",
@@ -2023,7 +2023,7 @@
         "steps": [
           {
             "result": {
-              "duration": 150914500,
+              "duration": 163460500,
               "status": "passed"
             },
             "line": 4,
@@ -2041,7 +2041,7 @@
           },
           {
             "result": {
-              "duration": 170088200,
+              "duration": 172300200,
               "status": "passed"
             },
             "line": 5,
@@ -2059,7 +2059,6 @@
           },
           {
             "result": {
-              "duration": 1009200,
               "status": "passed"
             },
             "line": 6,
@@ -2071,7 +2070,7 @@
           },
           {
             "result": {
-              "duration": 52747000,
+              "duration": 55073000,
               "status": "passed"
             },
             "line": 7,
@@ -2087,14 +2086,14 @@
                   "offset": 74
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 62003000,
+              "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 64541600,
               "status": "failed"
             },
             "line": 8,
@@ -2110,7 +2109,7 @@
                   "offset": 79
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2125,7 +2124,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:48.474Z",
+        "start_timestamp": "2023-01-02T08:47:59.771Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassDrugCanister\"",
         "description": "",
@@ -2135,7 +2134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 154000300,
+              "duration": 162792000,
               "status": "passed"
             },
             "line": 4,
@@ -2153,7 +2152,7 @@
           },
           {
             "result": {
-              "duration": 167594900,
+              "duration": 173648500,
               "status": "passed"
             },
             "line": 5,
@@ -2182,7 +2181,7 @@
           },
           {
             "result": {
-              "duration": 51460600,
+              "duration": 56008000,
               "status": "passed"
             },
             "line": 7,
@@ -2198,14 +2197,14 @@
                   "offset": 77
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c11389\u003e but was:\u003c11417\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 55158100,
+              "error_message": "java.lang.AssertionError: expected:\u003c11389\u003e but was:\u003c11417\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 57987100,
               "status": "failed"
             },
             "line": 8,
@@ -2221,7 +2220,7 @@
                   "offset": 82
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2236,7 +2235,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:48.912Z",
+        "start_timestamp": "2023-01-02T08:48:00.232Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"StrengthUnitType\"",
         "description": "",
@@ -2246,7 +2245,7 @@
         "steps": [
           {
             "result": {
-              "duration": 147375600,
+              "duration": 163363800,
               "status": "passed"
             },
             "line": 4,
@@ -2264,7 +2263,7 @@
           },
           {
             "result": {
-              "duration": 165676900,
+              "duration": 175746000,
               "status": "passed"
             },
             "line": 5,
@@ -2282,7 +2281,6 @@
           },
           {
             "result": {
-              "duration": 1078500,
               "status": "passed"
             },
             "line": 6,
@@ -2294,7 +2292,7 @@
           },
           {
             "result": {
-              "duration": 52232000,
+              "duration": 56070500,
               "status": "passed"
             },
             "line": 7,
@@ -2310,13 +2308,13 @@
                   "offset": 77
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 51778800,
+              "duration": 54353400,
               "status": "passed"
             },
             "line": 8,
@@ -2332,7 +2330,7 @@
                   "offset": 82
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2347,7 +2345,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:49.338Z",
+        "start_timestamp": "2023-01-02T08:48:00.692Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DeviceSettingMax\"",
         "description": "",
@@ -2357,7 +2355,7 @@
         "steps": [
           {
             "result": {
-              "duration": 152174100,
+              "duration": 167981900,
               "status": "passed"
             },
             "line": 4,
@@ -2375,7 +2373,7 @@
           },
           {
             "result": {
-              "duration": 166383400,
+              "duration": 171775500,
               "status": "passed"
             },
             "line": 5,
@@ -2393,6 +2391,7 @@
           },
           {
             "result": {
+              "duration": 1066300,
               "status": "passed"
             },
             "line": 6,
@@ -2404,7 +2403,7 @@
           },
           {
             "result": {
-              "duration": 54006100,
+              "duration": 55153700,
               "status": "passed"
             },
             "line": 7,
@@ -2420,14 +2419,14 @@
                   "offset": 77
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c31457\u003e but was:\u003c31482\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 61009100,
+              "error_message": "java.lang.AssertionError: expected:\u003c31457\u003e but was:\u003c31482\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+              "duration": 62871100,
               "status": "failed"
             },
             "line": 8,
@@ -2443,7 +2442,7 @@
                   "offset": 82
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2458,7 +2457,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-02T07:04:49.783Z",
+        "start_timestamp": "2023-01-02T08:48:01.162Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Coating\"",
         "description": "",
@@ -2468,7 +2467,7 @@
         "steps": [
           {
             "result": {
-              "duration": 149000600,
+              "duration": 164014600,
               "status": "passed"
             },
             "line": 4,
@@ -2486,7 +2485,7 @@
           },
           {
             "result": {
-              "duration": 169852000,
+              "duration": 167582200,
               "status": "passed"
             },
             "line": 5,
@@ -2515,7 +2514,7 @@
           },
           {
             "result": {
-              "duration": 52437200,
+              "duration": 57564000,
               "status": "passed"
             },
             "line": 7,
@@ -2531,13 +2530,13 @@
                   "offset": 68
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 53133500,
+              "duration": 55352000,
               "status": "passed"
             },
             "line": 8,
@@ -2553,7 +2552,7 @@
                   "offset": 73
                 }
               ],
-              "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+              "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }

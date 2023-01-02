@@ -1,12 +1,12 @@
+step\DataAndColumnTestAzureCDDBSPAndTableTest.class
 utils\context\TestContext.class
 step\Tokenizer.class
 GenericInfo\genericFactory.class
 constants\CONSTANTS.class
-step\OnPremAzureTableDataAndColumnvalidationTest.class
+step\DataAndColumnTestBetweenOnpremAzureTableTest.class
 utils\context\ScenarioContext.class
 constants\CONTEXT.class
 constants\GlobalContext.class
-step\AzureCDDBSPAndTableEvaluateTest.class
 constants\DbConnection.class
 step\DatabaseProcessTest.class
 step\DrugDBStep.class

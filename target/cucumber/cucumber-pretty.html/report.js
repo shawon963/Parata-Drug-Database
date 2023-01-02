@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table.feature");
 formatter.feature({
   "name": "Table Data and Column Test between PDDB_LP and DrugDB Database",
   "description": "",
@@ -52,7 +52,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -62,7 +62,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -115,7 +115,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -125,7 +125,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -178,21 +178,20 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c13\u003e but was: \u003c21\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_Inventory\" columns in PDDB_LP database should be same as table \"Inventory\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Procedure \"SP_Pull_Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in DrugDB database",
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"ClassificationShape\"",
@@ -242,21 +241,20 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c17\u003e but was: \u003c25\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\", \"ClassificationShapeID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\", \"ClassificationShapeId\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"ClassificationShapeID\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\",\"ClassificationShapeId\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_ClassificationShape\" columns in PDDB_LP database should be same as table \"ClassificationShape\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Procedure \"SP_Pull_ClassificationShape\" data count in PDDB_LP database should be equals to table \"ClassificationShape\" data count in DrugDB database",
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugStatus\"",
@@ -306,21 +304,20 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c24\u003e but was: \u003c33\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\", \"ClassificationShapeID\", \"StatusID\", \"StatusTypeID\", \"DeviceID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\", \"ClassificationShapeId\", \"StatusId\", \"StatusTypeId\", \"DeviceId\", \"Id\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"ClassificationShapeID\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusID\",\"StatusTypeID\",\"DeviceID\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\",\"ClassificationShapeId\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusId\",\"StatusTypeId\",\"DeviceId\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\",\"Id\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_Status\" columns in PDDB_LP database should be same as table \"DrugStatus\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Procedure \"SP_Pull_Status\" data count in PDDB_LP database should be equals to table \"DrugStatus\" data count in DrugDB database",
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugAttribute\"",
@@ -370,21 +367,20 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:\nArray \"\" has different length, expected: \u003c33\u003e but was: \u003c43\u003e.\nArray \"\" has different content. Missing values: [\"InventoryID\", \"ClassificationShapeID\", \"StatusID\", \"StatusTypeID\", \"DeviceID\"], extra values: [\"InventoryId\", \"Id\", \"DestroyDate\", \"Destroyed\", \"DestroyedBy\", \"DestroyedComments\", \"SourceAddress\", \"SourceEmail\", \"SourcePhone\", \"ClassificationShapeId\", \"StatusId\", \"StatusTypeId\", \"DeviceId\", \"Id\", \"Id\"], expected: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryID\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"ClassificationShapeID\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusID\",\"StatusTypeID\",\"DeviceID\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\",\"DrugAttributeId\",\"CleaningCodeId\",\"ColorId\",\"CoatingId\",\"ShapeId\",\"ImprintFront\",\"ImprintBack\",\"DosageFormId\",\"Scored\"]\u003e but was: \u003c[\"StatusTypeId\",\"StatusTypeDescription\",\"Id\",\"Reason\",\"InventoryId\",\"DrugNumber\",\"Date\",\"Source\",\"Quantity\",\"Price\",\"Comments\",\"ChangedBy\",\"ChangedDate\",\"Id\",\"DestroyDate\",\"Destroyed\",\"DestroyedBy\",\"DestroyedComments\",\"SourceAddress\",\"SourceEmail\",\"SourcePhone\",\"ClassificationShapeId\",\"ClassificationShapeDescription\",\"HandlerAssembly\",\"HandlerClass\",\"StatusId\",\"StatusTypeId\",\"DeviceId\",\"DrugNumber\",\"Comments\",\"NonCountReasonID\",\"IsSuperCellOnly\",\"Id\",\"Id\",\"DrugAttributeId\",\"CleaningCodeId\",\"ColorId\",\"CoatingId\",\"ShapeId\",\"ImprintFront\",\"ImprintBack\",\"DosageFormId\",\"Scored\"]\u003e\n\r\n\tat net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)\r\n\tat net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)\r\n\tat net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)\r\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)\r\n\tat step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)\r\n\tat ✽.Procedure \"SP_Pull_DrugAttribute\" columns in PDDB_LP database should be same as table \"DrugAttribute\" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Procedure \"SP_Pull_DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in DrugDB database",
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.AzureCDDBSPAndTableEvaluateTest.ProcedureDataCountInPDDB_LPDatabaseWithinAzureServerAndTableDataInDrugDBDatabaseWithinCDDBServer(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.uri("file:src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature");
 formatter.feature({
@@ -440,7 +436,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -450,7 +446,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -503,7 +499,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -513,7 +509,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -566,7 +562,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -576,10 +572,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37556\u003e but was:\u003c37583\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c37556\u003e but was:\u003c37583\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -630,7 +626,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -640,10 +636,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37837\u003e but was:\u003c37864\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c37837\u003e but was:\u003c37864\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -694,7 +690,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -704,7 +700,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -757,7 +753,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -767,10 +763,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c2526\u003e but was:\u003c2528\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c2526\u003e but was:\u003c2528\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -821,7 +817,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -831,10 +827,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c36111\u003e but was:\u003c36141\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c36111\u003e but was:\u003c36141\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -885,7 +881,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -895,7 +891,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -948,7 +944,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -958,10 +954,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -1012,7 +1008,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1022,7 +1018,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1075,7 +1071,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1085,10 +1081,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c189477\u003e but was:\u003c190546\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c189477\u003e but was:\u003c190546\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -1139,7 +1135,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1149,7 +1145,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1202,7 +1198,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1212,10 +1208,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -1266,7 +1262,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1276,10 +1272,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c11389\u003e but was:\u003c11417\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c11389\u003e but was:\u003c11417\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -1330,7 +1326,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1340,7 +1336,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1393,7 +1389,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1403,10 +1399,10 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c31457\u003e but was:\u003c31482\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)\r\n\tat ✽.Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c31457\u003e but was:\u003c31482\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -1457,7 +1453,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -1467,7 +1463,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+  "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"

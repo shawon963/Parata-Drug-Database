@@ -1,11 +1,11 @@
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\constants\CONTEXT.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\constants\GlobalContext.java
+F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\DataAndColumnTestBetweenOnpremAzureTableTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\DrugDBRequest.java
-F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\OnPremAzureTableDataAndColumnvalidationTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\GenericInfo\genericFactory.java
+F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\DataAndColumnTestAzureCDDBSPAndTableTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\DrugDBStep.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\constants\CONSTANTS.java
-F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\step\AzureCDDBSPAndTableEvaluateTest.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\constants\DbConnection.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\runner\TestRunner.java
 F:\Ether\Ether\QA\parata-database-testing-qa\src\test\java\utils\context\TestContext.java

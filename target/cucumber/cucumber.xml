@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="13" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="23" time="14.349">
-    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;StatusType&quot;" time="1.904">
+<testsuite errors="0" failures="9" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="23" time="16.692">
+    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;StatusType&quot;" time="1.965">
         <system-out>
             <![CDATA[Given Database connection for "PDDB_LP" from azure server...................passed
 And Database connection for "DrugDB" from CDDB server.......................passed
@@ -10,7 +10,7 @@ And Procedure "SP_Pull_StatusType" data count in PDDB_LP database should be equa
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;DrugNonCountReason&quot;" time="1.075">
+    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;DrugNonCountReason&quot;" time="0.865">
         <system-out>
             <![CDATA[Given Database connection for "PDDB_LP" from azure server...................passed
 And Database connection for "DrugDB" from CDDB server.......................passed
@@ -20,95 +20,47 @@ And Procedure "SP_Pull_DrugNonCountReason" data count in PDDB_LP database should
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;Inventory&quot;" time="0.796">
-        <failure message="JSON documents are different:&#10;Array &quot;&quot; has different length, expected: &lt;13&gt; but was: &lt;21&gt;.&#10;Array &quot;&quot; has different content. Missing values: [&quot;InventoryID&quot;], extra values: [&quot;InventoryId&quot;, &quot;Id&quot;, &quot;DestroyDate&quot;, &quot;Destroyed&quot;, &quot;DestroyedBy&quot;, &quot;DestroyedComments&quot;, &quot;SourceAddress&quot;, &quot;SourceEmail&quot;, &quot;SourcePhone&quot;], expected: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryID&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;]&gt; but was: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryId&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;Id&quot;,&quot;DestroyDate&quot;,&quot;Destroyed&quot;,&quot;DestroyedBy&quot;,&quot;DestroyedComments&quot;,&quot;SourceAddress&quot;,&quot;SourceEmail&quot;,&quot;SourcePhone&quot;]&gt;&#10;" type="net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError">
+    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;Inventory&quot;" time="1.367">
+        <system-out>
             <![CDATA[Given Database connection for "PDDB_LP" from azure server...................passed
 And Database connection for "DrugDB" from CDDB server.......................passed
 When Database connections are established...................................passed
-Then Procedure "SP_Pull_Inventory" columns in PDDB_LP database should be same as table "Inventory" columns in DrugDB database.failed
-And Procedure "SP_Pull_Inventory" data count in PDDB_LP database should be equals to table "Inventory" data count in DrugDB database.skipped
-
-StackTrace:
-net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:
-Array "" has different length, expected: <13> but was: <21>.
-Array "" has different content. Missing values: ["InventoryID"], extra values: ["InventoryId", "Id", "DestroyDate", "Destroyed", "DestroyedBy", "DestroyedComments", "SourceAddress", "SourceEmail", "SourcePhone"], expected: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryID","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate"]> but was: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryId","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","Id","DestroyDate","Destroyed","DestroyedBy","DestroyedComments","SourceAddress","SourceEmail","SourcePhone"]>
-
-	at net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)
-	at net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)
-	at net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)
-	at net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)
-	at step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)
-	at ✽.Procedure "SP_Pull_Inventory" columns in PDDB_LP database should be same as table "Inventory" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)
+Then Procedure "SP_Pull_Inventory" columns in PDDB_LP database should be same as table "Inventory" columns in DrugDB database.passed
+And Procedure "SP_Pull_Inventory" data count in PDDB_LP database should be equals to table "Inventory" data count in DrugDB database.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;ClassificationShape&quot;" time="0.729">
-        <failure message="JSON documents are different:&#10;Array &quot;&quot; has different length, expected: &lt;17&gt; but was: &lt;25&gt;.&#10;Array &quot;&quot; has different content. Missing values: [&quot;InventoryID&quot;, &quot;ClassificationShapeID&quot;], extra values: [&quot;InventoryId&quot;, &quot;Id&quot;, &quot;DestroyDate&quot;, &quot;Destroyed&quot;, &quot;DestroyedBy&quot;, &quot;DestroyedComments&quot;, &quot;SourceAddress&quot;, &quot;SourceEmail&quot;, &quot;SourcePhone&quot;, &quot;ClassificationShapeId&quot;], expected: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryID&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;ClassificationShapeID&quot;,&quot;ClassificationShapeDescription&quot;,&quot;HandlerAssembly&quot;,&quot;HandlerClass&quot;]&gt; but was: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryId&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;Id&quot;,&quot;DestroyDate&quot;,&quot;Destroyed&quot;,&quot;DestroyedBy&quot;,&quot;DestroyedComments&quot;,&quot;SourceAddress&quot;,&quot;SourceEmail&quot;,&quot;SourcePhone&quot;,&quot;ClassificationShapeId&quot;,&quot;ClassificationShapeDescription&quot;,&quot;HandlerAssembly&quot;,&quot;HandlerClass&quot;]&gt;&#10;" type="net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError">
+    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;ClassificationShape&quot;" time="0.828">
+        <system-out>
             <![CDATA[Given Database connection for "PDDB_LP" from azure server...................passed
 And Database connection for "DrugDB" from CDDB server.......................passed
 When Database connections are established...................................passed
-Then Procedure "SP_Pull_ClassificationShape" columns in PDDB_LP database should be same as table "ClassificationShape" columns in DrugDB database.failed
-And Procedure "SP_Pull_ClassificationShape" data count in PDDB_LP database should be equals to table "ClassificationShape" data count in DrugDB database.skipped
-
-StackTrace:
-net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:
-Array "" has different length, expected: <17> but was: <25>.
-Array "" has different content. Missing values: ["InventoryID", "ClassificationShapeID"], extra values: ["InventoryId", "Id", "DestroyDate", "Destroyed", "DestroyedBy", "DestroyedComments", "SourceAddress", "SourceEmail", "SourcePhone", "ClassificationShapeId"], expected: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryID","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","ClassificationShapeID","ClassificationShapeDescription","HandlerAssembly","HandlerClass"]> but was: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryId","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","Id","DestroyDate","Destroyed","DestroyedBy","DestroyedComments","SourceAddress","SourceEmail","SourcePhone","ClassificationShapeId","ClassificationShapeDescription","HandlerAssembly","HandlerClass"]>
-
-	at net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)
-	at net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)
-	at net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)
-	at net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)
-	at step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)
-	at ✽.Procedure "SP_Pull_ClassificationShape" columns in PDDB_LP database should be same as table "ClassificationShape" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)
+Then Procedure "SP_Pull_ClassificationShape" columns in PDDB_LP database should be same as table "ClassificationShape" columns in DrugDB database.passed
+And Procedure "SP_Pull_ClassificationShape" data count in PDDB_LP database should be equals to table "ClassificationShape" data count in DrugDB database.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;DrugStatus&quot;" time="0.77">
-        <failure message="JSON documents are different:&#10;Array &quot;&quot; has different length, expected: &lt;24&gt; but was: &lt;33&gt;.&#10;Array &quot;&quot; has different content. Missing values: [&quot;InventoryID&quot;, &quot;ClassificationShapeID&quot;, &quot;StatusID&quot;, &quot;StatusTypeID&quot;, &quot;DeviceID&quot;], extra values: [&quot;InventoryId&quot;, &quot;Id&quot;, &quot;DestroyDate&quot;, &quot;Destroyed&quot;, &quot;DestroyedBy&quot;, &quot;DestroyedComments&quot;, &quot;SourceAddress&quot;, &quot;SourceEmail&quot;, &quot;SourcePhone&quot;, &quot;ClassificationShapeId&quot;, &quot;StatusId&quot;, &quot;StatusTypeId&quot;, &quot;DeviceId&quot;, &quot;Id&quot;], expected: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryID&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;ClassificationShapeID&quot;,&quot;ClassificationShapeDescription&quot;,&quot;HandlerAssembly&quot;,&quot;HandlerClass&quot;,&quot;StatusID&quot;,&quot;StatusTypeID&quot;,&quot;DeviceID&quot;,&quot;DrugNumber&quot;,&quot;Comments&quot;,&quot;NonCountReasonID&quot;,&quot;IsSuperCellOnly&quot;]&gt; but was: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryId&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;Id&quot;,&quot;DestroyDate&quot;,&quot;Destroyed&quot;,&quot;DestroyedBy&quot;,&quot;DestroyedComments&quot;,&quot;SourceAddress&quot;,&quot;SourceEmail&quot;,&quot;SourcePhone&quot;,&quot;ClassificationShapeId&quot;,&quot;ClassificationShapeDescription&quot;,&quot;HandlerAssembly&quot;,&quot;HandlerClass&quot;,&quot;StatusId&quot;,&quot;StatusTypeId&quot;,&quot;DeviceId&quot;,&quot;DrugNumber&quot;,&quot;Comments&quot;,&quot;NonCountReasonID&quot;,&quot;IsSuperCellOnly&quot;,&quot;Id&quot;]&gt;&#10;" type="net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError">
+    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;DrugStatus&quot;" time="2.02">
+        <system-out>
             <![CDATA[Given Database connection for "PDDB_LP" from azure server...................passed
 And Database connection for "DrugDB" from CDDB server.......................passed
 When Database connections are established...................................passed
-Then Procedure "SP_Pull_Status" columns in PDDB_LP database should be same as table "DrugStatus" columns in DrugDB database.failed
-And Procedure "SP_Pull_Status" data count in PDDB_LP database should be equals to table "DrugStatus" data count in DrugDB database.skipped
-
-StackTrace:
-net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:
-Array "" has different length, expected: <24> but was: <33>.
-Array "" has different content. Missing values: ["InventoryID", "ClassificationShapeID", "StatusID", "StatusTypeID", "DeviceID"], extra values: ["InventoryId", "Id", "DestroyDate", "Destroyed", "DestroyedBy", "DestroyedComments", "SourceAddress", "SourceEmail", "SourcePhone", "ClassificationShapeId", "StatusId", "StatusTypeId", "DeviceId", "Id"], expected: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryID","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","ClassificationShapeID","ClassificationShapeDescription","HandlerAssembly","HandlerClass","StatusID","StatusTypeID","DeviceID","DrugNumber","Comments","NonCountReasonID","IsSuperCellOnly"]> but was: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryId","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","Id","DestroyDate","Destroyed","DestroyedBy","DestroyedComments","SourceAddress","SourceEmail","SourcePhone","ClassificationShapeId","ClassificationShapeDescription","HandlerAssembly","HandlerClass","StatusId","StatusTypeId","DeviceId","DrugNumber","Comments","NonCountReasonID","IsSuperCellOnly","Id"]>
-
-	at net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)
-	at net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)
-	at net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)
-	at net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)
-	at step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)
-	at ✽.Procedure "SP_Pull_Status" columns in PDDB_LP database should be same as table "DrugStatus" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)
+Then Procedure "SP_Pull_Status" columns in PDDB_LP database should be same as table "DrugStatus" columns in DrugDB database.passed
+And Procedure "SP_Pull_Status" data count in PDDB_LP database should be equals to table "DrugStatus" data count in DrugDB database.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;DrugAttribute&quot;" time="0.831">
-        <failure message="JSON documents are different:&#10;Array &quot;&quot; has different length, expected: &lt;33&gt; but was: &lt;43&gt;.&#10;Array &quot;&quot; has different content. Missing values: [&quot;InventoryID&quot;, &quot;ClassificationShapeID&quot;, &quot;StatusID&quot;, &quot;StatusTypeID&quot;, &quot;DeviceID&quot;], extra values: [&quot;InventoryId&quot;, &quot;Id&quot;, &quot;DestroyDate&quot;, &quot;Destroyed&quot;, &quot;DestroyedBy&quot;, &quot;DestroyedComments&quot;, &quot;SourceAddress&quot;, &quot;SourceEmail&quot;, &quot;SourcePhone&quot;, &quot;ClassificationShapeId&quot;, &quot;StatusId&quot;, &quot;StatusTypeId&quot;, &quot;DeviceId&quot;, &quot;Id&quot;, &quot;Id&quot;], expected: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryID&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;ClassificationShapeID&quot;,&quot;ClassificationShapeDescription&quot;,&quot;HandlerAssembly&quot;,&quot;HandlerClass&quot;,&quot;StatusID&quot;,&quot;StatusTypeID&quot;,&quot;DeviceID&quot;,&quot;DrugNumber&quot;,&quot;Comments&quot;,&quot;NonCountReasonID&quot;,&quot;IsSuperCellOnly&quot;,&quot;DrugAttributeId&quot;,&quot;CleaningCodeId&quot;,&quot;ColorId&quot;,&quot;CoatingId&quot;,&quot;ShapeId&quot;,&quot;ImprintFront&quot;,&quot;ImprintBack&quot;,&quot;DosageFormId&quot;,&quot;Scored&quot;]&gt; but was: &lt;[&quot;StatusTypeId&quot;,&quot;StatusTypeDescription&quot;,&quot;Id&quot;,&quot;Reason&quot;,&quot;InventoryId&quot;,&quot;DrugNumber&quot;,&quot;Date&quot;,&quot;Source&quot;,&quot;Quantity&quot;,&quot;Price&quot;,&quot;Comments&quot;,&quot;ChangedBy&quot;,&quot;ChangedDate&quot;,&quot;Id&quot;,&quot;DestroyDate&quot;,&quot;Destroyed&quot;,&quot;DestroyedBy&quot;,&quot;DestroyedComments&quot;,&quot;SourceAddress&quot;,&quot;SourceEmail&quot;,&quot;SourcePhone&quot;,&quot;ClassificationShapeId&quot;,&quot;ClassificationShapeDescription&quot;,&quot;HandlerAssembly&quot;,&quot;HandlerClass&quot;,&quot;StatusId&quot;,&quot;StatusTypeId&quot;,&quot;DeviceId&quot;,&quot;DrugNumber&quot;,&quot;Comments&quot;,&quot;NonCountReasonID&quot;,&quot;IsSuperCellOnly&quot;,&quot;Id&quot;,&quot;Id&quot;,&quot;DrugAttributeId&quot;,&quot;CleaningCodeId&quot;,&quot;ColorId&quot;,&quot;CoatingId&quot;,&quot;ShapeId&quot;,&quot;ImprintFront&quot;,&quot;ImprintBack&quot;,&quot;DosageFormId&quot;,&quot;Scored&quot;]&gt;&#10;" type="net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError">
+    <testcase classname="Table Data and Column Test between PDDB_LP and DrugDB Database" name="Verify table columns and data sync between PDDB_LP and DrugDB database for table &quot;DrugAttribute&quot;" time="1.139">
+        <system-out>
             <![CDATA[Given Database connection for "PDDB_LP" from azure server...................passed
 And Database connection for "DrugDB" from CDDB server.......................passed
 When Database connections are established...................................passed
-Then Procedure "SP_Pull_DrugAttribute" columns in PDDB_LP database should be same as table "DrugAttribute" columns in DrugDB database.failed
-And Procedure "SP_Pull_DrugAttribute" data count in PDDB_LP database should be equals to table "DrugAttribute" data count in DrugDB database.skipped
-
-StackTrace:
-net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory$BasicJsonAssertError: JSON documents are different:
-Array "" has different length, expected: <33> but was: <43>.
-Array "" has different content. Missing values: ["InventoryID", "ClassificationShapeID", "StatusID", "StatusTypeID", "DeviceID"], extra values: ["InventoryId", "Id", "DestroyDate", "Destroyed", "DestroyedBy", "DestroyedComments", "SourceAddress", "SourceEmail", "SourcePhone", "ClassificationShapeId", "StatusId", "StatusTypeId", "DeviceId", "Id", "Id"], expected: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryID","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","ClassificationShapeID","ClassificationShapeDescription","HandlerAssembly","HandlerClass","StatusID","StatusTypeID","DeviceID","DrugNumber","Comments","NonCountReasonID","IsSuperCellOnly","DrugAttributeId","CleaningCodeId","ColorId","CoatingId","ShapeId","ImprintFront","ImprintBack","DosageFormId","Scored"]> but was: <["StatusTypeId","StatusTypeDescription","Id","Reason","InventoryId","DrugNumber","Date","Source","Quantity","Price","Comments","ChangedBy","ChangedDate","Id","DestroyDate","Destroyed","DestroyedBy","DestroyedComments","SourceAddress","SourceEmail","SourcePhone","ClassificationShapeId","ClassificationShapeDescription","HandlerAssembly","HandlerClass","StatusId","StatusTypeId","DeviceId","DrugNumber","Comments","NonCountReasonID","IsSuperCellOnly","Id","Id","DrugAttributeId","CleaningCodeId","ColorId","CoatingId","ShapeId","ImprintFront","ImprintBack","DosageFormId","Scored"]>
-
-	at net.javacrumbs.jsonunit.core.internal.BasicExceptionFactory.createException(ExceptionFactory.java:19)
-	at net.javacrumbs.jsonunit.core.internal.ExceptionUtils.createException(ExceptionUtils.java:45)
-	at net.javacrumbs.jsonunit.core.internal.Diff.failIfDifferent(Diff.java:617)
-	at net.javacrumbs.jsonunit.assertj.JsonAssert.isEqualTo(JsonAssert.java:117)
-	at step.AzureCDDBSPAndTableEvaluateTest.ProcedureColumnInPDDB_LPDatabaseShouldBeSameAsTableColumnInDrugDBDatabase(AzureCDDBSPAndTableEvaluateTest.java:24)
-	at ✽.Procedure "SP_Pull_DrugAttribute" columns in PDDB_LP database should be same as table "DrugAttribute" columns in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table-evaluate.feature:7)
+Then Procedure "SP_Pull_DrugAttribute" columns in PDDB_LP database should be same as table "DrugAttribute" columns in DrugDB database.passed
+And Procedure "SP_Pull_DrugAttribute" data count in PDDB_LP database should be equals to table "DrugAttribute" data count in DrugDB database.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugColor&quot;" time="0.484">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugColor&quot;" time="0.516">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -118,7 +70,7 @@ And Table "DrugColor" data count in PDDB_LP database should be equals to table "
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;ClassificationShape&quot;" time="0.442">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;ClassificationShape&quot;" time="0.452">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -128,7 +80,7 @@ And Table "ClassificationShape" data count in PDDB_LP database should be equals 
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugCore&quot;" time="0.45">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugCore&quot;" time="0.464">
         <failure message="expected:&lt;37556&gt; but was:&lt;37583&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -142,12 +94,12 @@ java.lang.AssertionError: expected:<37556> but was:<37583>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "DrugCore" data count in PDDB_LP database should be equals to table "DrugCore" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugName&quot;" time="0.442">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugName&quot;" time="0.46">
         <failure message="expected:&lt;37837&gt; but was:&lt;37864&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -161,12 +113,12 @@ java.lang.AssertionError: expected:<37837> but was:<37864>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "DrugName" data count in PDDB_LP database should be equals to table "DrugName" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugNonCountReason&quot;" time="0.433">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugNonCountReason&quot;" time="0.449">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -176,7 +128,7 @@ And Table "DrugNonCountReason" data count in PDDB_LP database should be equals t
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Firm&quot;" time="0.435">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Firm&quot;" time="0.451">
         <failure message="expected:&lt;2526&gt; but was:&lt;2528&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -190,12 +142,12 @@ java.lang.AssertionError: expected:<2526> but was:<2528>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "Firm" data count in PDDB_LP database should be equals to table "Firm" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Inventory&quot;" time="0.447">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Inventory&quot;" time="0.465">
         <failure message="expected:&lt;36111&gt; but was:&lt;36141&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -209,12 +161,12 @@ java.lang.AssertionError: expected:<36111> but was:<36141>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "Inventory" data count in PDDB_LP database should be equals to table "Inventory" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugShape&quot;" time="0.436">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugShape&quot;" time="0.45">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -224,7 +176,7 @@ And Table "DrugShape" data count in PDDB_LP database should be equals to table "
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Measurements&quot;" time="0.445">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Measurements&quot;" time="0.466">
         <failure message="expected:&lt;37839&gt; but was:&lt;37866&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -238,12 +190,12 @@ java.lang.AssertionError: expected:<37839> but was:<37866>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "Measurements" data count in PDDB_LP database should be equals to table "Measurements" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;PassCanister&quot;" time="0.434">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;PassCanister&quot;" time="0.45">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -253,7 +205,7 @@ And Table "PassCanister" data count in PDDB_LP database should be equals to tabl
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;PassScenarioDrug&quot;" time="0.47">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;PassScenarioDrug&quot;" time="0.48">
         <failure message="expected:&lt;189477&gt; but was:&lt;190546&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -267,12 +219,12 @@ java.lang.AssertionError: expected:<189477> but was:<190546>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "PassScenarioDrug" data count in PDDB_LP database should be equals to table "PassScenarioDrug" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DosageForm&quot;" time="0.439">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DosageForm&quot;" time="0.448">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -282,7 +234,7 @@ And Table "DosageForm" data count in PDDB_LP database should be equals to table 
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugAttribute&quot;" time="0.44">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DrugAttribute&quot;" time="0.461">
         <failure message="expected:&lt;37839&gt; but was:&lt;37866&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -296,12 +248,12 @@ java.lang.AssertionError: expected:<37839> but was:<37866>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "DrugAttribute" data count in PDDB_LP database should be equals to table "DrugAttribute" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;PassDrugCanister&quot;" time="0.433">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;PassDrugCanister&quot;" time="0.455">
         <failure message="expected:&lt;11389&gt; but was:&lt;11417&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -315,12 +267,12 @@ java.lang.AssertionError: expected:<11389> but was:<11417>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "PassDrugCanister" data count in PDDB_LP database should be equals to table "PassDrugCanister" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;StrengthUnitType&quot;" time="0.421">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;StrengthUnitType&quot;" time="0.453">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -330,7 +282,7 @@ And Table "StrengthUnitType" data count in PDDB_LP database should be equals to 
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DeviceSettingMax&quot;" time="0.438">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;DeviceSettingMax&quot;" time="0.462">
         <failure message="expected:&lt;31457&gt; but was:&lt;31482&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed
@@ -344,12 +296,12 @@ java.lang.AssertionError: expected:<31457> but was:<31482>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at step.OnPremAzureTableDataAndColumnvalidationTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(OnPremAzureTableDataAndColumnvalidationTest.java:26)
+	at step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)
 	at ✽.Table "DeviceSettingMax" data count in PDDB_LP database should be equals to table "DeviceSettingMax" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Coating&quot;" time="0.428">
+    <testcase classname="Table Data and Column Test between PDDB_LP and PDDB" name="Verify table columns and data sync between PDDB_LP and PDDB database for table &quot;Coating&quot;" time="0.446">
         <system-out>
             <![CDATA[Given Database connection for "PDDB" from on-prem server....................passed
 And Database connection for "PDDB_LP" from azure server.....................passed

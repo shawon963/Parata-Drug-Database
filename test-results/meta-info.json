@@ -2,6 +2,36 @@
   "reports": [
     {
       "name": "Surefire suite",
+      "dir": "test-results/Mon2Jan23_084744AM",
+      "startTime": 1672649264202
+    },
+    {
+      "name": "Surefire suite",
+      "dir": "test-results/Mon2Jan23_075736AM",
+      "startTime": 1672646256482
+    },
+    {
+      "name": "Surefire suite",
+      "dir": "test-results/Mon2Jan23_075455AM",
+      "startTime": 1672646095526
+    },
+    {
+      "name": "Surefire suite",
+      "dir": "test-results/Mon2Jan23_075139AM",
+      "startTime": 1672645899268
+    },
+    {
+      "name": "Surefire suite",
+      "dir": "test-results/Mon2Jan23_075013AM",
+      "startTime": 1672645813784
+    },
+    {
+      "name": "Surefire suite",
+      "dir": "test-results/Mon2Jan23_074900AM",
+      "startTime": 1672645740728
+    },
+    {
+      "name": "Surefire suite",
       "dir": "test-results/Mon2Jan23_070435AM",
       "startTime": 1672643075162
     },
