@@ -3,10 +3,13 @@ utils\context\TestContext.class
 step\Tokenizer.class
 GenericInfo\genericFactory.class
 constants\CONSTANTS.class
+step\TCGMeds_LPAndDrugDBDatabaseTableTestBetweenAzureAndOnPremServer.class
 step\DataAndColumnTestBetweenOnpremAzureTableTest.class
+step\TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.class
 utils\context\ScenarioContext.class
 constants\CONTEXT.class
 constants\GlobalContext.class
+step\DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.class
 constants\DbConnection.class
 step\DatabaseProcessTest.class
 step\DrugDBStep.class

@@ -6,8 +6,10 @@ import java.util.ArrayList;
 public class GlobalContext {
     //Database Status
     public static Connection onPremServerConnection;
+    public static Connection tcgMedsonPremServerConnection;
     public static Connection azureServerConnection;
     public static Connection pgAdminConnection;
+    public static Connection pgAdminConnectionForWkDB;
     public static String connectionStatus;
     public static String user = "stratusapps@pgdb-dcm-001";
     public static String password = "ceilingBoat36!";
@@ -16,13 +18,17 @@ public class GlobalContext {
     public static int datacountFromOnPremServer = 0;
     public static int datacountFromAzureServer = 0;
     public static int datacountFromCDDBServer = 0;
+    public static int datacountFromTCGMedsDatabase = 0;
 
     //Table Column
     public static ArrayList<String> storeColumnFromTableWithinPDDB_LPDatabaseAndAzureServer= new ArrayList<String>();
     public static ArrayList<String> storeColumnFromTableWithinPDDBDatabaseAndOnPremServer= new ArrayList<String>();
+    public static ArrayList<String> storeColumnFromTableWithinTCGMeds_LPDatabaseAndAzureServer= new ArrayList<String>();
+    public static ArrayList<String> storeColumnFromTableWithinTCGMedsDatabaseAndOnPremServer= new ArrayList<String>();
+
 
     //Procedure Column
-    public static ArrayList<String> storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer= new ArrayList<String>();
+    public static ArrayList<String> storeColumnFromProcedureWithinAzureServer= new ArrayList<String>();
     public static ArrayList<String> storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer= new ArrayList<String>();
 
     //Check Database connection

@@ -1,4 +1,169 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/feature/drugdb-and-wkdb-database-table-from-cddb-server-test.feature");
+formatter.feature({
+  "name": "Table Data and Column Test between DrugDB and WK Database from CDDB Server",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between DrugDB and WK database for table \"WKDrugs\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between DrugDB and WK Database from CDDB Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/drugdb_and_wk_database_from_cddb_server_test.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"DrugDB\" from CDDB server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"WK\" from CDDB server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "function \"fn_drug_wk\" check from wk database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.functionCheckFromWkDatabase(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between DrugDB and WK database for table \"WKLabelWarning\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between DrugDB and WK Database from CDDB Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/drugdb_and_wk_database_from_cddb_server_test.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"DrugDB\" from CDDB server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"WK\" from CDDB server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "function \"fn_drug_wk_label_warning\" check from wk database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.functionCheckFromWkDatabase(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between DrugDB and WK database for table \"WKDrugs\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between DrugDB and WK Database from CDDB Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/drugdb_and_wk_database_from_cddb_server_test.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"DrugDB\" from CDDB server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"WK\" from CDDB server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "function \"fn_drug_wk_update\" check from wk database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.functionCheckFromWkDatabase(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature");
 formatter.feature({
   "name": "Table Data and Column Test between PDDB_LP and DrugDB Database",
   "description": "",
@@ -13,7 +178,7 @@ formatter.scenario({
       "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
     },
     {
-      "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
     }
   ]
 });
@@ -76,7 +241,7 @@ formatter.scenario({
       "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
     },
     {
-      "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
     }
   ]
 });
@@ -139,7 +304,7 @@ formatter.scenario({
       "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
     },
     {
-      "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
     }
   ]
 });
@@ -191,7 +356,8 @@ formatter.match({
   "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected:\u003c36182\u003e but was:\u003c36188\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(DataAndColumnTestAzureCDDBSPAndTableTest.java:31)\r\n\tat ✽.Procedure \"SP_Pull_Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"ClassificationShape\"",
@@ -202,7 +368,7 @@ formatter.scenario({
       "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
     },
     {
-      "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
     }
   ]
 });
@@ -265,7 +431,7 @@ formatter.scenario({
       "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
     },
     {
-      "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
     }
   ]
 });
@@ -317,7 +483,8 @@ formatter.match({
   "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected:\u003c276812\u003e but was:\u003c276854\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(DataAndColumnTestAzureCDDBSPAndTableTest.java:31)\r\n\tat ✽.Procedure \"SP_Pull_Status\" data count in PDDB_LP database should be equals to table \"DrugStatus\" data count in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugAttribute\"",
@@ -328,7 +495,7 @@ formatter.scenario({
       "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
     },
     {
-      "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
     }
   ]
 });
@@ -380,11 +547,12 @@ formatter.match({
   "location": "step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected:\u003c37899\u003e but was:\u003c37905\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(DataAndColumnTestAzureCDDBSPAndTableTest.java:31)\r\n\tat ✽.Procedure \"SP_Pull_DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature:8)\r\n",
+  "status": "failed"
 });
-formatter.uri("file:src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature");
+formatter.uri("file:src/test/resources/feature/pddb-and-pddb_lp-database-table-test-between-onprem-azure-server.feature");
 formatter.feature({
-  "name": "Table Data and Column Test between PDDB_LP and PDDB",
+  "name": "Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server",
   "description": "",
   "keyword": "Feature"
 });
@@ -394,10 +562,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -457,10 +625,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -520,10 +688,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -575,8 +743,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37556\u003e but was:\u003c37583\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugName\"",
@@ -584,10 +751,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -639,8 +806,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37837\u003e but was:\u003c37864\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugNonCountReason\"",
@@ -648,10 +814,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -711,10 +877,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -766,8 +932,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c2526\u003e but was:\u003c2528\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Inventory\"",
@@ -775,10 +940,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -830,8 +995,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c36111\u003e but was:\u003c36141\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugShape\"",
@@ -839,10 +1003,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -902,10 +1066,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -957,8 +1121,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassCanister\"",
@@ -966,10 +1129,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1029,10 +1192,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1084,8 +1247,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c189477\u003e but was:\u003c190546\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DosageForm\"",
@@ -1093,10 +1255,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1156,10 +1318,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1211,8 +1373,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassDrugCanister\"",
@@ -1220,10 +1381,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1275,8 +1436,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c11389\u003e but was:\u003c11417\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"StrengthUnitType\"",
@@ -1284,10 +1444,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1347,10 +1507,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1402,8 +1562,7 @@ formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c31457\u003e but was:\u003c31482\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Coating\"",
@@ -1411,10 +1570,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+      "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
     },
     {
-      "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+      "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
     }
   ]
 });
@@ -1464,6 +1623,396 @@ formatter.step({
 });
 formatter.match({
   "location": "step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/feature/tcgmeds-and-tcgmeds_lp-database-table-test-between-onprem-and-azure-server.feature");
+formatter.feature({
+  "name": "Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"NDC-History\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds\" from on-prem server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds_LP\" from azure server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"NDC-History\" columns in TCGMeds database should be same as table \"NDC-History\" columns in TCGMeds_LP database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"NDC-History\" data count in TCGMeds database should be equals to table \"NDC-History\" data count in TCGMeds_LP database",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"NDC-9-10-11\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds\" from on-prem server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds_LP\" from azure server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"NDC-9-10-11\" columns in TCGMeds database should be same as table \"NDC-9-10-11\" columns in TCGMeds_LP database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"NDC-9-10-11\" data count in TCGMeds database should be equals to table \"NDC-9-10-11\" data count in TCGMeds_LP database",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"Dimensions\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds\" from on-prem server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds_LP\" from azure server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"Dimensions\" columns in TCGMeds database should be same as table \"Dimensions\" columns in TCGMeds_LP database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"Dimensions\" data count in TCGMeds database should be equals to table \"Dimensions\" data count in TCGMeds_LP database",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"CanadaMeds\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds\" from on-prem server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds_LP\" from azure server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"CanadaMeds\" columns in TCGMeds database should be same as table \"CanadaMeds\" columns in TCGMeds_LP database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"CanadaMeds\" data count in TCGMeds database should be equals to table \"CanadaMeds\" data count in TCGMeds_LP database",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"Product\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds\" from on-prem server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds_LP\" from azure server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"Product\" columns in TCGMeds database should be same as table \"Product\" columns in TCGMeds_LP database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Table \"Product\" data count in TCGMeds database should be equals to table \"Product\" data count in TCGMeds_LP database",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/feature/tcgmeds_lp-and-drugdb-database-table-test-between-azure-and-cddb-server.feature");
+formatter.feature({
+  "name": "Table Data and Column Test between TCGMeds_LP and DrugDB Database",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Verify table columns and data sync between TCGMeds_LP and DrugDB database for table \"TCGDrugs\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Feature:Table Data and Column Test between TCGMeds_LP and DrugDB Database"
+    },
+    {
+      "name": "@dataFile:drug_database_test_data/tcgmeds_lp_and_drugdb_database_test_between_azure_and_cddb_server.xls"
+    }
+  ]
+});
+formatter.step({
+  "name": "Database connection for \"TCGMeds_LP\" from azure server",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connection for \"DrugDB\" from CDDB server",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Database connections are established",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Procedure \"sp_Canister_Drug_Information_Api\" columns in TCGMeds_LP database should be same as table \"TCGDrugs\" columns in DrugDB database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step.TCGMeds_LPAndDrugDBDatabaseTableTestBetweenAzureAndOnPremServer.procedureColumnsInTCGMeds_LPDatabaseShouldBeSameAsTableColumnsInDrugDBDatabase(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Procedure \"sp_Canister_Drug_Information_Api\" data count in TCGMeds_LP database should be equals to table \"TCGDrugs\" data count in DrugDB database",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step.TCGMeds_LPAndDrugDBDatabaseTableTestBetweenAzureAndOnPremServer.procedureDataCountInTCGMeds_LPDatabaseShouldBeEqualsToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"

@@ -7,14 +7,34 @@ import java.util.ArrayList;
 public class genericFactory {
     public boolean databaseConnectionSetupWithSqlServer(String databaseName){
         boolean isConnected = false;
-        String connectionUrl = DbConnection.onpremconnectionUrl +databaseName;
-        try {
-            GlobalContext.onPremServerConnection = DriverManager.getConnection(connectionUrl);
-            GlobalContext.connectionStatus = "Success";
-            GlobalContext.databaseConnectionForOnPrem = true;
-            isConnected = true;
-        } catch (SQLException e) {
-            GlobalContext.connectionStatus = "Error";
+        if(databaseName.equals("PDDB")){
+            String connectionUrl = DbConnection.onpremconnectionUrl +databaseName;
+            try {
+                if(GlobalContext.onPremServerConnection != null && !GlobalContext.onPremServerConnection.isClosed()){
+                    GlobalContext.onPremServerConnection.close();
+                }
+                GlobalContext.onPremServerConnection = DriverManager.getConnection(connectionUrl);
+                GlobalContext.connectionStatus = "Success";
+                GlobalContext.databaseConnectionForOnPrem = true;
+                isConnected = true;
+            } catch (SQLException e) {
+                GlobalContext.connectionStatus = "Error";
+            }
+        }
+        else if(databaseName.equals("TCGMeds")){
+            String connectionUrl = DbConnection.tcgmedsonpremconnection +databaseName;
+            try {
+                if(GlobalContext.tcgMedsonPremServerConnection != null && !GlobalContext.tcgMedsonPremServerConnection.isClosed()){
+                    GlobalContext.tcgMedsonPremServerConnection.close();
+                }
+
+                GlobalContext.tcgMedsonPremServerConnection = DriverManager.getConnection(connectionUrl);
+                GlobalContext.connectionStatus = "Success";
+                GlobalContext.databaseConnectionForOnPrem = true;
+                isConnected = true;
+            } catch (SQLException e) {
+                GlobalContext.connectionStatus = "Error";
+            }
         }
         return isConnected;
     }
@@ -23,6 +43,9 @@ public class genericFactory {
         boolean isConnected = false;
         String connectionUrl = DbConnection.azureconnectionUrl+databaseName;
         try {
+            if(GlobalContext.azureServerConnection != null && !GlobalContext.azureServerConnection.isClosed()){
+                GlobalContext.azureServerConnection.close();
+            }
             // Load SQL Server With JDBC driver and establish connection.
             GlobalContext.azureServerConnection = DriverManager.getConnection(connectionUrl);
             GlobalContext.connectionStatus = "Success";
@@ -69,6 +92,21 @@ public class genericFactory {
         return isDataExist;
     }
 
+    public boolean countDataFromTableFromTcgMedsDatabase(String tableName) throws SQLException {
+        boolean isDataExist = false;
+        String sql = "select count(*) from ["+tableName+"]";
+        System.out.println(sql);
+        PreparedStatement stmt = GlobalContext.tcgMedsonPremServerConnection.prepareStatement(sql);
+        ResultSet rs = stmt.executeQuery();
+        rs.next();
+        GlobalContext.datacountFromTCGMedsDatabase = rs.getInt(1);
+        int count = rs.getInt(1);
+        if(count>0){
+            isDataExist = true;
+        }
+        return isDataExist;
+    }
+
     public boolean checkTableDataCountBetweenPDDB_LPAndCDDB(String tableName) throws SQLException{
         boolean dataEvaluate = false;
         String sql = "select count(*) from "+'"'+tableName+'"';
@@ -88,12 +126,49 @@ public class genericFactory {
         PreparedStatement stmt = GlobalContext.onPremServerConnection.prepareStatement(sql);
         ResultSetMetaData rmd = stmt.getMetaData();
         for(int i =1; i <= rmd.getColumnCount(); i++){
-           GlobalContext.storeColumnFromTableWithinPDDBDatabaseAndOnPremServer.add(rmd.getColumnName(i));
+            GlobalContext.storeColumnFromTableWithinPDDBDatabaseAndOnPremServer.add(rmd.getColumnName(i));
         }
         if(GlobalContext.storeColumnFromTableWithinPDDBDatabaseAndOnPremServer.stream().count()>0){
             columnIsExist = true;
         }
+
         return columnIsExist;
+    }
+
+    public boolean getColumnFromTableForTCGMedsDatabaseTable(String tableName) throws SQLException{
+        boolean columnIsExist = false;
+        String sql = "select * from "+'"'+tableName+'"';
+
+        PreparedStatement stmt = GlobalContext.tcgMedsonPremServerConnection.prepareStatement(sql);
+        ResultSetMetaData rmd = stmt.getMetaData();
+        for(int i =1; i <= rmd.getColumnCount(); i++){
+            GlobalContext.storeColumnFromTableWithinTCGMedsDatabaseAndOnPremServer.add(rmd.getColumnName(i));
+        }
+        if(GlobalContext.storeColumnFromTableWithinTCGMedsDatabaseAndOnPremServer.stream().count()>0){
+            columnIsExist = true;
+        }
+
+        return columnIsExist;
+    }
+
+    public boolean checkColumnInTableBetweenTCGMedsAndTCGMeds_LPDatabase(String tableName) throws SQLException {
+        boolean isColumnExist = getColumnFromTableForTCGMedsDatabaseTable(tableName);
+        boolean columnEvaluate = false;
+        if(GlobalContext.storeColumnFromTableWithinTCGMedsDatabaseAndOnPremServer.stream().count()>0){
+            String sql = "select * from "+'"'+tableName+'"';
+            PreparedStatement stmt = GlobalContext.azureServerConnection.prepareStatement(sql);
+            ResultSetMetaData rmd = stmt.getMetaData();
+            for(int i =1; i <= rmd.getColumnCount(); i++){
+                GlobalContext.storeColumnFromTableWithinTCGMeds_LPDatabaseAndAzureServer.add(rmd.getColumnName(i));
+            }
+            if(GlobalContext.storeColumnFromTableWithinTCGMeds_LPDatabaseAndAzureServer.equals(GlobalContext.storeColumnFromTableWithinTCGMedsDatabaseAndOnPremServer)){
+                columnEvaluate = true;
+            }
+        }
+        else{
+            columnEvaluate = false;
+        }
+        return columnEvaluate;
     }
 
     public boolean checkColumnInTableBetweenPDDBAndPDDB_LPDatabase(String tableName) throws SQLException {
@@ -116,7 +191,6 @@ public class genericFactory {
 
         return columnEvaluate;
     }
-
 
     public boolean checkDataCountInTableBetweenPDDBAndPDDB_LP(String tableName) throws SQLException {
         boolean dataCountEvaluate = false;
@@ -149,21 +223,21 @@ public class genericFactory {
         return isExists;
     }
 
-    public boolean getColumnFromPDDB_LPDatabaseWithinAzureServer(String procedureName) throws SQLException {
+    public boolean getColumnFromProcedureWithinAzureServer(String procedureName) throws SQLException {
         boolean columnIsExist = false;
         PreparedStatement stmt = GlobalContext.azureServerConnection.prepareStatement(procedureName);
         ResultSet rs = stmt.executeQuery();
         ResultSetMetaData rmd = rs.getMetaData();
         for(int i =1; i <= rmd.getColumnCount(); i++){
-            GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.add(rmd.getColumnName(i));
+            GlobalContext.storeColumnFromProcedureWithinAzureServer.add(rmd.getColumnName(i));
         }
-        if(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.stream().count()>0){
+        if(GlobalContext.storeColumnFromProcedureWithinAzureServer.stream().count()>0){
             columnIsExist = true;
         }
         return columnIsExist;
     }
 
-    public boolean getDataFromProcedurePDDB_LPDatabaseWithinAzureServer(String procedureName) throws SQLException {
+    public boolean getDataFromProcedureWithinAzureServer(String procedureName) throws SQLException {
         boolean columnIsExist = false;
         PreparedStatement stmt = GlobalContext.azureServerConnection.prepareStatement(procedureName);
         ResultSet rs = stmt.executeQuery();
@@ -182,16 +256,31 @@ public class genericFactory {
     public boolean databaseConnectionSetupWithCDDBServer(String databaseName) throws SQLException{
         boolean isConnected = false;
         String connectionUrl = DbConnection.PgAdminConnectionUrl+databaseName;
-        try {
-            // Load PostGreSQL Server JDBC driver and establish connection.
-            GlobalContext.pgAdminConnection = DriverManager.getConnection(connectionUrl, GlobalContext.user, GlobalContext.password);
-            GlobalContext.connectionStatus = "Success";
-            GlobalContext.databaseConnectionForCDDB = true;
-            isConnected = true;
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-            GlobalContext.connectionStatus = "Error";
+        if(databaseName.equals("DrugDB")){
+            try {
+                // Load PostGreSQL Server JDBC driver and establish connection.
+                GlobalContext.pgAdminConnection = DriverManager.getConnection(connectionUrl, GlobalContext.user, GlobalContext.password);
+                GlobalContext.connectionStatus = "Success";
+                GlobalContext.databaseConnectionForCDDB = true;
+                isConnected = true;
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+                GlobalContext.connectionStatus = "Error";
+            }
         }
+        else if (databaseName.equals("WK")){
+            try {
+                // Load PostGreSQL Server JDBC driver and establish connection.
+                GlobalContext.pgAdminConnectionForWkDB = DriverManager.getConnection(connectionUrl, GlobalContext.user, GlobalContext.password);
+                GlobalContext.connectionStatus = "Success";
+                GlobalContext.databaseConnectionForCDDB = true;
+                isConnected = true;
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+                GlobalContext.connectionStatus = "Error";
+            }
+        }
+
         return isConnected;
     }
 
@@ -205,9 +294,9 @@ public class genericFactory {
         return isExists;
     }
 
-    public boolean checkColumnInTableWithProcedureBetweenDrugDBAndPDDB_LPServer(String procedureName, String tableName) throws SQLException{
+    public boolean checkColumnInTableWithProcedureBetweenAzureAndOnPremServer(String procedureName, String tableName) throws SQLException{
         boolean columnEvaluation = false;
-        boolean isColumnExist = getColumnFromPDDB_LPDatabaseWithinAzureServer(procedureName);
+        boolean isColumnExist = getColumnFromProcedureWithinAzureServer(procedureName);
         if(isColumnExist){
             String sql = "select * from "+'"'+tableName+'"';
             PreparedStatement stmt = GlobalContext.pgAdminConnection.prepareStatement(sql);
@@ -215,7 +304,7 @@ public class genericFactory {
             for(int i =1; i <= rmd.getColumnCount(); i++){
                 GlobalContext.storeColumnFromTableWithinDrugDBDatabaseAndCDDBServer.add(rmd.getColumnName(i));
             }
-            if(GlobalContext.storeColumnFromProcedureWithinPDDB_LPDatabaseAndAzureServer.stream().count()>0){
+            if(GlobalContext.storeColumnFromProcedureWithinAzureServer.stream().count()>0){
                 columnEvaluation = true;
             }
         }
@@ -226,9 +315,9 @@ public class genericFactory {
         return columnEvaluation;
     }
 
-    public boolean checkDataCountInTableWithProcedureBetweenDrugDBAndPDDB_LPServer(String procedureName, String tableName) throws SQLException{
+    public boolean checkDataCountInTableWithProcedureBetweenDrugDBAndAzureServer(String procedureName, String tableName) throws SQLException{
         boolean dataEvaluate = false;
-        boolean isDataExist = getDataFromProcedurePDDB_LPDatabaseWithinAzureServer(procedureName);
+        boolean isDataExist = getDataFromProcedureWithinAzureServer(procedureName);
         if(isDataExist){
             String sql = "select count(*) from "+'"'+tableName+'"';
             PreparedStatement stmt = GlobalContext.pgAdminConnection.prepareStatement(sql);
@@ -245,5 +334,36 @@ public class genericFactory {
         }
 
         return dataEvaluate;
+    }
+
+    public boolean checkDataCountInTableBetweenTCGMedsAndTCGMeds_LPDatabase(String tableName) throws SQLException{
+        boolean dataCountEvaluate = false;
+        boolean isDataExist = countDataFromTableFromTcgMedsDatabase(tableName);
+        if(isDataExist){
+            String sql = "select count(*) from "+'"'+tableName+'"';
+            PreparedStatement stmt = GlobalContext.azureServerConnection.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            rs.next();
+            int count = rs.getInt(1);
+            GlobalContext.datacountFromAzureServer = count;
+            if(count == GlobalContext.datacountFromTCGMedsDatabase ){
+                dataCountEvaluate = true;
+            }
+        }
+        else {
+            dataCountEvaluate = false;
+        }
+
+        return dataCountEvaluate;
+    }
+
+    public String checkFunctionWithDataFromWkDatabase(String functionName)  throws SQLException{
+        boolean isExists = false;
+        DatabaseMetaData dbm = GlobalContext.pgAdminConnectionForWkDB.getMetaData();
+        ResultSet tables = dbm.getProcedures(null, null, functionName);
+        if (tables.next()) {
+            isExists = true;
+        }
+        return "";
     }
 }

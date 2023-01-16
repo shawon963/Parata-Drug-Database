@@ -3,7 +3,270 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-01-02T08:47:45.414Z",
+        "start_timestamp": "2023-01-16T11:38:25.840Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between DrugDB and WK database for table \"WKDrugs\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-drugdb-and-wk-database-from-cddb-server;verify-table-columns-and-data-sync-between-drugdb-and-wk-database-for-table-\"${table-name}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1142158900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"DrugDB\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 589358300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"WK\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 156224800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "function \"fn_drug_wk\" check from wk database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fn_drug_wk\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step.DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.functionCheckFromWkDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between DrugDB and WK Database from CDDB Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/drugdb_and_wk_database_from_cddb_server_test.xls"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T11:38:27.855Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between DrugDB and WK database for table \"WKLabelWarning\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-drugdb-and-wk-database-from-cddb-server;verify-table-columns-and-data-sync-between-drugdb-and-wk-database-for-table-\"${table-name}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 500438700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"DrugDB\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 468313100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"WK\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15950800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "function \"fn_drug_wk_label_warning\" check from wk database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fn_drug_wk_label_warning\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step.DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.functionCheckFromWkDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between DrugDB and WK Database from CDDB Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/drugdb_and_wk_database_from_cddb_server_test.xls"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T11:38:28.871Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between DrugDB and WK database for table \"WKDrugs\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-drugdb-and-wk-database-from-cddb-server;verify-table-columns-and-data-sync-between-drugdb-and-wk-database-for-table-\"${table-name}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 546905700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"DrugDB\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 468508200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"WK\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15668600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "function \"fn_drug_wk_update\" check from wk database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fn_drug_wk_update\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step.DrugDBAndWkDBDatabaseTableFromCDDBServerTestStep.functionCheckFromWkDatabase(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between DrugDB and WK Database from CDDB Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/drugdb_and_wk_database_from_cddb_server_test.xls"
+          }
+        ]
+      }
+    ],
+    "name": "Table Data and Column Test between DrugDB and WK Database from CDDB Server",
+    "description": "",
+    "id": "table-data-and-column-test-between-drugdb-and-wk-database-from-cddb-server",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/drugdb-and-wkdb-database-table-from-cddb-server-test.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-16T11:38:29.934Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"StatusType\"",
         "description": "",
@@ -13,7 +276,7 @@
         "steps": [
           {
             "result": {
-              "duration": 775005600,
+              "duration": 327841200,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +294,7 @@
           },
           {
             "result": {
-              "duration": 774787400,
+              "duration": 781357700,
               "status": "passed"
             },
             "line": 5,
@@ -60,7 +323,7 @@
           },
           {
             "result": {
-              "duration": 264006400,
+              "duration": 234291000,
               "status": "passed"
             },
             "line": 7,
@@ -82,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 68000200,
+              "duration": 78113200,
               "status": "passed"
             },
             "line": 8,
@@ -108,12 +371,12 @@
             "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
           },
           {
-            "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:47.397Z",
+        "start_timestamp": "2023-01-16T11:38:31.371Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugNonCountReason\"",
         "description": "",
@@ -123,7 +386,7 @@
         "steps": [
           {
             "result": {
-              "duration": 196982700,
+              "duration": 218733700,
               "status": "passed"
             },
             "line": 4,
@@ -141,7 +404,7 @@
           },
           {
             "result": {
-              "duration": 559263500,
+              "duration": 514271100,
               "status": "passed"
             },
             "line": 5,
@@ -159,7 +422,6 @@
           },
           {
             "result": {
-              "duration": 1058300,
               "status": "passed"
             },
             "line": 6,
@@ -171,7 +433,7 @@
           },
           {
             "result": {
-              "duration": 33763600,
+              "duration": 48588300,
               "status": "passed"
             },
             "line": 7,
@@ -193,7 +455,7 @@
           },
           {
             "result": {
-              "duration": 69554700,
+              "duration": 62714100,
               "status": "passed"
             },
             "line": 8,
@@ -219,12 +481,12 @@
             "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
           },
           {
-            "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:48.276Z",
+        "start_timestamp": "2023-01-16T11:38:32.230Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"Inventory\"",
         "description": "",
@@ -234,7 +496,7 @@
         "steps": [
           {
             "result": {
-              "duration": 174804500,
+              "duration": 218789400,
               "status": "passed"
             },
             "line": 4,
@@ -252,7 +514,7 @@
           },
           {
             "result": {
-              "duration": 530291100,
+              "duration": 469068600,
               "status": "passed"
             },
             "line": 5,
@@ -281,7 +543,7 @@
           },
           {
             "result": {
-              "duration": 74056700,
+              "duration": 78306000,
               "status": "passed"
             },
             "line": 7,
@@ -303,8 +565,9 @@
           },
           {
             "result": {
-              "duration": 580948000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c36182\u003e but was:\u003c36188\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(DataAndColumnTestAzureCDDBSPAndTableTest.java:31)\r\n\tat ✽.Procedure \"SP_Pull_Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature:8)\r\n",
+              "duration": 812122500,
+              "status": "failed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in DrugDB database",
@@ -329,12 +592,12 @@
             "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
           },
           {
-            "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:49.650Z",
+        "start_timestamp": "2023-01-16T11:38:33.824Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"ClassificationShape\"",
         "description": "",
@@ -344,7 +607,7 @@
         "steps": [
           {
             "result": {
-              "duration": 182244500,
+              "duration": 233215000,
               "status": "passed"
             },
             "line": 4,
@@ -362,7 +625,7 @@
           },
           {
             "result": {
-              "duration": 533425700,
+              "duration": 735500300,
               "status": "passed"
             },
             "line": 5,
@@ -380,7 +643,6 @@
           },
           {
             "result": {
-              "duration": 1000300,
               "status": "passed"
             },
             "line": 6,
@@ -392,7 +654,7 @@
           },
           {
             "result": {
-              "duration": 42936600,
+              "duration": 46894100,
               "status": "passed"
             },
             "line": 7,
@@ -414,7 +676,7 @@
           },
           {
             "result": {
-              "duration": 63852700,
+              "duration": 62410800,
               "status": "passed"
             },
             "line": 8,
@@ -440,12 +702,12 @@
             "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
           },
           {
-            "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:50.487Z",
+        "start_timestamp": "2023-01-16T11:38:34.934Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugStatus\"",
         "description": "",
@@ -455,7 +717,7 @@
         "steps": [
           {
             "result": {
-              "duration": 192235800,
+              "duration": 218833100,
               "status": "passed"
             },
             "line": 4,
@@ -473,7 +735,7 @@
           },
           {
             "result": {
-              "duration": 546867800,
+              "duration": 468861800,
               "status": "passed"
             },
             "line": 5,
@@ -491,7 +753,6 @@
           },
           {
             "result": {
-              "duration": 998100,
               "status": "passed"
             },
             "line": 6,
@@ -503,7 +764,7 @@
           },
           {
             "result": {
-              "duration": 58990400,
+              "duration": 93805000,
               "status": "passed"
             },
             "line": 7,
@@ -525,8 +786,9 @@
           },
           {
             "result": {
-              "duration": 1216990500,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c276812\u003e but was:\u003c276854\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(DataAndColumnTestAzureCDDBSPAndTableTest.java:31)\r\n\tat ✽.Procedure \"SP_Pull_Status\" data count in PDDB_LP database should be equals to table \"DrugStatus\" data count in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature:8)\r\n",
+              "duration": 1265529700,
+              "status": "failed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_Status\" data count in PDDB_LP database should be equals to table \"DrugStatus\" data count in DrugDB database",
@@ -551,12 +813,12 @@
             "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
           },
           {
-            "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:52.514Z",
+        "start_timestamp": "2023-01-16T11:38:36.996Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and DrugDB database for table \"DrugAttribute\"",
         "description": "",
@@ -566,7 +828,7 @@
         "steps": [
           {
             "result": {
-              "duration": 170667700,
+              "duration": 203025900,
               "status": "passed"
             },
             "line": 4,
@@ -584,7 +846,7 @@
           },
           {
             "result": {
-              "duration": 571137800,
+              "duration": 531447500,
               "status": "passed"
             },
             "line": 5,
@@ -602,7 +864,6 @@
           },
           {
             "result": {
-              "duration": 1007000,
               "status": "passed"
             },
             "line": 6,
@@ -614,7 +875,7 @@
           },
           {
             "result": {
-              "duration": 46360300,
+              "duration": 47023900,
               "status": "passed"
             },
             "line": 7,
@@ -636,8 +897,9 @@
           },
           {
             "result": {
-              "duration": 348415400,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c37899\u003e but was:\u003c37905\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestAzureCDDBSPAndTableTest.ProcedureDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInDrugDBDatabase(DataAndColumnTestAzureCDDBSPAndTableTest.java:31)\r\n\tat ✽.Procedure \"SP_Pull_DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in DrugDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature:8)\r\n",
+              "duration": 421358900,
+              "status": "failed"
             },
             "line": 8,
             "name": "Procedure \"SP_Pull_DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in DrugDB database",
@@ -662,7 +924,7 @@
             "name": "@Feature:Table Data and Column Test between PDDB_LP and DrugDB Database"
           },
           {
-            "name": "@dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls"
           }
         ]
       }
@@ -671,24 +933,24 @@
     "description": "",
     "id": "table-data-and-column-test-between-pddb-lp-and-drugdb-database",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/feature/data-and-column-test-azure-cddb-sp-and-table.feature",
+    "uri": "file:src/test/resources/feature/pddb-and-drugdb-database-table-test-between-azure-cddb-server.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-01-02T08:47:53.660Z",
+        "start_timestamp": "2023-01-16T11:38:38.215Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugColor\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 210706200,
+              "duration": 171855800,
               "status": "passed"
             },
             "line": 4,
@@ -706,7 +968,7 @@
           },
           {
             "result": {
-              "duration": 170750900,
+              "duration": 218680200,
               "status": "passed"
             },
             "line": 5,
@@ -724,7 +986,6 @@
           },
           {
             "result": {
-              "duration": 994800,
               "status": "passed"
             },
             "line": 6,
@@ -736,7 +997,7 @@
           },
           {
             "result": {
-              "duration": 65006700,
+              "duration": 62651100,
               "status": "passed"
             },
             "line": 7,
@@ -758,7 +1019,7 @@
           },
           {
             "result": {
-              "duration": 61984300,
+              "duration": 62681100,
               "status": "passed"
             },
             "line": 8,
@@ -781,25 +1042,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:54.185Z",
+        "start_timestamp": "2023-01-16T11:38:38.746Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"ClassificationShape\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 164402300,
+              "duration": 156253700,
               "status": "passed"
             },
             "line": 4,
@@ -817,7 +1078,7 @@
           },
           {
             "result": {
-              "duration": 172458600,
+              "duration": 218635000,
               "status": "passed"
             },
             "line": 5,
@@ -835,7 +1096,6 @@
           },
           {
             "result": {
-              "duration": 1033700,
               "status": "passed"
             },
             "line": 6,
@@ -847,7 +1107,7 @@
           },
           {
             "result": {
-              "duration": 55269500,
+              "duration": 62691200,
               "status": "passed"
             },
             "line": 7,
@@ -869,7 +1129,7 @@
           },
           {
             "result": {
-              "duration": 55621700,
+              "duration": 62495900,
               "status": "passed"
             },
             "line": 8,
@@ -892,25 +1152,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:54.646Z",
+        "start_timestamp": "2023-01-16T11:38:39.246Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugCore\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 162998100,
+              "duration": 187188600,
               "status": "passed"
             },
             "line": 4,
@@ -928,7 +1188,7 @@
           },
           {
             "result": {
-              "duration": 170964400,
+              "duration": 218706100,
               "status": "passed"
             },
             "line": 5,
@@ -946,7 +1206,6 @@
           },
           {
             "result": {
-              "duration": 1020400,
               "status": "passed"
             },
             "line": 6,
@@ -958,7 +1217,7 @@
           },
           {
             "result": {
-              "duration": 55323900,
+              "duration": 62428300,
               "status": "passed"
             },
             "line": 7,
@@ -980,9 +1239,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37556\u003e but was:\u003c37583\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 66552500,
-              "status": "failed"
+              "duration": 62510500,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"DrugCore\" data count in PDDB_LP database should be equals to table \"DrugCore\" data count in PDDB database",
@@ -1004,25 +1262,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:55.119Z",
+        "start_timestamp": "2023-01-16T11:38:39.793Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugName\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 162034500,
+              "duration": 156225900,
               "status": "passed"
             },
             "line": 4,
@@ -1040,7 +1298,7 @@
           },
           {
             "result": {
-              "duration": 171115700,
+              "duration": 219040800,
               "status": "passed"
             },
             "line": 5,
@@ -1058,7 +1316,7 @@
           },
           {
             "result": {
-              "duration": 1059900,
+              "duration": 15652500,
               "status": "passed"
             },
             "line": 6,
@@ -1070,7 +1328,7 @@
           },
           {
             "result": {
-              "duration": 55619400,
+              "duration": 62562500,
               "status": "passed"
             },
             "line": 7,
@@ -1092,9 +1350,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37837\u003e but was:\u003c37864\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 65208400,
-              "status": "failed"
+              "duration": 62620200,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"DrugName\" data count in PDDB_LP database should be equals to table \"DrugName\" data count in PDDB database",
@@ -1116,25 +1373,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:55.586Z",
+        "start_timestamp": "2023-01-16T11:38:40.325Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugNonCountReason\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 167513700,
+              "duration": 155824800,
               "status": "passed"
             },
             "line": 4,
@@ -1152,7 +1409,7 @@
           },
           {
             "result": {
-              "duration": 166294200,
+              "duration": 203431400,
               "status": "passed"
             },
             "line": 5,
@@ -1181,7 +1438,7 @@
           },
           {
             "result": {
-              "duration": 54997200,
+              "duration": 62519100,
               "status": "passed"
             },
             "line": 7,
@@ -1203,7 +1460,7 @@
           },
           {
             "result": {
-              "duration": 55001100,
+              "duration": 62517000,
               "status": "passed"
             },
             "line": 8,
@@ -1226,25 +1483,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:56.042Z",
+        "start_timestamp": "2023-01-16T11:38:40.824Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Firm\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 166306400,
+              "duration": 156111600,
               "status": "passed"
             },
             "line": 4,
@@ -1262,7 +1519,7 @@
           },
           {
             "result": {
-              "duration": 169496500,
+              "duration": 218800400,
               "status": "passed"
             },
             "line": 5,
@@ -1291,7 +1548,7 @@
           },
           {
             "result": {
-              "duration": 54094400,
+              "duration": 62570500,
               "status": "passed"
             },
             "line": 7,
@@ -1313,9 +1570,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c2526\u003e but was:\u003c2528\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 55017500,
-              "status": "failed"
+              "duration": 62443100,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"Firm\" data count in PDDB_LP database should be equals to table \"Firm\" data count in PDDB database",
@@ -1337,25 +1593,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:56.501Z",
+        "start_timestamp": "2023-01-16T11:38:41.324Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Inventory\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 160844800,
+              "duration": 156357600,
               "status": "passed"
             },
             "line": 4,
@@ -1373,7 +1629,7 @@
           },
           {
             "result": {
-              "duration": 179839600,
+              "duration": 218690800,
               "status": "passed"
             },
             "line": 5,
@@ -1391,7 +1647,6 @@
           },
           {
             "result": {
-              "duration": 1015500,
               "status": "passed"
             },
             "line": 6,
@@ -1403,7 +1658,7 @@
           },
           {
             "result": {
-              "duration": 55368500,
+              "duration": 62574600,
               "status": "passed"
             },
             "line": 7,
@@ -1425,9 +1680,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c36111\u003e but was:\u003c36141\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 63554600,
-              "status": "failed"
+              "duration": 62596200,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"Inventory\" data count in PDDB_LP database should be equals to table \"Inventory\" data count in PDDB database",
@@ -1449,25 +1703,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:56.973Z",
+        "start_timestamp": "2023-01-16T11:38:41.840Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugShape\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 165015100,
+              "duration": 156271300,
               "status": "passed"
             },
             "line": 4,
@@ -1485,7 +1739,7 @@
           },
           {
             "result": {
-              "duration": 169997000,
+              "duration": 218320400,
               "status": "passed"
             },
             "line": 5,
@@ -1503,7 +1757,6 @@
           },
           {
             "result": {
-              "duration": 1000800,
               "status": "passed"
             },
             "line": 6,
@@ -1515,7 +1768,7 @@
           },
           {
             "result": {
-              "duration": 56008000,
+              "duration": 62601600,
               "status": "passed"
             },
             "line": 7,
@@ -1537,7 +1790,7 @@
           },
           {
             "result": {
-              "duration": 53989900,
+              "duration": 62524500,
               "status": "passed"
             },
             "line": 8,
@@ -1560,25 +1813,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:57.429Z",
+        "start_timestamp": "2023-01-16T11:38:42.340Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Measurements\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 163997600,
+              "duration": 156317700,
               "status": "passed"
             },
             "line": 4,
@@ -1596,7 +1849,7 @@
           },
           {
             "result": {
-              "duration": 170868100,
+              "duration": 218611700,
               "status": "passed"
             },
             "line": 5,
@@ -1625,7 +1878,7 @@
           },
           {
             "result": {
-              "duration": 60501700,
+              "duration": 62657600,
               "status": "passed"
             },
             "line": 7,
@@ -1647,9 +1900,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 64510600,
-              "status": "failed"
+              "duration": 62598500,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"Measurements\" data count in PDDB_LP database should be equals to table \"Measurements\" data count in PDDB database",
@@ -1671,25 +1923,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:57.904Z",
+        "start_timestamp": "2023-01-16T11:38:42.856Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassCanister\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 163534900,
+              "duration": 155987100,
               "status": "passed"
             },
             "line": 4,
@@ -1707,7 +1959,7 @@
           },
           {
             "result": {
-              "duration": 169063900,
+              "duration": 219045900,
               "status": "passed"
             },
             "line": 5,
@@ -1725,7 +1977,6 @@
           },
           {
             "result": {
-              "duration": 1070300,
               "status": "passed"
             },
             "line": 6,
@@ -1737,7 +1988,7 @@
           },
           {
             "result": {
-              "duration": 57762600,
+              "duration": 62404200,
               "status": "passed"
             },
             "line": 7,
@@ -1759,7 +2010,7 @@
           },
           {
             "result": {
-              "duration": 55008400,
+              "duration": 62704000,
               "status": "passed"
             },
             "line": 8,
@@ -1782,25 +2033,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:58.362Z",
+        "start_timestamp": "2023-01-16T11:38:43.356Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassScenarioDrug\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 166984300,
+              "duration": 156074300,
               "status": "passed"
             },
             "line": 4,
@@ -1818,7 +2069,7 @@
           },
           {
             "result": {
-              "duration": 169758400,
+              "duration": 234280300,
               "status": "passed"
             },
             "line": 5,
@@ -1836,7 +2087,6 @@
           },
           {
             "result": {
-              "duration": 1122600,
               "status": "passed"
             },
             "line": 6,
@@ -1848,7 +2098,7 @@
           },
           {
             "result": {
-              "duration": 56842300,
+              "duration": 62475300,
               "status": "passed"
             },
             "line": 7,
@@ -1870,9 +2120,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c189477\u003e but was:\u003c190546\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 81157200,
-              "status": "failed"
+              "duration": 93675600,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"PassScenarioDrug\" data count in PDDB_LP database should be equals to table \"PassScenarioDrug\" data count in PDDB database",
@@ -1894,25 +2143,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:58.848Z",
+        "start_timestamp": "2023-01-16T11:38:43.918Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DosageForm\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 164789100,
+              "duration": 155792900,
               "status": "passed"
             },
             "line": 4,
@@ -1930,7 +2179,7 @@
           },
           {
             "result": {
-              "duration": 169455100,
+              "duration": 203990900,
               "status": "passed"
             },
             "line": 5,
@@ -1948,7 +2197,6 @@
           },
           {
             "result": {
-              "duration": 874500,
               "status": "passed"
             },
             "line": 6,
@@ -1960,7 +2208,7 @@
           },
           {
             "result": {
-              "duration": 55732500,
+              "duration": 62261200,
               "status": "passed"
             },
             "line": 7,
@@ -1982,7 +2230,7 @@
           },
           {
             "result": {
-              "duration": 55155300,
+              "duration": 62395600,
               "status": "passed"
             },
             "line": 8,
@@ -2005,25 +2253,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:59.301Z",
+        "start_timestamp": "2023-01-16T11:38:44.402Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DrugAttribute\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 163460500,
+              "duration": 156259800,
               "status": "passed"
             },
             "line": 4,
@@ -2041,7 +2289,7 @@
           },
           {
             "result": {
-              "duration": 172300200,
+              "duration": 219486800,
               "status": "passed"
             },
             "line": 5,
@@ -2059,6 +2307,7 @@
           },
           {
             "result": {
+              "duration": 997300,
               "status": "passed"
             },
             "line": 6,
@@ -2070,7 +2319,7 @@
           },
           {
             "result": {
-              "duration": 55073000,
+              "duration": 62010700,
               "status": "passed"
             },
             "line": 7,
@@ -2092,9 +2341,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c37839\u003e but was:\u003c37866\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 64541600,
-              "status": "failed"
+              "duration": 71003600,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"DrugAttribute\" data count in PDDB_LP database should be equals to table \"DrugAttribute\" data count in PDDB database",
@@ -2116,25 +2364,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:47:59.771Z",
+        "start_timestamp": "2023-01-16T11:38:44.937Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"PassDrugCanister\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 162792000,
+              "duration": 153988400,
               "status": "passed"
             },
             "line": 4,
@@ -2152,7 +2400,7 @@
           },
           {
             "result": {
-              "duration": 173648500,
+              "duration": 223003500,
               "status": "passed"
             },
             "line": 5,
@@ -2181,7 +2429,7 @@
           },
           {
             "result": {
-              "duration": 56008000,
+              "duration": 61376700,
               "status": "passed"
             },
             "line": 7,
@@ -2203,9 +2451,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c11389\u003e but was:\u003c11417\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 57987100,
-              "status": "failed"
+              "duration": 64988400,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"PassDrugCanister\" data count in PDDB_LP database should be equals to table \"PassDrugCanister\" data count in PDDB database",
@@ -2227,25 +2474,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:48:00.232Z",
+        "start_timestamp": "2023-01-16T11:38:45.457Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"StrengthUnitType\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 163363800,
+              "duration": 158993700,
               "status": "passed"
             },
             "line": 4,
@@ -2263,7 +2510,7 @@
           },
           {
             "result": {
-              "duration": 175746000,
+              "duration": 216996500,
               "status": "passed"
             },
             "line": 5,
@@ -2281,6 +2528,7 @@
           },
           {
             "result": {
+              "duration": 1001800,
               "status": "passed"
             },
             "line": 6,
@@ -2292,7 +2540,7 @@
           },
           {
             "result": {
-              "duration": 56070500,
+              "duration": 63001600,
               "status": "passed"
             },
             "line": 7,
@@ -2314,7 +2562,7 @@
           },
           {
             "result": {
-              "duration": 54353400,
+              "duration": 61002400,
               "status": "passed"
             },
             "line": 8,
@@ -2337,25 +2585,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:48:00.692Z",
+        "start_timestamp": "2023-01-16T11:38:45.969Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"DeviceSettingMax\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 167981900,
+              "duration": 154995200,
               "status": "passed"
             },
             "line": 4,
@@ -2373,7 +2621,7 @@
           },
           {
             "result": {
-              "duration": 171775500,
+              "duration": 216986600,
               "status": "passed"
             },
             "line": 5,
@@ -2391,7 +2639,6 @@
           },
           {
             "result": {
-              "duration": 1066300,
               "status": "passed"
             },
             "line": 6,
@@ -2403,7 +2650,7 @@
           },
           {
             "result": {
-              "duration": 55153700,
+              "duration": 63000300,
               "status": "passed"
             },
             "line": 7,
@@ -2425,9 +2672,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c31457\u003e but was:\u003c31482\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat step.DataAndColumnTestBetweenOnpremAzureTableTest.TableDataCountInPDDB_LPDatabaseShouldBeEqualToTableDataCountInPDDBDatabase(DataAndColumnTestBetweenOnpremAzureTableTest.java:26)\r\n\tat ✽.Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database(file:///F:/Ether/Ether/QA/parata-database-testing-qa/src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature:8)\r\n",
-              "duration": 62871100,
-              "status": "failed"
+              "duration": 69993300,
+              "status": "passed"
             },
             "line": 8,
             "name": "Table \"DeviceSettingMax\" data count in PDDB_LP database should be equals to table \"DeviceSettingMax\" data count in PDDB database",
@@ -2449,25 +2695,25 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       },
       {
-        "start_timestamp": "2023-01-02T08:48:01.162Z",
+        "start_timestamp": "2023-01-16T11:38:46.483Z",
         "line": 3,
         "name": "Verify table columns and data sync between PDDB_LP and PDDB database for table \"Coating\"",
         "description": "",
-        "id": "table-data-and-column-test-between-pddb-lp-and-pddb;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
+        "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-pddb-lp-and-pddb-database-for-table-\"${table-name}\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 164014600,
+              "duration": 155985100,
               "status": "passed"
             },
             "line": 4,
@@ -2485,7 +2731,7 @@
           },
           {
             "result": {
-              "duration": 167582200,
+              "duration": 213333000,
               "status": "passed"
             },
             "line": 5,
@@ -2514,7 +2760,7 @@
           },
           {
             "result": {
-              "duration": 57564000,
+              "duration": 61896200,
               "status": "passed"
             },
             "line": 7,
@@ -2536,7 +2782,7 @@
           },
           {
             "result": {
-              "duration": 55352000,
+              "duration": 67007700,
               "status": "passed"
             },
             "line": 8,
@@ -2559,19 +2805,701 @@
         ],
         "tags": [
           {
-            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB"
+            "name": "@Feature:Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server"
           },
           {
-            "name": "@dataFile:drug_database_test_data/column-data-count-between-azure-and-onprem-table.xls"
+            "name": "@dataFile:drug_database_test_data/data_and_column_test_between_onprem_azure_table.xls"
           }
         ]
       }
     ],
-    "name": "Table Data and Column Test between PDDB_LP and PDDB",
+    "name": "Table Data and Column Test between PDDB_LP and PDDB from Azure and OnPrem Server",
     "description": "",
-    "id": "table-data-and-column-test-between-pddb-lp-and-pddb",
+    "id": "table-data-and-column-test-between-pddb-lp-and-pddb-from-azure-and-onprem-server",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/feature/data-and-column-test-between-onprem-azure-table.feature",
+    "uri": "file:src/test/resources/feature/pddb-and-pddb_lp-database-table-test-between-onprem-azure-server.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-16T11:38:46.990Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"NDC-History\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-tcgmeds-lp-and-tcgmeds-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-tcgmeds-lp-and-tcgmeds-database-for-table-\"${azure-tablename}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 411990200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"TCGMeds\" from on-prem server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 216192200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"TCGMeds_LP\" from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds_LP\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93376200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Table \"NDC-History\" columns in TCGMeds database should be same as table \"NDC-History\" columns in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NDC-History\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"NDC-History\"",
+                  "offset": 72
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 93908100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Table \"NDC-History\" data count in TCGMeds database should be equals to table \"NDC-History\" data count in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NDC-History\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"NDC-History\"",
+                  "offset": 77
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T11:38:47.824Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"NDC-9-10-11\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-tcgmeds-lp-and-tcgmeds-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-tcgmeds-lp-and-tcgmeds-database-for-table-\"${azure-tablename}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 375207800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"TCGMeds\" from on-prem server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 218480800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"TCGMeds_LP\" from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds_LP\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93786600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Table \"NDC-9-10-11\" columns in TCGMeds database should be same as table \"NDC-9-10-11\" columns in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NDC-9-10-11\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"NDC-9-10-11\"",
+                  "offset": 72
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 140604000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Table \"NDC-9-10-11\" data count in TCGMeds database should be equals to table \"NDC-9-10-11\" data count in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NDC-9-10-11\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"NDC-9-10-11\"",
+                  "offset": 77
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T11:38:48.652Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"Dimensions\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-tcgmeds-lp-and-tcgmeds-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-tcgmeds-lp-and-tcgmeds-database-for-table-\"${azure-tablename}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 374945500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"TCGMeds\" from on-prem server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219023100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"TCGMeds_LP\" from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds_LP\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93583900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Table \"Dimensions\" columns in TCGMeds database should be same as table \"Dimensions\" columns in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dimensions\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Dimensions\"",
+                  "offset": 71
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109345100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Table \"Dimensions\" data count in TCGMeds database should be equals to table \"Dimensions\" data count in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dimensions\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Dimensions\"",
+                  "offset": 76
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T11:38:49.465Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"CanadaMeds\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-tcgmeds-lp-and-tcgmeds-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-tcgmeds-lp-and-tcgmeds-database-for-table-\"${azure-tablename}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 343870200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"TCGMeds\" from on-prem server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203348200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"TCGMeds_LP\" from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds_LP\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109063600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Table \"CanadaMeds\" columns in TCGMeds database should be same as table \"CanadaMeds\" columns in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CanadaMeds\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"CanadaMeds\"",
+                  "offset": 71
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125048700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Table \"CanadaMeds\" data count in TCGMeds database should be equals to table \"CanadaMeds\" data count in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CanadaMeds\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"CanadaMeds\"",
+                  "offset": 76
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T11:38:50.246Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between TCGMeds_LP and TCGMeds database for table \"Product\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-tcgmeds-lp-and-tcgmeds-from-azure-and-onprem-server;verify-table-columns-and-data-sync-between-tcgmeds-lp-and-tcgmeds-database-for-table-\"${azure-tablename}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 343602000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"TCGMeds\" from on-prem server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromOnPremLanServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203159800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"TCGMeds_LP\" from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds_LP\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109605300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Table \"Product\" columns in TCGMeds database should be same as table \"Product\" columns in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Product\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Product\"",
+                  "offset": 68
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableColumnsInTCGMedsDatabaseShouldBeSameAsTableColumnsInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109494100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Table \"Product\" data count in TCGMeds database should be equals to table \"Product\" data count in TCGMeds_LP database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Product\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Product\"",
+                  "offset": 73
+                }
+              ],
+              "location": "step.TCGMedsAndTCGMeds_LPDatabaseTableTestBetweenOnpremAndAzureServerTest.tableDataCountInTCGMedsDatabaseShouldBeEqualsToTableDataCountInTCGMeds_LPDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/tcgmeds_and_tcgmeds_lp_database_test_between_onprem_and_azure_server.xls"
+          }
+        ]
+      }
+    ],
+    "name": "Table Data and Column Test between TCGMeds_LP and TCGMeds from Azure and OnPrem Server",
+    "description": "",
+    "id": "table-data-and-column-test-between-tcgmeds-lp-and-tcgmeds-from-azure-and-onprem-server",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/tcgmeds-and-tcgmeds_lp-database-table-test-between-onprem-and-azure-server.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-16T11:38:51.012Z",
+        "line": 3,
+        "name": "Verify table columns and data sync between TCGMeds_LP and DrugDB database for table \"TCGDrugs\"",
+        "description": "",
+        "id": "table-data-and-column-test-between-tcgmeds-lp-and-drugdb-database;verify-table-columns-and-data-sync-between-tcgmeds-lp-and-drugdb-database-for-table-\"${table-name}\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 218765800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Database connection for \"TCGMeds_LP\" from azure server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TCGMeds_LP\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.databaseConnectionFromAzureServer(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 499903200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database connection for \"DrugDB\" from CDDB server",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DrugDB\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step.DatabaseProcessTest.connectionSetupWithDatabaseFromCDDBServer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Database connections are established",
+            "match": {
+              "location": "step.DatabaseProcessTest.databaseConnectionsAreEstablished()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 484184200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Procedure \"sp_Canister_Drug_Information_Api\" columns in TCGMeds_LP database should be same as table \"TCGDrugs\" columns in DrugDB database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sp_Canister_Drug_Information_Api\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"TCGDrugs\"",
+                  "offset": 100
+                }
+              ],
+              "location": "step.TCGMeds_LPAndDrugDBDatabaseTableTestBetweenAzureAndOnPremServer.procedureColumnsInTCGMeds_LPDatabaseShouldBeSameAsTableColumnsInDrugDBDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 943754800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Procedure \"sp_Canister_Drug_Information_Api\" data count in TCGMeds_LP database should be equals to table \"TCGDrugs\" data count in DrugDB database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sp_Canister_Drug_Information_Api\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"TCGDrugs\"",
+                  "offset": 105
+                }
+              ],
+              "location": "step.TCGMeds_LPAndDrugDBDatabaseTableTestBetweenAzureAndOnPremServer.procedureDataCountInTCGMeds_LPDatabaseShouldBeEqualsToTableDataCountInDrugDBDatabase(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature:Table Data and Column Test between TCGMeds_LP and DrugDB Database"
+          },
+          {
+            "name": "@dataFile:drug_database_test_data/tcgmeds_lp_and_drugdb_database_test_between_azure_and_cddb_server.xls"
+          }
+        ]
+      }
+    ],
+    "name": "Table Data and Column Test between TCGMeds_LP and DrugDB Database",
+    "description": "",
+    "id": "table-data-and-column-test-between-tcgmeds-lp-and-drugdb-database",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/tcgmeds_lp-and-drugdb-database-table-test-between-azure-and-cddb-server.feature",
     "tags": []
   }
 ]

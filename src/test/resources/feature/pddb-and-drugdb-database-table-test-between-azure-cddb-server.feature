@@ -1,5 +1,5 @@
 Feature: Table Data and Column Test between PDDB_LP and DrugDB Database
-  @dataFile:drug_database_test_data/azure_cddb_proc_with_table_validation.xls
+  @dataFile:drug_database_test_data/data_and_column_test_between_azure_cddb_sp_and_table.xls
   Scenario: Verify table columns and data sync between PDDB_LP and DrugDB database for table "${table_name}"
     Given Database connection for "PDDB_LP" from azure server
     And Database connection for "DrugDB" from CDDB server

@@ -50,13 +50,13 @@ public class DatabaseProcessTest {
 
     @And("user get column from {string} procedure in PDDB_LP database within azure server")
     public void userGetColumnFromProcedureInPDDB_LPDatabaseWithinAzureServer(String procedureName) throws SQLException{
-        boolean isColumnExist = gen.getColumnFromPDDB_LPDatabaseWithinAzureServer(procedureName);
+        boolean isColumnExist = gen.getColumnFromProcedureWithinAzureServer(procedureName);
         Assert.assertTrue(isColumnExist);
     }
 
     @And("user get data count from {string} procedure in PDDB_LP database within azure server")
     public void userGetDataCountFromProcedureInPDDB_LPDatabaseWithinAzureServer(String procedureName) throws SQLException {
-        boolean isDataExist = gen.getDataFromProcedurePDDB_LPDatabaseWithinAzureServer(procedureName);
+        boolean isDataExist = gen.getDataFromProcedureWithinAzureServer(procedureName);
         Assert.assertTrue(isDataExist);
     }
 
